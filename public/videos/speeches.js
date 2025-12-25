@@ -1,0 +1,302 @@
+export const speeches = [
+  {
+    category: "Speech",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1C_kzGewu4MyDQsvy3Zs7b1jw7IyFm6pr/view?usp=drive_link",
+    source_title:
+      "খালেদ মহিউদ্দিনের উদ্দেশ্যে যে প্রশ্ন রাখলেন ওসমান হাদি | Khaled Muhiuddin | Osman Hadi | Channel 24",
+    yt_source_url: "https://www.youtube.com/watch?v=G19aj88jSIQ",
+  },
+  {
+    category: "Speech",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1lnhQZQuAZt-7Z-E--4QuGRNPZDM36dKP/view?usp=drive_link",
+    source_title:
+      "‘দিল্লির দাসত্ব করলে ভয়ঙ্কর অবস্থা হবে এনসিপির’ | Sharif Osman Hadi | BNP | NCP | Ekhon TV",
+    yt_source_url: "https://www.youtube.com/watch?v=MVYG_QhGaSk",
+  },
+  {
+    category: "Speech",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1wvZRCtpJ8WfQHwU2cyN_pzQERHYGHeK7/view?usp=drive_link",
+    source_title:
+      "যে বক্তব্যের কারণে ওসমান হাদীকে শহীদ করা হয়েছে | Osman Hadi Vairal Video | Inqilab Manch News",
+    yt_source_url: "https://www.youtube.com/watch?v=E46azHBZkjc",
+  },
+  {
+    category: "Speech",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1fFPthQdCGW8u7BC2PK_XVer6Ux1XyoFo/view?usp=drive_link",
+    source_title: "গোপালগঞ্জের ইসুতে বিএনপি জামাতকে যা বললেন ওসমান হাদি BV71",
+    yt_source_url: "https://www.youtube.com/watch?v=-a7LDaaqDWU",
+  },
+  {
+    category: "Speech",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1EgRlPB97uzr7lIXBJ81dcAlQBN10ik_d/view?usp=drive_link",
+    source_title:
+      "'জুলাই বিক্রি করলে তাকে ছেড়ে দেয়ার মালিকানা দেইনি' | Sharif Osman Hadi | July Revolution | Ekhon TV",
+    yt_source_url: "https://www.youtube.com/watch?v=wxZGrnORGkc",
+  },
+  {
+    category: "Speech",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/15oWzvjrxDbFdYf-l2ouBeefona8ZOyWJ/view?usp=drive_link",
+    source_title:
+      "বিএনপিকে উদ্দেশ্য করে যা বললেন শরীফ ওসমান হাদী | Sharif Osman Hadi | Awami League Ban | Ekhon TV",
+    yt_source_url: "https://www.youtube.com/watch?v=UXQOGrv69OQ",
+  },
+  {
+    category: "Speech",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1BeY_xmejt5wb75k_YwyPqmeIKXb2NzEs/view?usp=drive_link",
+    source_title:
+      "ঢাকা ৮ আসনে সেলফি তুললেই পেছনে আব্বাস ভাই বা হেলাল ভাইয়ের পোষ্টার থাকে: হাদী | Sharif Osman Hadi",
+    yt_source_url: "https://www.youtube.com/watch?v=oQCWcLAiIMY",
+  },
+  {
+    category: "Speech",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1Dbl8vXDLkZK9E4OaC3z7QpJGQKzpjzo7/view?usp=drive_link",
+    source_title:
+      "শিক্ষকদের দাবির সাথে হাদির একাত্মতা | Sharif Osman Hadi | Inqilab Mancha | Teacher's Protest | Ekhon",
+    yt_source_url: "https://www.youtube.com/watch?v=KinQpvQHqYE",
+  },
+  {
+    category: "Speech",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1L7n7WYs9B9menspZdJDH_voN5Ylk0Vvx/view?usp=drive_link",
+    source_title:
+      "গোপালগঞ্জকে স্বাধীন করতে লং মার্চের ঘোষণা দিলো ইনকিলাব মঞ্চ | Inqilab | Hadi | ATN Bangla News",
+    yt_source_url: "https://www.youtube.com/watch?v=tinzwyeToYU",
+  },
+  {
+    category: "Speech",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1pePH1qBe3l0UWQa54mtDTTLVIa5Au9Wv/view?usp=drive_link",
+    source_title:
+      "'নারায়ে তাকবির' শুধুমাত্র হুজুরদের শ্লোগান নয়_ শরিফ ওসমান হাদী @NagorikTV",
+    yt_source_url: "https://www.youtube.com/watch?v=bXG0wZ84Q58",
+  },
+  {
+    category: "Speech",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1qxhBF92egoze2J5VpvemaDGJiHvm2DUO/view?usp=drive_link",
+    source_title:
+      "হেফাজতের নেতাদের নিয়ে যা বললেন শরীফ ওসমান হাদি | Sharif Osman Hadi",
+    yt_source_url: "https://www.youtube.com/watch?v=9_Hy6SiOZaU",
+  },
+  {
+    category: "Speech",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1dM97ecFlS8BHVAyENQl4zkfhZrh9nS1c/view?usp=drive_link",
+    source_title:
+      "‘বাংলাদেশে আর কোন শাহবাগীতা চলবে না’ | Inqilab Manch | Rtv News",
+    yt_source_url: "https://www.youtube.com/watch?v=t2DJO25G3q4",
+  },
+  {
+    category: "Speech",
+    yt_personal_url: "https://www.youtube.com/watch?v=tP3nmVjzHWA",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1gV054nYL0NCMgUg-6kpKEy6yNlnXArek/view?usp=drive_link",
+    source_title:
+      "‘জামায়াত ক্যান্টনমেন্টে গেলে দেশে তাদের হিসাব থাকবে না’ | Sharif Osman Hadi | Ekhon TV",
+    yt_source_url: "https://www.youtube.com/watch?v=SaATC_FT5WE",
+  },
+  {
+    category: "Speech",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1izuyrpQqww7twPqaVN8dHCazynoDHMcG/view?usp=drive_link",
+    source_title:
+      "আরে হাসিনা আমারে চেনে ব্যাটা | Sharif Osman Bin Hadi | Inqilab Moncho | Speech | Sheikh Hasina",
+    yt_source_url: "https://www.youtube.com/watch?v=OdWVjlIJFHM",
+  },
+  {
+    category: "Speech",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1gwdg4kWlXevT8i65uhZOa2132GxQy7PI/view?usp=drive_link",
+    source_title:
+      "ঢাকা - ৮ আসনের প্রার্থীরা ছিচকে চোর : ওসমান হাদী | Business Bangladesh",
+    yt_source_url: "https://www.youtube.com/watch?v=OykypVzuYTs",
+  },
+  {
+    category: "Speech",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1FK0qnbaiCpqbPaXkeLWjsxNrNppArGqF/view?usp=drive_link",
+    source_title:
+      "ঢাকা বিশ্ববিদ্যালয়ের শিক্ষকরা জানেই না তারা কী পড়ায় | Sharif Osman Bin Hadi | Dhaka University",
+    yt_source_url: "https://www.youtube.com/watch?v=Kmc2raRyoQU",
+  },
+  {
+    category: "Speech",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1Wg-hv8aj8qzwOubyle4kfBsdZm4uxcdz/view?usp=drive_link",
+    source_title:
+      "মাত্র ১০০০ টাকা বাড়ি ভাড়া পেয়ে শিক্ষকরা কিভাবে দক্ষ জাতি তৈরি করবেন",
+    yt_source_url: "https://www.youtube.com/watch?v=2qyzDlM6lQA",
+  },
+  {
+    category: "Speech",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1x7fol-o08SA2ohxOGgo5VhEltaC79OIO/view?usp=drive_link",
+    source_title:
+      "বক্তব্য; আপ বাংলাদেশের গণজমায়েতে শরিফ ওসমান হাদি || UP BANGLADESH || Inqilab Moncho",
+    yt_source_url: "https://www.youtube.com/watch?v=hu-wmfacVwk",
+  },
+  {
+    category: "Speech",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1fNyzsgjyQSQ2MWb3EBltu1A8FmPvQRuT/view?usp=drive_link",
+    source_title:
+      "জান ও জুলাই বাঁচাতে ঐক্যবদ্ধ হোন || Osman Hadi || Inqilab moncho || ইনকিলাব মঞ্চ",
+    yt_source_url: "https://www.youtube.com/watch?v=2YyNZhAM4SE",
+  },
+  {
+    category: "Speech",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1BeYv7kfKF_YjHO5wzlpvpJM3v7AO3XeQ/view?usp=drive_link",
+    source_title:
+      "৪৩ তম বিসিএস এ আওয়ামী সংশ্লিষ্টতা ব্যতীত গেজেট বঞ্চিত নিরপরাধ ক্যাডারদের গেজেটভুক্ত করতে আহবান",
+    yt_source_url: "https://www.youtube.com/watch?v=2-mSO2h21Bo",
+  },
+  {
+    category: "Speech",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1EE-cTV7kVxZPaHxau2bVBUR_Idg8eJQX/view?usp=drive_link",
+    source_title:
+      "আওয়ামী লীগ নিষিদ্ধের দাবিতে ময়মনসিংহে শহীদি সমাবেশের গণসংযোগ",
+    yt_source_url: "https://www.youtube.com/watch?v=LPZyckpELy4",
+  },
+  {
+    category: "Speech",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1TX0YBIQTQg_UTT_2kvl5Xd4RSIKmIjOI/view?usp=drive_link",
+    source_title:
+      "গাইল খাবে পুলিশ/ আমলারা খাবে ইলিশ!পুলিশ প্রশাসনকে ইনকিলাব মঞ্চের পাঁচ দফা",
+    yt_source_url: "https://www.youtube.com/watch?v=1JrlpyAgYdg",
+  },
+  {
+    category: "Speech",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1rNdwJVocD7tdF8_bPWgYj7_EnCHh0wiI/view?usp=sharing",
+    source_title:
+      "'কান্দে আমার মায়' থেকে ইনকিলাব মঞ্চের ইশতেহার | inqilab moncho | inqilab ishtehar | july 24",
+    yt_source_url: "https://www.youtube.com/watch?v=ubNbbG6VDkI",
+  },
+  {
+    category: "Speech",
+    yt_personal_url: "https://www.youtube.com/watch?v=F8p1H1vMDzQ",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1Mg1mJ27n6je3u9RueTlrV1ZaV4ffR7iK/view?usp=drive_link",
+    source_title:
+      "ফ্যাসিবাদী বয়ান নির্মাণে গণমাধ্যমের ভূমিকাঃ একটি পর্যালোচনায় বক্তব্যে শরিফ ওসমান হাদি। inqilab monch",
+    yt_source_url: "https://www.youtube.com/watch?v=dDrRXCrD63s",
+  },
+  {
+    category: "Speech",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url: "",
+    source_title:
+      "ঢাকা-৮ আসনের নির্বাচন নিয়ে ওসমান হাদির হুঁশিয়ারি | Osman Hadi | Inquilab Moncho",
+    yt_source_url: "https://www.youtube.com/watch?v=9ygvWjKzXqU",
+  },
+  {
+    category: "Speech",
+    yt_personal_url: "https://www.youtube.com/watch?v=i-0b6fRD_Tg",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1PxvZqyKR3myUZr7aOg52UTrSrWz8cdST/view?usp=drive_link",
+    source_title:
+      "বাংলাদেশের রাজনীতিবিদরা মাদক বন্ধ করেন না: ওসমান হাদি | Face The People",
+    yt_source_url: "https://www.youtube.com/watch?v=nRls4vVs0yk",
+  },
+  {
+    category: "Speech",
+    yt_personal_url: "",
+    fb_url: "https://www.facebook.com/reel/802160259541698",
+    drive_url:
+      "https://drive.google.com/file/d/18lmHQn2naUKyfeOPmU4qaz2aYTQwsYbM/view?usp=drive_link",
+    source_title: "ওসমান হাদী না থাকলেও হাজার ওসমান জন্ম নিবে বাংলাদেশে! ",
+    yt_source_url: "",
+  },
+  {
+    category: "Speech",
+    yt_personal_url: "",
+    fb_url: "https://www.facebook.com/reel/4113352712218320",
+    drive_url: "",
+    source_title: "BNP is back to Shahid Zia!",
+    yt_source_url: "",
+  },
+  {
+    category: "Speech",
+    yt_personal_url: "",
+    fb_url: "https://www.facebook.com/reel/766168529473552",
+    drive_url: "",
+    source_title: "Who are the freedom fighters?",
+    yt_source_url: "",
+  },
+  {
+    category: "Speech",
+    yt_personal_url: "",
+    fb_url: "https://www.facebook.com/reel/1151582670504867",
+    drive_url: "",
+    source_title: "Some posts are very difficult to give the right caption.",
+    yt_source_url: "",
+  },
+  {
+    category: "Speech",
+    yt_personal_url: "",
+    fb_url: "https://www.facebook.com/reel/1527868428494290",
+    drive_url: "",
+    source_title:
+      "If Allah wills, we will maintain the politics of justice in every inch of 56 thousand square miles",
+    yt_source_url: "",
+  },
+];

@@ -1,0 +1,49 @@
+export const songs = [
+  {
+    category: "Song",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1K-Lag4BalUM5S6gbewAP47nXvb0IzF3d/view?usp=drive_link",
+    source_title:
+      "EI HADI EKA NOY (এই হাদি একা নয়) | Bangladesh Protest Song 2025 | Ariful islam | Usman Hadi",
+    yt_source_url: "https://www.youtube.com/watch?v=ehShWDhLHJ0",
+  },
+  {
+    category: "Song",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1iqx0CehFRLVfA4-3Q-YzvOgFzZvt_IL9/view?usp=drive_link",
+    source_title: "Hadi Tui Fire Ay | হাদি তুই ফিরে আয় | Abu Ubayda",
+    yt_source_url: "https://www.youtube.com/watch?v=gg7claSY6XA",
+  },
+  {
+    category: "Song",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1Mt_ZQ5fRL6uc56Sqw_GI2S96sB4WF7Ua/view?usp=drive_link",
+    source_title:
+      "লাল জুলাই | লিরিক্যাল ভার্সন LAL JULY lyrical version || inqilab moncho",
+    yt_source_url: "https://www.youtube.com/watch?v=a1pebhwmP_k",
+  },
+  {
+    category: "Song",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1Y12U2Lu3CKApyV8BFjP7j9awxedfG7jG/view?usp=drive_link",
+    source_title: "Hadir Jindabad | হাদির জিন্দাবাদ | Abu Ubayda | Zia Haq",
+    yt_source_url: "https://www.youtube.com/watch?v=oNtZnaocEkQ",
+  },
+  {
+    category: "Song",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1aV-EJT5p3-u5DV5mprskoI2SezQD2Jxl/view?usp=drive_link",
+    source_title: "কই মেলে বিপ্লবী হাদিদের সন্ধান! ",
+    yt_source_url: "https://www.youtube.com/watch?v=SWmgT4RtkmY",
+  },
+];

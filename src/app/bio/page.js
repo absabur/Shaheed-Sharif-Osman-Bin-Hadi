@@ -184,38 +184,6 @@ const AboutPage = () => {
           </div>
         </section>
 
-        {/* 5. PROFESSIONAL MATRIX SECTION */}
-        <section className="bg-zinc-950 border border-white/10 rounded-[4rem] p-12 md:p-24 relative overflow-hidden shadow-2xl">
-          <div className="absolute -bottom-20 -right-20 opacity-5 rotate-12">
-            <Briefcase size={500} />
-          </div>
-          <div className="grid md:grid-cols-2 gap-16 relative z-10">
-            <div className="space-y-8">
-              <span className="text-red-600 font-black uppercase tracking-widest text-xs">
-                Academic & Intellectual
-              </span>
-              <h2 className="text-4xl md:text-6xl font-black tracking-tighter leading-none">
-                শিক্ষকতা ও <br />
-                তাত্ত্বিক শক্তি
-              </h2>
-              <p className="text-zinc-400 text-xl leading-relaxed">
-                ওসমান হাদী বিশ্বাস করতেন জ্ঞান ছাড়া বিপ্লব অসম্পূর্ণ। প্রভাষক
-                হিসেবে তিনি কেবল পাঠদান করতেন না, বরং ছাত্রদের নৈতিক ও রাজনৈতিক
-                সচেতনতা তৈরিতে কাজ করতেন।
-              </p>
-            </div>
-            <div className="grid grid-cols-1 gap-4">
-              <SkillBar
-                icon={<BookOpen />}
-                label="Political Strategy"
-                level="95%"
-              />
-              <SkillBar icon={<Mic2 />} label="Public Speaking" level="90%" />
-              <SkillBar icon={<Zap />} label="Crisis Leadership" level="98%" />
-            </div>
-          </div>
-        </section>
-
         {/* 6. ENHANCED QUOTE SECTION */}
         <section className="py-20 text-center max-w-5xl mx-auto px-6 relative">
           <div className="absolute inset-0 bg-red-900/5 blur-[120px] rounded-full" />

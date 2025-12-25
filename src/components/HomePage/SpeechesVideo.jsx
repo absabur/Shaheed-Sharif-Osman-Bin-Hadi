@@ -1,0 +1,91 @@
+import React from "react";
+import { SectionHeader } from "./Home";
+import { Play, ArrowRight, MonitorPlay } from "lucide-react"; // Added icons
+import { getYouTubeID } from "@/utils/ytId";
+import { speeches } from "../../../public/videos/speeches";
+import Link from "next/link";
+import { getThumbnailSrc } from "@/app/videos/page";
+
+const SpeechesVideo = () => {
+  return (
+    <section className="max-w-7xl mx-auto py-32 bg-[#050000] border-b border-white/5 relative">
+      <div className="px-6 mb-16 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-end gap-8">
+        <SectionHeader
+          number="02"
+          title="চিন্তা ও দর্শন"
+          sub="Intellectual Warfare"
+        />
+      </div>
+
+      <div
+        id="intellectual-scroll"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 pb-12"
+      >
+        {speeches.slice(0, 6).map((item, index) => (
+          <Link
+            href={`/videos/${encodeURIComponent(item.source_title)}`}
+            key={index}
+            className="group cursor-pointer"
+          >
+            <div className="aspect-video bg-zinc-950 overflow-hidden relative border border-white/5 group-hover:border-red-700 transition-all rounded-[2rem]">
+              <img
+                src={getThumbnailSrc(item)}
+                className="w-full h-full object-cover grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
+                alt={`Speech ${item.source_title}`}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-90" />
+              <div className="absolute bottom-8 left-8 right-8">
+                <p className="text-red-600 text-[10px] font-black tracking-widest uppercase mb-2">
+                  SPEECH COLLECTION 0{index + 1}
+                </p>
+                <h4 className="text-lg font-black leading-tight line-clamp-2">
+                  {item.source_title}
+                </h4>
+              </div>
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-red-700 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all scale-75 group-hover:scale-100 shadow-2xl">
+                <Play fill="white" size={24} />
+              </div>
+            </div>
+          </Link>
+        ))}
+      </div>
+
+      {/* --- WATCH MORE BUTTON SECTION --- */}
+      <div className="flex justify-center px-6">
+        <Link
+          href="/videos?category=Speeches"
+          className="relative group w-full max-w-2xl"
+        >
+          <div className="flex items-center justify-between p-6 bg-zinc-950 border border-white/5 rounded-[2rem] group-hover:border-red-600/50 transition-all duration-500 overflow-hidden">
+            {/* Background Glow Effect */}
+            <div className="absolute inset-0 bg-red-600/5 opacity-0 group-hover:opacity-100 transition-opacity" />
+
+            <div className="flex items-center gap-6 relative z-10">
+              <div className="w-12 h-12 bg-zinc-900 rounded-2xl flex items-center justify-center text-zinc-500 group-hover:bg-red-700 group-hover:text-white transition-all duration-500">
+                <MonitorPlay size={20} />
+              </div>
+              <div>
+                <h5 className="text-white font-black text-sm uppercase tracking-widest">
+                  বক্তৃতাগুলো একসাথে দেখুন
+                </h5>
+                <p className="text-zinc-600 text-[10px] font-bold uppercase tracking-widest mt-1">
+                  Access the Full Intellectual Archive
+                </p>
+              </div>
+            </div>
+
+            <div className="relative z-10 flex items-center gap-2 text-red-600 font-black text-[10px] uppercase tracking-widest">
+              Explore{" "}
+              <ArrowRight
+                size={16}
+                className="group-hover:translate-x-2 transition-transform duration-500"
+              />
+            </div>
+          </div>
+        </Link>
+      </div>
+    </section>
+  );
+};
+
+export default SpeechesVideo;

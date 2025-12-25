@@ -1,0 +1,328 @@
+export const interview = [
+  {
+    category: "Interview",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1GhqSRNOtJd1343unmF4SE_PG-IaJX0rR/view?usp=drive_link",
+    source_title: "রকমারিতে শহীদ ওসমান হাদির সর্বশেষ সাক্ষাৎকার.",
+    yt_source_url: "https://youtube.com/watch?v=8QtJGK6c7DE",
+  },
+  {
+    category: "Interview",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1-q978UhiUi76-8caL_rHM5chiJsB3jHu/view?usp=drive_link",
+    source_title:
+      "হাসিনার উসকানিতে নিজেদের জীবন ধ্বংস কইরেন না: ওসমান হাদী | Osman Hadi | BanglaVision",
+    yt_source_url: "https://www.youtube.com/watch?v=hpRcLOQKHU4",
+  },
+  {
+    category: "Interview",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1L6n5EDJ-o3p__vUzoWRgusQw8UqrPff_/view?usp=drive_link",
+    source_title:
+      "পিনাকী ভট্টাচার্য আর শিবির নিয়ে কি বলে ওসমান হাদি! | Osman Hadi",
+    yt_source_url: "https://www.youtube.com/watch?v=Q8UXxtyasPk&t=8s",
+  },
+  {
+    category: "Interview",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1gTJcZUN15XJ7rwSHfoByt1A3I8Vzio3O/view?usp=drive_link",
+    source_title:
+      "এই মব জাস্টিস কি গত এক বছর ধরেই বাংলাদেশ হচ্ছে?: শরিফ ওসমান হাদি | Sharif Osman Hadi | Channel 24",
+    yt_source_url: "https://www.youtube.com/watch?v=spqBIjupB44",
+  },
+  {
+    category: "Interview",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1QZDw2lc1huyJqPoiYq8-oll5qMvCtONw/view?usp=drive_link",
+    source_title:
+      "মসজিদে ব্যানার টানিয়ে রাজনীতি করা নিষিদ্ধ করতে হবে: ওসমান হাদি | Sharif Osman Hadi | Inqilab Manch",
+    yt_source_url: "https://www.youtube.com/watch?v=47S7shu7aSg",
+  },
+  {
+    category: "Interview",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1kBrbsfwMCV3LILzt-Qt-fIYUPNYazYiP/view?usp=drive_link",
+    source_title:
+      "শূন্য টাকায় নির্বাচন করতে চায় হাদী | Osman Hadi | Political Speech | Daily Jugantor",
+    yt_source_url: "https://www.youtube.com/watch?v=6LUsQ-Y_NiU",
+  },
+  {
+    category: "Interview",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1lIbjqFFBkMLul3SJYVxWbc_G893ygWgY/view?usp=drive_link",
+    source_title:
+      "রিকশাচালক বলে তিনি নির্বাচনে দাঁড়াতে পারবেন না কেন- ওসমান হাদির প্রশ্ন | Osman Hadi",
+    yt_source_url: "https://www.youtube.com/watch?v=J9eLKQZDs4o",
+  },
+  {
+    category: "Interview",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1VR4kxcYauYKvWYnIoZZ1WxnB4t4uVX_x/view?usp=drive_link",
+    source_title:
+      "অন্য প্রার্থীরা খরচ করেন; উল্টো টাকা পাচ্ছিলেন হাদি | Osman Hadi | Jugantor",
+    yt_source_url: "https://www.youtube.com/watch?v=Hw16ZdND81c",
+  },
+  {
+    category: "Interview",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1fWFyxB2S0O-U4OJ4-RYz1vUfQO2zqLS-/view?usp=drive_link",
+    source_title:
+      "‘বাঁশের লা'ঠি নিয়ে প্রস্তুত আছি, আওয়ামী লীগ কোথায় থাকবে?’ | Osman Hadi | Awami League | Jugantor",
+    yt_source_url: "https://www.youtube.com/watch?v=xkXp1X11XWM",
+  },
+  {
+    category: "Interview",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1JokA6gcxZWgsxhNYNi88zHr0QooSXCiX/view?usp=drive_link",
+    source_title:
+      "'আ. লীগের সাথে টি-২০ ম্যাচ খেলার অপেক্ষায় হাদি' | Sharif Osman Hadi | 13 November | Awami League",
+    yt_source_url: "https://www.youtube.com/watch?v=caXNZLtau1k",
+  },
+  {
+    category: "Interview",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1zRJTuSi51g9Ym7z0h5u9lx_tRm8Hs9e3/view?usp=drive_link",
+    source_title:
+      "আ. লীগকে আ'গু'নে পু'ড়ি'য়ে মারা ওয়াজিব কিন্তু আমরা সেটা করবো না: ওসমান হাদী | Hadi | Channel 24",
+    yt_source_url: "https://www.youtube.com/watch?v=J6ZqF2KALek",
+  },
+  {
+    category: "Interview",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1tpiM_L4rMYrchPPDnWY6-tOKmBZBKFpS/view?usp=drive_link",
+    source_title:
+      "জুলাই ঘোষণাপত্র নিয়ে যা বললেন ইনকিলাব মঞ্চের মুখপাত্র ওসমান হাদি | Osman Hadi | ATN Bangla News",
+    yt_source_url: "https://www.youtube.com/watch?v=Ui3t3uuLDPU",
+  },
+  {
+    category: "Interview",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1tg-SyncyYjMALTov1rAm5eXrf_i3iCLd/view?usp=drive_link",
+    source_title:
+      "জুলাই ঘোষণাপত্র ও কফিন মার্চ বিষয়ক জরুরি লাইভ || Live || July",
+    yt_source_url: "https://www.youtube.com/watch?v=V_oC8tp16ZE",
+  },
+  {
+    category: "Interview",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1tg-SyncyYjMALTov1rAm5eXrf_i3iCLd/view?usp=drive_link",
+    source_title:
+      "জুলাই ঘোষণাপত্র ও গণ'হ'ত্যার নিশ্চিত বিচার দাবিতে ইনকিলাব মঞ্চে জরুরি সংবাদ সম্মেলন। July Ghoshona",
+    yt_source_url: "https://www.youtube.com/watch?v=yJFEui_orjs",
+  },
+  {
+    category: "Interview",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1Env9y9Zfr27Z5IshKLSbjmctaOOcN1dD/view?usp=drive_link",
+    source_title:
+      "১৮ কোটি মানুষকে নিয়ে এবার সমুদ্রে নামতে হবে! River move II Sharif Osman II Inqilab Moncho",
+    yt_source_url: "https://www.youtube.com/watch?v=f3Z2hLmwwiw",
+  },
+  {
+    category: "Interview",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1WDr5oyactNnC_YzwYvFtgKAncAIYvZ4u/view?usp=drive_link",
+    source_title: "১ ডিসেম্বর থেকে ১০ ডিসেম্বর আমার নির্বাচনী ফান্ডের আপডেট",
+    yt_source_url: "https://www.youtube.com/watch?v=RYCfd_XA80c",
+  },
+  {
+    category: "Interview",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/15s_ed66O-31L3nFrjRsfW3KdVc_8KawX/view?usp=drive_link",
+    source_title:
+      "দেশে এখন সবচেয়ে বেশি সমস্যা বিদ্যমান: হাদি | Osman Hadi | Talk Show | Sadhin Songlap | ATN News",
+    yt_source_url: "https://www.youtube.com/watch?v=ncIez8FBMtM",
+  },
+  {
+    category: "Interview",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1AvBsZvlwnFornsfAoGJ6Jt5iuJUAHb9x/view?usp=drive_link",
+    source_title:
+      "বাউল শিল্পী, সে নিজেও তো মুসলমান দাবি করে: শরীফ ওসমান হাদি | Talk Show | Global TV News",
+    yt_source_url: "https://www.youtube.com/watch?v=Ii2oIemy4Ow",
+  },
+  {
+    category: "Interview",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1mMGb4sI6muDS80ZHq4QEJ5-kbq4_QPS-/view?usp=drive_link",
+    source_title:
+      "“তুমি কোনদিন ওয়ার্ড কাউন্সিলর হইছো? এমপি হইতে চাও?” হাদিকে মির্জা আব্বাস এর সমর্থক | Talk Show",
+    yt_source_url: "https://www.youtube.com/watch?v=cYh07YUdg6A",
+  },
+  {
+    category: "Interview",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1uRO8EHcucIKFFcjAbNBYOSoYsaiUtaTK/view?usp=drive_link",
+    source_title:
+      "কাদের রাজনৈতিক এজেন্ডা বাস্তবায়ন করছে ইনকিলাব মঞ্চ? | Inqilab Moncho | BD Politics | FE News",
+    yt_source_url: "https://www.youtube.com/watch?v=w-sUAkvQESA",
+  },
+  {
+    category: "Interview",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1-v9lL1bipyojmHYBdMZviS2J7bzX_3jG/view?usp=drive_link",
+    source_title:
+      "মৃ-ত্যুর আগে ওসমান হাদির এক্সক্লুসিভ সাক্ষাৎকার। Osman Hadi। Inqulab Monch-Chithi",
+    yt_source_url: "https://www.youtube.com/watch?v=lAVK4wvu9eY",
+  },
+  {
+    category: "Interview",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1be3H74KsZwMtCab_P0paIXra8GX9Lv3x/view?usp=drive_link",
+    source_title:
+      "‘জুলাইয়ের নব্বই ভাগ ঘটনাই আমরা জানি না’ —ইনডিপেনডেন্ট টিভির সাক্ষাৎকারে ওসমান হাদি | Independent TV",
+    yt_source_url: "https://www.youtube.com/watch?v=5YbZBjJSmeg",
+  },
+  {
+    category: "Interview",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1YtAPe5aDCGKdrLffHZeYtrkYEmy1s0OF/view?usp=drive_link",
+    source_title:
+      "জীবদ্দশায় হাদির সেই সতর্কবার্তা! ফেস দ্যা পিপলকে দিয়েছিলেন বি*স্ফো*রক তথ্য! Face The People",
+    yt_source_url: "https://www.youtube.com/watch?v=Vib32_VRVlo",
+  },
+  {
+    category: "Interview",
+    yt_personal_url: "",
+    fb_url: "https://www.facebook.com/reel/919763097887285",
+    drive_url:
+      "https://drive.google.com/file/d/1W82ODEXp0CMxjtaKLuCyZ0OVgz81FulO/view?usp=drive_link",
+    source_title: "জুলাই আন্দোলনের ভয়াবহ ঘটনা শুনুন হাদী ভাই এর মুখে",
+    yt_source_url: "",
+  },
+  {
+    category: "Interview",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url: "",
+    source_title:
+      "ফ্যাসিবাদের আমলেও সাংস্কৃতিক লড়াই অব্যাহত রেখেছিলেন শহীদ ওসমান বিন হাদি! | লাল জুলাই | ছাত্র সংবাদ |",
+    yt_source_url: "https://www.youtube.com/watch?v=aKVBKZ_APuw",
+  },
+  {
+    category: "Interview",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url: "",
+    source_title:
+      "'আমরা যে পথে নেমেছি, সেখান থেকে ইউটার্ন নেওয়ার সুযোগ নেই!'| লাল জুলাই | ছাত্র সংবাদ |",
+    yt_source_url: "https://www.youtube.com/watch?v=vWZ-BBOXSl8",
+  },
+  {
+    category: "Interview",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url: "",
+    source_title:
+      "ভা/র/তীয় আধিপত্যবাদ বিরোধী শহীদ শরীফ ওসমান বিন হাদি! | লাল জুলাই | ছাত্র সংবাদ |",
+    yt_source_url: "https://www.youtube.com/watch?v=r5Joidv_KVc",
+  },
+  {
+    category: "Interview",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url: "",
+    source_title:
+      "আবরার ফাহাদের শাহাদাতের সংবাদ ভীষণ ব্যথিত করে শরীফ ওসমান বিন হাদিকে | লাল জুলাই | ছাত্র সংবাদ |",
+    yt_source_url: "https://www.youtube.com/watch?v=WHQnsm8fFUU",
+  },
+  {
+    category: "Interview",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url: "",
+    source_title:
+      "জুলাই বিপ্লবের এক শহীদের স্মৃতিচারণ করছেন শরীফ ওসমান হাদি! | লাল জুলাই | ছাত্র সংবাদ |",
+    yt_source_url: "https://www.youtube.com/watch?v=x0-o2hVbJck",
+  },
+  {
+    category: "Interview",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url: "",
+    source_title:
+      "ইশতেহার ও নির্বাচনী রাজনীতি | টাইমলাইন বাংলাদেশ | Timeline Bangladesh.",
+    yt_source_url: "https://www.youtube.com/watch?v=HVj9hYEZFXE",
+  },
+  {
+    category: "Interview",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url: "",
+    source_title:
+      "আগামী ৫০ বছর বাংলাদেশে রাজনীতি করতে চাই আমরা: শরীফ ওসমান হাদি | Sharif Osman Hadi | Inqilab Manch",
+    yt_source_url: "https://www.youtube.com/watch?v=pXxcAwW2Lgw",
+  },
+  {
+    category: "Interview",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url: "",
+    source_title:
+      "আমার মৃ'ত্যুর পরেও ভারতীয় আ'ধিপত্যবাদের বিরুদ্ধে লড়াই চলবে: ওসমান হাদি | Osman Hadi | THE hot seat",
+    yt_source_url: "https://www.youtube.com/watch?v=g3Fb1xZFJRk",
+  },
+  {
+    category: "Interview",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url: "",
+    source_title:
+      "নির্বাচন নিয়ে যা বলেছিলেন ওসমান হাদি | Osman Hadi | Jugantor",
+    yt_source_url: "https://www.youtube.com/watch?v=FwL-aZPr4gU",
+  },
+  {
+    category: "Interview",
+    yt_personal_url: "",
+    fb_url: "https://www.facebook.com/reel/2400017240436767",
+    drive_url: "",
+    source_title: "The Journey Towards Our Dream❤️",
+    yt_source_url: "",
+  },
+];

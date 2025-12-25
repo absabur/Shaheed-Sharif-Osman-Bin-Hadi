@@ -25,7 +25,7 @@ const Navbar = () => {
             হ
           </div>
           <div>
-            <h1 className="text-lg font-black tracking-tighter leading-none">
+            <h1 className="text-lg text-white tracking-tighter leading-none">
               OSMAN HADI
             </h1>
             <p className="text-[10px] text-red-500 font-bold uppercase tracking-[0.2em]">
@@ -35,42 +35,39 @@ const Navbar = () => {
         </Link>
 
         <div className="hidden lg:flex items-center gap-10 text-sm font-bold tracking-wide text-zinc-400">
-          <a
-            href="#biography"
+          <Link
+            href="/bio"
             className="hover:text-red-500 transition-colors uppercase"
           >
             জীবনী
-          </a>
-          <a
+          </Link>
+          <Link
             href="#vision"
             className="hover:text-red-500 transition-colors uppercase"
           >
             দর্শন
-          </a>
-          <a
-            href="#vault"
+          </Link>
+          <Link
+            href="/videos"
             className="hover:text-red-500 transition-colors uppercase"
           >
             ভিডিও
-          </a>
-          <a
+          </Link>
+          <Link
             href="#poetry"
             className="hover:text-red-500 transition-colors uppercase"
           >
             সাহিত্য
-          </a>
-          <a
+          </Link>
+          <Link
             href="#research"
             className="hover:text-red-500 transition-colors uppercase"
           >
             গবেষণা
-          </a>
+          </Link>
         </div>
 
         <div className="flex items-center gap-4">
-          <button className="hidden sm:block bg-red-700 text-white px-6 py-2.5 rounded-xl text-xs font-black hover:bg-red-600 transition-all shadow-xl active:scale-95 uppercase tracking-widest">
-            Google Drive
-          </button>
           <button
             className="lg:hidden text-zinc-400"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -79,6 +76,37 @@ const Navbar = () => {
           </button>
         </div>
       </div>
+
+      {/* MOBILE MENU OVERLAY */}
+      {mobileMenuOpen && (
+        <div className="fixed inset-0 z-[200] bg-black p-6 animate-in slide-in-from-top duration-300 flex flex-col">
+          <div className="flex justify-between items-center mb-16">
+            <div className="w-10 h-10 bg-red-700 rounded-lg flex items-center justify-center font-black">
+              হ
+            </div>
+            <button
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-white"
+            >
+              <X size={40} />
+            </button>
+          </div>
+          <div className="flex flex-col gap-10 text-5xl font-black tracking-tighter uppercase">
+            <a href="#biography" onClick={() => setMobileMenuOpen(false)}>
+              Biography
+            </a>
+            <a href="#vision" onClick={() => setMobileMenuOpen(false)}>
+              Vision
+            </a>
+            <a href="#vault" onClick={() => setMobileMenuOpen(false)}>
+              Videos
+            </a>
+            <a href="#poetry" onClick={() => setMobileMenuOpen(false)}>
+              Literature
+            </a>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };

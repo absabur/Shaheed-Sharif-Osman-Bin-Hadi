@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import {
   Play,
   ArrowUpRight,
@@ -24,118 +24,93 @@ import {
   Zap,
   X,
 } from "lucide-react";
-import { talkshow } from "../../../public/videos/talkshow";
-import { interview } from "../../../public/videos/talk";
-import { rajpoth } from "../../../public/videos/rajpothe";
-import { lecture } from "../../../public/videos/lectures";
-import { kobita } from "../../../public/videos/kobita";
-import { discussion } from "../../../public/videos/discussion";
-import { biography } from "../../../public/videos/biography";
-import { getYouTubeID } from "@/utils/ytId";
-import Link from "next/link";
 
-/**
- * SHAHEED OSMAN HADI MEMORIAL ARCHIVE
- * A revolutionary theme built for integrity, justice, and sacrifice.
- */
+import Link from "next/link";
+import { getYouTubeID } from "@/utils/ytId";
+import DiscussionVideo from "./DiscussionVideo";
+import SpeechesVideo from "./SpeechesVideo";
+import PoetryVideo from "./PoetryVideo";
 
 const Home = () => {
-  const [activeTab, setActiveTab] = useState("All");
-  const [scrolled, setScrolled] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  // Data for Video Categories
-  const videoCategories = [
-    {
-      id: "All",
-      label: "সবগুলো (All)",
-      videos: [
-        ...talkshow,
-        ...interview,
-        ...rajpoth,
-        ...lecture,
-        ...kobita,
-        ...discussion,
-        ...biography,
-      ],
-    },
-    { id: "Speeches", label: "বক্তৃতা (Speeches)", videos: [] },
-    { id: "Protests", label: "আন্দোলন (Protests)", videos: rajpoth },
-    { id: "Interviews", label: "সাক্ষাৎকার (Interviews)", videos: interview },
-    { id: "Poetry", label: "কবিতা আবৃত্তি (Poetry)", videos: kobita },
-    { id: "TalkShow", label: "টক শো (Talk Show)", videos: talkshow },
-    {
-      id: "PressConference",
-      label: "সংবাদ সম্মেলন (Press conference)",
-      videos: [],
-    },
-  ];
-
-  const filteredVideos = videoCategories.filter((v) => v.id === activeTab)[0]
-    .videos;
-
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <div className="min-h-screen bg-[#050000] text-white selection:bg-red-600/40 selection:text-red-100 font-sans">
       {/* 2. HERO SECTION */}
       <header className="relative h-screen flex items-center justify-center overflow-hidden">
+        {/* Background Layer */}
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-t from-[#050000] via-transparent to-black/60 z-10" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#050000] via-transparent to-black/80 z-10" />
           <img
             src="/static/header.webp"
-            className="w-full h-full object-cover opacity-30 grayscale"
+            className="w-full h-full object-cover opacity-25 grayscale"
             alt="Revolution Background"
           />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-red-900/10 blur-[150px] rounded-full" />
         </div>
 
-        <div className="relative z-20 text-center px-6 max-w-5xl space-y-8">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-600/10 border border-red-600/20 text-red-500 text-xs font-black backdrop-blur-md animate-pulse uppercase tracking-[0.2em]">
-            শহীদ শরীফ ওসমান বিন হাদী (১৯৯৩ - ২০২৫)
-          </div>
-          <h2 className="text-2xl md:text-4xl font-black text-white">
-            মৃত্যুর ফায়সালা জমীনে না, আসমানে হয়
-          </h2>
-
-          {/* 2. Main Name with Revolutionary Glow */}
-          <div className="pt-0 relative inline-block">
-            <span className="relative z-10 text-4xl md:text-7xl font-black text-red-600 drop-shadow-[0_0_25px_rgba(220,38,38,0.4)]">
-              শহীদ শরীফ ওসমান বিন হাদি
+        {/* Content Layer */}
+        <div className="relative z-20 text-center px-6 w-full max-w-5xl flex flex-col items-center">
+          {/* 1. Top Badge - Made smaller and cleaner */}
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 mb-8 rounded-full bg-red-600/10 border border-red-600/20 text-red-500 text-[10px] md:text-xs font-bold backdrop-blur-md tracking-[0.2em] uppercase">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
             </span>
+            ১৯৯৩ — ২০২৫
           </div>
 
-          <p className="text-lg md:text-2xl text-zinc-400 font-medium max-w-3xl mx-auto leading-relaxed">
-            <span className="block text-sm text-zinc-500 font-bold uppercase tracking-widest">
-              ইনকিলাব মঞ্চের মুখপাত্র
-            </span>
+          {/* 2. Main Name - Significant Scale Up */}
+          <div className="relative">
+            <h1 className="text-5xl md:text-8xl font-black text-white tracking-tighter leading-none">
+              শহীদ শরীফ ওসমান <br />
+              <span className="text-red-600 drop-shadow-[0_0_30px_rgba(220,38,38,0.5)]">
+                বিন হাদী
+              </span>
+            </h1>
+          </div>
+
+          {/* 3. Subtitle / Designation */}
+          <p className="text-zinc-400 font-bold uppercase tracking-[0.3em] text-xs md:text-sm">
+            ইনকিলাব মঞ্চের মুখপাত্র
           </p>
-          <div className="flex flex-wrap justify-center gap-4 pt-4">
+
+          {/* 4. Quote - Placed in a stylized container */}
+          <div className="max-w-2xl my-4">
+            <h2 className="text-xl md:text-3xl font-medium italic text-zinc-200 leading-relaxed">
+              <span className="text-red-600 text-4xl mr-2 font-serif">“</span>
+              মৃত্যুর ফায়সালা জমীনে না, আসমানে হয়
+              <span className="text-red-600 text-4xl ml-2 font-serif">”</span>
+            </h2>
+          </div>
+
+          {/* 5. Action Buttons - More compact on mobile */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
             <Link
-              href={`/videos`}
-              className="group flex items-center gap-3 bg-red-700 px-10 py-5 rounded-2xl font-black text-lg hover:bg-red-600 transition-all shadow-2xl shadow-red-700/20 active:scale-95"
+              href="/videos"
+              className="group w-full sm:w-auto flex items-center justify-center gap-3 bg-red-700 px-8 py-4 rounded-xl font-black text-white hover:bg-red-600 transition-all shadow-xl shadow-red-900/20 active:scale-95"
             >
-              ভিডিওগুলো দেখুন{" "}
+              ভিডিওগুলো দেখুন
               <Play
-                size={22}
+                size={20}
+                fill="currentColor"
                 className="group-hover:translate-x-1 transition-transform"
               />
             </Link>
+
             <Link
-              href={`/bio`}
-              className="flex items-center gap-3 bg-white/5 border border-white/10 backdrop-blur-xl px-10 py-5 rounded-2xl font-black text-lg hover:bg-white/10 transition-all active:scale-95"
+              href="/bio"
+              className="w-full sm:w-auto flex items-center justify-center gap-3 bg-white/5 border border-white/10 backdrop-blur-xl px-8 py-4 rounded-xl font-black text-white hover:bg-white/10 transition-all active:scale-95"
             >
-              জীবনী পড়ুন <BookOpen size={22} />
+              জীবনী পড়ুন <BookOpen size={20} />
             </Link>
           </div>
         </div>
 
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-20">
-          <div className="w-1 h-12 bg-gradient-to-b from-red-600 to-transparent rounded-full" />
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
+          <span className="text-[10px] text-zinc-600 uppercase tracking-widest font-bold">
+            Scroll
+          </span>
+          <div className="w-[1px] h-12 bg-gradient-to-b from-red-600 to-transparent animate-pulse" />
         </div>
       </header>
 
@@ -242,199 +217,121 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 5. CINEMATIC VAULT (TABBED ARCHIVE) */}
-      <section id="vault" className="py-32 bg-[#050000]">
-        <div className="max-w-[1400px] mx-auto px-6">
-          <div className="flex flex-col lg:flex-row justify-between items-end gap-10 mb-16">
-            <div className="space-y-4">
-              <h3 className="text-red-600 font-black uppercase tracking-[0.3em] flex items-center gap-2">
-                <Play size={16} fill="currentColor" /> Cinematic Vault
-              </h3>
-              <h2 className="text-5xl font-black">
-                ভিডিও আর্কাইভ (YouTube Collection)
-              </h2>
-              <p className="text-zinc-500 max-w-xl text-lg">
-                ওসমান হাদীর আন্দোলন, বক্তব্য এবং ব্যক্তিগত জীবনের দুর্লভ ভিডিও
-                ক্লিপগুলোর বিশাল সংগ্রহ।
-              </p>
-            </div>
-
-            <div className="flex flex-wrap gap-2 bg-zinc-950 p-2 rounded-2xl border border-white/10">
-              {videoCategories.map((cat) => (
-                <button
-                  key={cat.id}
-                  onClick={() => setActiveTab(cat.id)}
-                  className={`cursor-pointer px-6 border border-red-700/20 py-3 rounded-xl text-xs font-black transition-all uppercase tracking-widest ${
-                    activeTab === cat.id
-                      ? "bg-red-700 text-white shadow-lg"
-                      : "text-zinc-500 hover:text-white hover:bg-white/5"
-                  }`}
-                >
-                  {cat.label}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredVideos.slice(0, 9).map((video) => (
-              <Link
-                key={video.yt_source_url}
-                href={`/${encodeURIComponent(video?.source_title)}`}
-                className="group relative bg-zinc-950 border border-white/5 rounded-3xl overflow-hidden hover:border-red-600/50 transition-all shadow-xl"
-              >
-                <div className="relative aspect-video overflow-hidden">
-                  <img
-                    src={`https://i.ytimg.com/vi/${getYouTubeID(
-                      video.yt_source_url
-                    )}/hqdefault.jpg`}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-60 group-hover:opacity-100"
-                    alt={video.source_title}
-                  />
-                  <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all">
-                    <div className="w-16 h-16 bg-red-700 rounded-full flex items-center justify-center shadow-2xl scale-75 group-hover:scale-100 transition-all">
-                      <Play fill="white" size={24} />
-                    </div>
-                  </div>
-                  <div className="absolute bottom-4 right-4 bg-black/80 backdrop-blur-md px-3 py-1 rounded-lg text-[10px] font-black tracking-widest uppercase">
-                    {video.duration}
-                  </div>
-                </div>
-                <div className="p-6 space-y-3">
-                  <div className="flex justify-between items-center">
-                    <span className="text-[10px] font-black uppercase text-red-600 tracking-widest">
-                      {video.category}
-                    </span>
-                    <span className="text-[10px] text-zinc-500 font-bold uppercase">
-                      {video.date}
-                    </span>
-                  </div>
-                  <h4 className="text-xl font-bold leading-tight line-clamp-2 group-hover:text-red-500 transition-colors">
-                    {video.source_title}
-                  </h4>
-                </div>
-              </Link>
-            ))}
-          </div>
-
-          <div className="mt-20 text-center">
-            <Link
-              href={`/videos`}
-              className="inline-flex items-center gap-4 bg-white/5 border border-white/10 px-12 py-5 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-red-700 hover:text-white transition-all group active:scale-95 shadow-2xl"
-            >
-              View Entire Video Legacy
-              <ArrowUpRight className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* 6. LITERARY SECTION (POETRY) */}
+      {/* 6. VISUAL ARCHIVE / GALLERY (Redesigned from Poetry) */}
       <section
-        id="poetry"
-        className="py-32 relative overflow-hidden bg-zinc-950"
+        id="gallery"
+        className="py-32 relative overflow-hidden bg-[#050000]"
       >
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-red-700/10 blur-[150px] -z-10" />
-        <div className="max-w-[1400px] mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
-          <div className="space-y-8">
-            <h3 className="text-red-600 font-black uppercase tracking-[0.3em] flex items-center gap-2">
-              <Mic2 size={16} /> Words of Fire
-            </h3>
-            <h2 className="text-5xl md:text-6xl font-black tracking-tight">
-              প্রতিবাদী কবিতার <br /> পাণ্ডুলিপি
-            </h2>
-            <p className="text-zinc-400 text-xl leading-relaxed italic">
-              "যখন কলম কথা বলে, তখন স্বৈরাচারের সিংহাসন কেঁপে ওঠে।"
-            </p>
-            <div className="space-y-4">
-              {[
-                { title: "মুক্তির গান", year: "২০২৩" },
-                { title: "জুলাইয়ের ডায়েরি", year: "২০২৪" },
-                { title: "বিপ্লবের বর্ণমালা", year: "২০২৫" },
-              ].map((poem, i) => (
-                <div
-                  key={i}
-                  className="flex items-center justify-between p-6 bg-white/5 rounded-2xl border border-white/5 hover:border-red-600/40 cursor-pointer group transition-all"
+        {/* Decorative Background Elements */}
+        <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-red-900/5 blur-[120px] -z-10" />
+        <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-zinc-900/20 blur-[100px] -z-10" />
+
+        <div className="max-w-[1400px] mx-auto px-6">
+          <div className="flex flex-col lg:flex-row justify-between items-end gap-10 mb-20">
+            <div className="space-y-6">
+              <h3 className="text-red-600 font-black uppercase tracking-[0.4em] flex items-center gap-2">
+                <Maximize2 size={16} /> Visual Legacy
+              </h3>
+              <h2 className="text-5xl md:text-7xl font-black tracking-tighter">
+                স্মৃতির কোলাজ <br />
+                <span
+                  className="text-zinc-800"
+                  style={{ WebkitTextStroke: "1px #3f3f46" }}
                 >
-                  <div className="flex items-center gap-4">
-                    <span className="text-zinc-800 font-black text-3xl">
-                      0{i + 1}
-                    </span>
-                    <span className="text-xl font-bold">{poem.title}</span>
-                  </div>
-                  <div className="flex items-center gap-4">
-                    <span className="text-zinc-600 font-black text-[10px] tracking-widest uppercase">
-                      {poem.year}
-                    </span>
-                    <Volume2 className="text-red-600 group-hover:scale-125 transition-transform" />
-                  </div>
-                </div>
-              ))}
+                  Photo Archive
+                </span>
+              </h2>
             </div>
-            <button className="text-red-600 font-black text-sm uppercase tracking-widest border-b border-red-900/50 pb-1 hover:text-red-500 transition-colors flex items-center gap-2">
-              পড়ুন পূর্ণাঙ্গ কাব্যগ্রন্থ <ArrowRight size={14} />
-            </button>
+            <div className="max-w-md text-right">
+              <p className="text-zinc-500 text-lg leading-relaxed italic mb-6">
+                "ছবি কথা বলে, ইতিহাসকে জীবন্ত রাখে। প্রতিটি ফ্রেমে মিশে আছে
+                বিপ্লব ও ভালোবাসার গল্প।"
+              </p>
+              <Link
+                href="/gallery"
+                className="inline-flex items-center gap-3 bg-white/5 border border-white/10 px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-red-700 hover:border-red-700 transition-all group"
+              >
+                গ্যালারি দেখুন{" "}
+                <ArrowRight
+                  size={16}
+                  className="group-hover:translate-x-2 transition-transform"
+                />
+              </Link>
+            </div>
           </div>
-          <div className="relative">
-            <div className="aspect-[4/5] bg-gradient-to-br from-red-900/40 to-black rounded-[3rem] p-1 border border-white/20 shadow-2xl relative z-10 overflow-hidden group">
+
+          {/* UNIQUE MASONRY GRID */}
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-[200px] md:auto-rows-[150px]">
+            {/* Main Featured Image */}
+            <div className="md:col-span-6 md:row-span-4 relative group rounded-[2.5rem] overflow-hidden border border-white/5">
               <img
-                src="https://images.unsplash.com/photo-1512485694743-9c9538b4e6e0?q=80&w=800"
-                className="w-full h-full object-cover rounded-[3rem] opacity-60 group-hover:scale-110 transition-transform duration-[2s]"
-                alt="Poetry"
+                src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=800"
+                className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-1000"
+                alt="Main Archive"
               />
-              <div className="absolute inset-0 p-12 flex flex-col justify-end">
-                <div className="bg-black/60 backdrop-blur-md p-8 rounded-3xl border border-white/10">
-                  <Quote size={24} className="text-red-600 mb-4 opacity-50" />
-                  <p className="text-xl font-serif text-zinc-100 leading-relaxed italic">
-                    "রক্তের কালিতে লেখা এ ইতিহাস, <br />
-                    মুছতে পারবে না কোনো কালবৈশাখী।"
-                  </p>
-                  <p className="mt-4 text-red-600 font-black uppercase tracking-widest text-sm">
-                    — ওসমান হাদী
-                  </p>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-60 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute bottom-10 left-10 p-2">
+                <span className="bg-red-700 px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">
+                  Featured
+                </span>
+                <h4 className="text-3xl font-black mt-4">
+                  বিপ্লবের প্রথম প্রহর
+                </h4>
+              </div>
+            </div>
+
+            {/* Top Right Vertical */}
+            <div className="md:col-span-3 md:row-span-3 relative group rounded-[2.5rem] overflow-hidden border border-white/5">
+              <img
+                src="https://images.unsplash.com/photo-1512485694743-9c9538b4e6e0?q=80&w=600"
+                className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                alt="Portrait"
+              />
+              <div className="absolute inset-0 bg-red-700/20 opacity-0 group-hover:opacity-100 transition-opacity" />
+            </div>
+
+            {/* Middle Square */}
+            <div className="md:col-span-3 md:row-span-2 relative group rounded-[2.5rem] overflow-hidden border border-white/5 bg-zinc-950 flex flex-col items-center justify-center p-8 text-center border-dashed border-zinc-800">
+              <History
+                size={48}
+                className="text-zinc-800 mb-4 group-hover:text-red-600 transition-colors"
+              />
+              <p className="text-zinc-600 font-bold uppercase tracking-widest text-[10px]">
+                Total Collection
+              </p>
+              <h3 className="text-5xl font-black text-white mt-2">৫০০+</h3>
+            </div>
+
+            {/* Bottom Wide */}
+            <div className="md:col-span-6 md:row-span-2 relative group rounded-[2.5rem] overflow-hidden border border-white/5">
+              <img
+                src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=800"
+                className="w-full h-full object-cover grayscale opacity-40 group-hover:opacity-100 transition-all"
+                alt="Wide Archive"
+              />
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-0 group-hover:scale-100 transition-all">
+                <div className="bg-white text-black p-4 rounded-full shadow-2xl">
+                  <ArrowUpRight size={24} />
                 </div>
               </div>
             </div>
-            <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-red-600/20 rounded-full blur-[80px]" />
+
+            {/* Smallest Detail */}
+            <div className="md:col-span-3 md:row-span-1 relative group rounded-[2.5rem] overflow-hidden border border-white/5">
+              <div className="absolute inset-0 bg-red-700 mix-blend-multiply opacity-20" />
+              <img
+                src="https://images.unsplash.com/photo-1478737270239-2fccd27ee086?q=80&w=400"
+                className="w-full h-full object-cover grayscale"
+                alt="Detail"
+              />
+            </div>
           </div>
         </div>
       </section>
 
       {/* 7. SECTION 01: FRONTLINE BATTLES */}
-      <section className="py-32 px-6 bg-black">
-        <div className="max-w-7xl mx-auto">
-          <SectionHeader
-            number="01"
-            title="রণাঙ্গনের কন্ঠস্বর"
-            sub="Frontline Battles"
-          />
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-16">
-            <FeaturedVideo
-              title="জুলাইয়ের সেই উত্তাল দুপুর: শাহবাগে ওসমান হাদী"
-              desc="বিপ্লবের প্রথম সারিতে দাঁড়িয়ে তিনি যখন ঘোষণা করলেন পরাধীনতা আমরা মানবো না।"
-              img="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1200"
-              date="July 15, 2024"
-            />
-            <div className="space-y-6">
-              <CompactVideo
-                title="ঢাবি ক্যাম্পাসে ইনকিলাব মঞ্চের মিছিল"
-                views="200K"
-              />
-              <CompactVideo
-                title="পুলিশের ব্যারিকেড ভেঙে এগিয়ে যাওয়া"
-                views="450K"
-              />
-              <CompactVideo
-                title="মধ্যরাতের শাহবাগ: তারুণ্যের গর্জন"
-                views="1.2M"
-              />
-              <button className="w-full py-5 border border-red-900/50 text-red-600 font-black hover:bg-red-700 hover:text-white transition-all uppercase tracking-[0.3em] text-[10px] rounded-2xl active:scale-95">
-                View Battlefield Archive
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <DiscussionVideo />
 
       {/* 8. PHILOSOPHY INTERSTITIAL */}
       <section className="py-40 bg-red-950/40 relative overflow-hidden border-y border-red-900/20">
@@ -458,94 +355,7 @@ const Home = () => {
       </section>
 
       {/* SECTION 02: INTELLECTUAL WARFARE (With Navigation Controls) */}
-      <section className="py-32 bg-[#050000] border-b border-white/5 relative">
-        <div className="px-6 mb-16 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-end gap-8">
-          <SectionHeader
-            number="02"
-            title="চিন্তা ও দর্শন"
-            sub="Intellectual Warfare"
-          />
-
-          {/* Custom Navigation Buttons */}
-          <div className="flex gap-4 pb-2">
-            <button
-              onClick={() => {
-                const container = document.getElementById(
-                  "intellectual-scroll"
-                );
-                container.scrollBy({ left: -400, behavior: "smooth" });
-              }}
-              className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:bg-red-700 hover:border-red-700 transition-all bg-zinc-950 text-white shadow-xl group/btn"
-            >
-              <ArrowRight
-                size={20}
-                className="rotate-180 group-hover/btn:-translate-x-1 transition-transform"
-              />
-            </button>
-            <button
-              onClick={() => {
-                const container = document.getElementById(
-                  "intellectual-scroll"
-                );
-                container.scrollBy({ left: 400, behavior: "smooth" });
-              }}
-              className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:bg-red-700 hover:border-red-700 transition-all bg-zinc-950 text-white shadow-xl group/btn"
-            >
-              <ArrowRight
-                size={20}
-                className="group-hover/btn:translate-x-1 transition-transform"
-              />
-            </button>
-          </div>
-        </div>
-
-        {/* Scrollable Container with Hidden Scrollbar */}
-        <div
-          id="intellectual-scroll"
-          className="flex overflow-x-auto gap-8 px-6 pb-12 scroll-smooth"
-          style={{
-            scrollbarWidth: "none" /* Firefox */,
-            msOverflowStyle: "none" /* IE and Edge */,
-            WebkitOverflowScrolling: "touch",
-          }}
-        >
-          {/* Inline CSS to hide Webkit scrollbars */}
-          <style
-            dangerouslySetInnerHTML={{
-              __html: `
-            #intellectual-scroll::-webkit-scrollbar { display: none; }
-          `,
-            }}
-          />
-
-          {[1, 2, 3, 4, 5, 6].map((i) => (
-            <div
-              key={i}
-              className="min-w-[320px] md:min-w-[500px] group cursor-pointer"
-            >
-              <div className="aspect-video bg-zinc-950 overflow-hidden relative border border-white/5 group-hover:border-red-700 transition-all rounded-[2rem]">
-                <img
-                  src={`https://images.unsplash.com/photo-1524178232363-1fb28f74b081?q=80&w=800&sig=${i}`}
-                  className="w-full h-full object-cover grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
-                  alt={`Speech ${i}`}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-90" />
-                <div className="absolute bottom-8 left-8 right-8">
-                  <p className="text-red-600 text-[10px] font-black tracking-widest uppercase mb-2">
-                    SPEECH COLLECTION 0{i}
-                  </p>
-                  <h4 className="text-2xl font-black leading-tight">
-                    সার্বভৌমত্ব রক্ষায় আমাদের করণীয় ও দর্শন
-                  </h4>
-                </div>
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-red-700 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all scale-75 group-hover:scale-100 shadow-2xl">
-                  <Play fill="white" size={24} />
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+      <SpeechesVideo />
 
       {/* 10. THE INTEGRITY TIMELINE */}
       <section className="py-32 px-6 max-w-5xl mx-auto">
@@ -589,138 +399,8 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 11. SECTION 03: POETIC RESISTANCE */}
-      <section className="py-32 bg-[#050000] px-6">
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-20">
-          <div className="lg:w-1/3">
-            <SectionHeader
-              number="03"
-              title="শব্দের বিদ্রোহ"
-              sub="Poetic Resistance"
-            />
-            <p className="mt-8 text-zinc-500 leading-relaxed text-lg">
-              তার প্রতিটি কবিতা ছিল এক একটি আগ্নেয়াস্ত্র। শব্দের মাধ্যমে তিনি
-              ফুটিয়ে তুলতেন এক শোষিত জাতির দীর্ঘশ্বাস।
-            </p>
-            <button className="mt-10 flex items-center gap-3 font-black text-red-600 hover:text-red-500 uppercase tracking-widest text-xs">
-              সম্পূর্ণ কাব্যগ্রন্থ পড়ুন <ArrowRight size={18} />
-            </button>
-          </div>
-          <div className="lg:w-2/3 space-y-4">
-            {[
-              {
-                title: "বধ্যভূমির গান",
-                length: "04:20",
-                color: "bg-red-950/20",
-              },
-              {
-                title: "স্বাধীনতা মানে কী?",
-                length: "05:15",
-                color: "bg-zinc-900/50",
-              },
-              {
-                title: "রক্তে ভেজা রাজপথ",
-                length: "03:45",
-                color: "bg-red-950/20",
-              },
-              { title: "শেষ চিঠি", length: "06:10", color: "bg-zinc-900/50" },
-            ].map((poem, i) => (
-              <div
-                key={i}
-                className={`group flex items-center justify-between p-8 rounded-[2rem] ${poem.color} border border-white/5 hover:border-red-700 transition-all cursor-pointer shadow-xl`}
-              >
-                <div className="flex items-center gap-6">
-                  <div className="w-14 h-14 bg-black rounded-2xl flex items-center justify-center text-red-600 group-hover:bg-red-700 group-hover:text-white transition-all shadow-lg shadow-black/50">
-                    <Mic2 size={24} />
-                  </div>
-                  <h5 className="text-2xl font-black tracking-tight">
-                    {poem.title}
-                  </h5>
-                </div>
-                <div className="flex items-center gap-4 text-zinc-500 font-black text-xs uppercase tracking-widest">
-                  <span>{poem.length}</span>
-                  <div className="w-8 h-8 rounded-full bg-red-900/10 flex items-center justify-center group-hover:bg-red-700 group-hover:text-white transition-all">
-                    <Play size={12} fill="currentColor" />
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 12. RESEARCH & ARCHIVE (GOOGLE DRIVE HUB) */}
-      <section id="research" className="py-32 bg-black">
-        <div className="max-w-[1400px] mx-auto px-6">
-          <div className="bg-gradient-to-br from-red-800 to-zinc-950 rounded-[3.5rem] p-12 lg:p-24 relative overflow-hidden border border-red-900/20 shadow-[0_0_100px_rgba(153,27,27,0.1)]">
-            <div className="absolute top-0 right-0 w-full h-full opacity-5 pointer-events-none">
-              <div className="absolute top-0 right-0 w-96 h-96 bg-white rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2" />
-            </div>
-
-            <div className="grid lg:grid-cols-2 gap-20 items-center relative z-10">
-              <div className="space-y-10">
-                <div className="w-16 h-1 w-16 bg-white rounded-full" />
-                <h2 className="text-4xl md:text-7xl font-black tracking-tighter leading-none">
-                  গবেষণা ও রাজনৈতিক <br /> নথিপত্র সংগ্রহশালা
-                </h2>
-                <p className="text-white/70 text-xl leading-relaxed max-w-xl">
-                  ওসমান হাদীর লেখা সকল রাজনৈতিক প্রবন্ধ, ইনকিলাব মঞ্চের
-                  অফিসিয়াল নথিপত্র এবং গবেষণাপত্র এখন উন্মুক্ত। ইতিহাস সংরক্ষণে
-                  আমাদের এই ক্ষুদ্র প্রচেষ্টা।
-                </p>
-                <div className="flex flex-wrap gap-4">
-                  <div className="flex items-center gap-3 bg-black/40 px-8 py-5 rounded-3xl border border-white/10 backdrop-blur-xl group cursor-default">
-                    <Download
-                      size={22}
-                      className="text-red-500 group-hover:scale-110 transition-transform"
-                    />
-                    <span className="font-black text-sm uppercase tracking-widest">
-                      PDF Library
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-3 bg-black/40 px-8 py-5 rounded-3xl border border-white/10 backdrop-blur-xl group cursor-default">
-                    <Maximize2
-                      size={22}
-                      className="text-red-500 group-hover:scale-110 transition-transform"
-                    />
-                    <span className="font-black text-sm uppercase tracking-widest">
-                      Manuscripts
-                    </span>
-                  </div>
-                </div>
-                <button className="bg-white text-red-900 px-14 py-6 rounded-[2rem] font-black text-xl hover:bg-zinc-100 hover:scale-105 transition-all shadow-3xl flex items-center gap-4">
-                  অ্যাক্সেস করুন (Drive) <ArrowUpRight strokeWidth={3} />
-                </button>
-              </div>
-
-              <div className="bg-black/60 backdrop-blur-3xl border border-white/10 rounded-[3rem] p-10 space-y-8 shadow-2xl">
-                <h5 className="text-2xl font-black flex items-center gap-3 tracking-tight">
-                  <Clock size={24} className="text-red-600" /> সর্বশেষ আপলোডসমূহ
-                </h5>
-                <div className="space-y-4">
-                  {[
-                    "ইনকিলাব মঞ্চ: রূপরেখা ও লক্ষ্য",
-                    "রাজনৈতিক দর্শন: সার্বভৌমত্ব ও বিচার",
-                    "বিশ্ববিদ্যালয় লেকচার সিরিজ - ২৫",
-                    "জুলাই বিপ্লবের অপ্রকাশিত স্থিরচিত্র",
-                  ].map((doc, i) => (
-                    <div
-                      key={i}
-                      className="flex justify-between items-center p-6 bg-white/5 rounded-2xl border border-white/5 hover:bg-white/10 transition-all group cursor-pointer"
-                    >
-                      <span className="text-lg font-bold">{doc}</span>
-                      <Download
-                        size={20}
-                        className="text-zinc-500 group-hover:text-red-600 transition-colors"
-                      />
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* 11. SECTION 03: POETIC RESISTANCE (Video Edition) */}
+      <PoetryVideo />
 
       {/* 13. TRIBUTE GUESTBOOK */}
       <section className="py-40 text-center max-w-4xl mx-auto px-6 relative">
@@ -812,11 +492,6 @@ const Home = () => {
               <ul className="space-y-5 text-zinc-400 font-bold uppercase tracking-widest text-xs">
                 <li>
                   <a href="#" className="hover:text-red-500 transition-colors">
-                    Google Drive
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-red-500 transition-colors">
                     Inqilab Moncho
                   </a>
                 </li>
@@ -847,40 +522,6 @@ const Home = () => {
           </div>
         </div>
       </footer>
-
-      {/* MOBILE MENU OVERLAY */}
-      {mobileMenuOpen && (
-        <div className="fixed inset-0 z-[200] bg-black p-6 animate-in slide-in-from-top duration-300 flex flex-col">
-          <div className="flex justify-between items-center mb-16">
-            <div className="w-10 h-10 bg-red-700 rounded-lg flex items-center justify-center font-black">
-              হ
-            </div>
-            <button
-              onClick={() => setMobileMenuOpen(false)}
-              className="text-white"
-            >
-              <X size={40} />
-            </button>
-          </div>
-          <div className="flex flex-col gap-10 text-5xl font-black tracking-tighter uppercase">
-            <a href="#biography" onClick={() => setMobileMenuOpen(false)}>
-              Biography
-            </a>
-            <a href="#vision" onClick={() => setMobileMenuOpen(false)}>
-              Vision
-            </a>
-            <a href="#vault" onClick={() => setMobileMenuOpen(false)}>
-              Videos
-            </a>
-            <a href="#poetry" onClick={() => setMobileMenuOpen(false)}>
-              Literature
-            </a>
-            <a href="#research" onClick={() => setMobileMenuOpen(false)}>
-              Drive
-            </a>
-          </div>
-        </div>
-      )}
     </div>
   );
 };
@@ -901,11 +542,11 @@ const PillarCard = ({ icon, title, desc, color }) => (
   </div>
 );
 
-const SectionHeader = ({ number, title, sub }) => (
+export const SectionHeader = ({ number, title, sub }) => (
   <div className="flex items-center gap-8">
     <span
       className="text-6xl md:text-9xl font-black text-transparent opacity-30 select-none"
-      style={{ WebkitTextStroke: "1px #991b1b" }}
+      style={{ WebkitTextStroke: "2px #991b1b" }}
     >
       {number}
     </span>
@@ -920,11 +561,14 @@ const SectionHeader = ({ number, title, sub }) => (
   </div>
 );
 
-const FeaturedVideo = ({ title, desc, img, date }) => (
-  <div className="relative group cursor-pointer overflow-hidden rounded-[3.5rem] bg-zinc-950 border border-white/5 hover:border-red-600 transition-all shadow-2xl">
+export const FeaturedVideo = ({ title, url }) => (
+  <Link
+    href={`/videos/${encodeURIComponent(title)}`}
+    className="relative group cursor-pointer overflow-hidden rounded-[3.5rem] bg-zinc-950 border border-white/5 hover:border-red-600 transition-all shadow-2xl"
+  >
     <div className="aspect-video relative overflow-hidden">
       <img
-        src={img}
+        src={`https://i.ytimg.com/vi/${getYouTubeID(url)}/hqdefault.jpg`}
         className="w-full h-full object-cover grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-1000 group-hover:scale-105"
         alt={title}
       />
@@ -934,23 +578,22 @@ const FeaturedVideo = ({ title, desc, img, date }) => (
       </div>
     </div>
     <div className="p-12">
-      <p className="text-red-600 font-black text-[10px] mb-4 uppercase tracking-[0.3em]">
-        {date}
-      </p>
-      <h3 className="text-3xl font-black mb-6 leading-tight group-hover:text-red-500 transition-colors">
+      <h3 className="text-2xl font-black mb-6 leading-tight group-hover:text-red-500 transition-colors">
         {title}
       </h3>
-      <p className="text-zinc-500 leading-relaxed text-lg">{desc}</p>
     </div>
-  </div>
+  </Link>
 );
 
-const CompactVideo = ({ title, views }) => (
-  <div className="flex gap-6 items-center p-6 bg-zinc-950 border border-white/5 rounded-3xl hover:bg-red-950/20 hover:border-red-900/50 transition-all group cursor-pointer shadow-xl">
+export const CompactVideo = ({ title, url }) => (
+  <Link
+    href={`/videos/${encodeURIComponent(title)}`}
+    className="flex gap-6 items-center p-6 bg-zinc-950 border border-white/5 rounded-3xl hover:bg-red-950/20 hover:border-red-900/50 transition-all duration-300 group cursor-pointer shadow-xl"
+  >
     <div className="w-32 h-20 bg-black rounded-2xl overflow-hidden shrink-0 border border-white/5">
       <img
-        src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=200"
-        className="w-full h-full object-cover grayscale opacity-30 group-hover:opacity-60 transition-opacity"
+        src={`https://i.ytimg.com/vi/${getYouTubeID(url)}/hqdefault.jpg`}
+        className="w-full h-full object-cover grayscale group-hover:grayscale-0 opacity-30 group-hover:opacity-60 transition-opacity"
         alt="thumbnail"
       />
     </div>
@@ -958,17 +601,14 @@ const CompactVideo = ({ title, views }) => (
       <h5 className="font-black text-lg leading-tight line-clamp-2 group-hover:text-white transition-colors">
         {title}
       </h5>
-      <p className="text-[10px] text-zinc-600 mt-2 uppercase font-black tracking-widest flex items-center gap-2">
-        <Youtube size={12} className="text-red-700" /> {views} WATCHERS
-      </p>
     </div>
     <div className="w-10 h-10 bg-zinc-900 rounded-full flex items-center justify-center text-zinc-700 group-hover:bg-red-700 group-hover:text-white transition-all">
       <Play size={16} fill="currentColor" />
     </div>
-  </div>
+  </Link>
 );
 
-const TimelineItem = ({ year, title, desc, side, highlight }) => (
+export const TimelineItem = ({ year, title, desc, side, highlight }) => (
   <div
     className={`flex w-full ${
       side === "left" ? "flex-row text-right" : "flex-row-reverse text-left"
