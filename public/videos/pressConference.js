@@ -259,4 +259,13 @@ export const pressConference = [
       "৮ আগস্ট সরকার নতুন বাংলাদেশ দিবস পালন করলে সারাদেশে আমরা বিপ্লব বেহাত দিবস পালন করবো ||সংবাদ সম্মেলন",
     yt_source_url: "https://www.youtube.com/watch?v=EBmdMvXUoAA",
   },
+  {
+    category: "Press Conference",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url: "",
+    source_title:
+      "আসন্ন নির্বাচনে যেসব চ্যালেঞ্জ মনে করেন ওসমান হাদি | Face The People",
+    yt_source_url: "https://www.youtube.com/watch?v=FG7htCf2NBA",
+  },
 ];
