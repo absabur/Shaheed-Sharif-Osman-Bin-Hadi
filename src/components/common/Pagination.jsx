@@ -2,13 +2,12 @@
 
 import React from "react";
 import Link from "next/link";
-import { useSearchParams } from "next/navigation"; // Import this
+import { useSearchParams } from "next/navigation";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const Pagination = ({ currentPage, totalPages }) => {
   const searchParams = useSearchParams();
 
-  // This helper creates a new URL string by merging existing params with the new page
   const createPageURL = (pageNumber) => {
     const params = new URLSearchParams(searchParams.toString());
     params.set("page", pageNumber.toString());
@@ -32,31 +31,32 @@ const Pagination = ({ currentPage, totalPages }) => {
   };
 
   return (
-    <div className="mt-20 flex flex-col items-center gap-8">
+    <div className="mt-12 md:mt-20 flex flex-col items-center gap-6 md:gap-8 px-4">
+      {/* Cinematic Divider */}
       <div className="w-full h-px bg-gradient-to-r from-transparent via-white/5 to-transparent" />
 
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-2 md:gap-4">
         {/* Prev Button */}
         <Link
           href={createPageURL(Math.max(1, currentPage - 1))}
           scroll={false}
-          className={`p-5 rounded-2xl border transition-all ${
+          className={`p-3 md:p-5 rounded-xl md:rounded-2xl border transition-all ${
             currentPage === 1
-              ? "opacity-20 pointer-events-none border-white/5"
-              : "bg-zinc-950 border-white/10 hover:border-red-600 hover:text-red-600"
+              ? "opacity-10 pointer-events-none border-white/5"
+              : "bg-zinc-950 border-white/10 hover:border-red-600 hover:text-red-600 text-white"
           }`}
         >
-          <ChevronLeft size={20} />
+          <ChevronLeft size={18} className="md:w-5 md:h-5" />
         </Link>
 
         {/* Page Numbers */}
-        <div className="flex gap-2">
+        <div className="flex gap-1 md:gap-2">
           {getPageNumbers().map((page, idx) => {
             if (page === "...") {
               return (
                 <span
                   key={`dots-${idx}`}
-                  className="flex items-end pb-4 text-zinc-700"
+                  className="flex items-center px-1 md:px-2 text-zinc-700 text-xs md:text-sm"
                 >
                   ...
                 </span>
@@ -69,12 +69,13 @@ const Pagination = ({ currentPage, totalPages }) => {
                 key={page}
                 href={createPageURL(page)}
                 scroll={false}
-                className={`w-14 h-14 rounded-2xl flex items-center justify-center font-black text-sm transition-all border ${
+                className={`w-10 h-10 md:w-14 md:h-14 rounded-xl md:rounded-2xl flex items-center justify-center font-black text-xs md:text-sm transition-all border ${
                   isActive
                     ? "bg-red-700 border-red-600 text-white shadow-lg shadow-red-700/20"
                     : "bg-zinc-950 border-white/10 text-zinc-500 hover:border-white/20"
                 }`}
               >
+                {/* On mobile, we might skip the leading zero to save space if needed */}
                 {page.toString().padStart(2, "0")}
               </Link>
             );
@@ -85,18 +86,18 @@ const Pagination = ({ currentPage, totalPages }) => {
         <Link
           href={createPageURL(Math.min(totalPages, currentPage + 1))}
           scroll={false}
-          className={`p-5 rounded-2xl border transition-all ${
+          className={`p-3 md:p-5 rounded-xl md:rounded-2xl border transition-all ${
             currentPage === totalPages
-              ? "opacity-20 pointer-events-none border-white/5"
-              : "bg-zinc-950 border-white/10 hover:border-red-600 hover:text-red-600"
+              ? "opacity-10 pointer-events-none border-white/5"
+              : "bg-zinc-950 border-white/10 hover:border-red-600 hover:text-red-600 text-white"
           }`}
         >
-          <ChevronRight size={20} />
+          <ChevronRight size={18} className="md:w-5 md:h-5" />
         </Link>
       </div>
 
-      <p className="text-[10px] font-black uppercase tracking-[0.5em] text-zinc-700">
-        End of Page {currentPage}
+      <p className="text-[8px] md:text-[10px] font-black uppercase tracking-[0.3em] md:tracking-[0.5em] text-zinc-700 text-center">
+        Page {currentPage} of {totalPages}
       </p>
     </div>
   );

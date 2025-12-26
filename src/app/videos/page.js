@@ -23,6 +23,7 @@ import { peoplesLove } from "../../../public/videos/peoplesLove";
 import { songs } from "../../../public/videos/song";
 import { electionCampaign } from "../../../public/videos/electionCampaign";
 import Pagination from "@/components/common/Pagination";
+import VideoCategoryFilter from "@/components/common/VideoCategoryFilter";
 
 export const videoCategories = [
   {
@@ -123,29 +124,15 @@ const VideoVaultPage = async ({ searchParams }) => {
               ক্লিপগুলোর বিশাল সংগ্রহ।
             </p>
           </div>
-
-          {/* Navigation Bar: Buttons replaced with Links */}
-          <div className="flex flex-wrap gap-2 bg-zinc-950 p-2 rounded-2xl border border-white/10">
-            {videoCategories.map((cat) => (
-              <Link
-                key={cat.id}
-                scroll={false} // Prevents jumping to top when switching tabs
-                href={`?category=${cat.id}`}
-                className={`px-6 flex-auto text-center border border-white/10 hover:border-red-700/20 py-3 rounded-xl text-xs font-black transition-all uppercase tracking-widest ${
-                  activeTab === cat.id
-                    ? "bg-red-700 text-white shadow-lg"
-                    : "text-zinc-500 hover:text-white hover:bg-white/5"
-                }`}
-              >
-                {cat.label}
-              </Link>
-            ))}
-          </div>
+          <VideoCategoryFilter
+            activeTab={activeTab}
+            videoCategories={videoCategories}
+          />
         </div>
 
-        <div className="my-8 flex flex-col md:flex-row gap-4 w-full items-stretch">
+        <div className="my-4 lg:my-8 flex flex-col md:flex-row gap-4 w-full items-stretch">
           {/* Left: Total Vault Badge */}
-          <div className="group flex flex-1 md:flex-initial md:w-1/3 items-center gap-4 bg-zinc-950 border border-white/5 px-6 py-4 rounded-2xl hover:border-red-600/30 transition-all shadow-xl">
+          <div className="group flex flex-1 md:flex-initial md:w-1/3 items-center gap-4 bg-zinc-950 border border-white/5 px-6 py-2 rounded-2xl hover:border-red-600/30 transition-all shadow-xl">
             <div className="p-2 bg-zinc-900 rounded-xl group-hover:bg-red-700 transition-colors">
               <MonitorPlay
                 size={16}
@@ -153,11 +140,8 @@ const VideoVaultPage = async ({ searchParams }) => {
               />
             </div>
             <div className="flex flex-col">
-              <p className="text-[9px] font-black uppercase tracking-[0.3em] text-zinc-600 mb-0.5">
-                Database
-              </p>
               <p className="text-xs font-black uppercase tracking-widest text-zinc-400">
-                Vault:{" "}
+                Total Video:{" "}
                 <span className="text-white ml-1 tabular-nums">
                   {filteredVideos.length}
                 </span>

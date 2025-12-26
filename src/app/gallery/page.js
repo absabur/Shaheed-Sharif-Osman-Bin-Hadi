@@ -1,14 +1,11 @@
 import React from "react";
 import Link from "next/link";
-import {
-  Camera,
-  Maximize2,
-  Image as ImageIcon,
-} from "lucide-react";
+import { Camera, Maximize2, Image as ImageIcon } from "lucide-react";
 
 // ... Paste your osmanarchiveImages array here or import it
 import { osmanarchiveImages } from "../../../public/images/images";
 import Pagination from "@/components/common/Pagination";
+import ImageDownload from "@/components/common/ImageDownload";
 
 const ITEMS_PER_PAGE = 24;
 
@@ -72,21 +69,29 @@ export default async function GalleryPage({ searchParams }) {
           {currentImages.map((img, idx) => (
             <div
               key={idx}
-              className="group relative aspect-[4/5] bg-zinc-900 rounded-[2rem] overflow-hidden border border-white/5 hover:border-red-600/50 transition-all duration-500 shadow-xl"
+              className="group relative aspect-[4/5] bg-zinc-900 rounded-xl overflow-hidden border border-white/5 hover:border-red-600/50 transition-all duration-500 shadow-xl"
             >
-              {/* Viewfinder Corners (Stylized) */}
-              <div className="absolute top-4 left-4 w-4 h-4 border-t border-l border-white/20 group-hover:border-red-600 transition-colors z-20" />
-              <div className="absolute top-4 right-4 w-4 h-4 border-t border-r border-white/20 group-hover:border-red-600 transition-colors z-20" />
+              <div className="cursor-pointer relative w-full h-full overflow-hidden bg-zinc-950 flex items-center justify-center group">
+                <div className="relative w-full h-full overflow-hidden bg-black group">
+                  {/* The Background (Always Cover, blurs on hover) */}
+                  <img
+                    src={img.url}
+                    className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-40 blur-sm group-hover:blur-md transition-all duration-500"
+                    alt=""
+                  />
 
-              <img
-                src={img.url}
-                alt="Gallery Image"
-                loading="lazy"
-                className="w-full h-full object-cover"
-              />
+                  {/* The Foreground (Hidden Cover, becomes Contain on hover) */}
+                  <img
+                    src={img.url}
+                    alt="Gallery Image"
+                    className="relative w-full h-full object-contain transition-all duration-300 scale-0 scale-100"
+                  />
+                </div>
+              </div>
 
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80 group-hover:opacity-40 transition-opacity" />
+              <div className="absolute top-4 right-4 z-50">
+                <ImageDownload img={img} />
+              </div>
 
               <div className="absolute bottom-6 left-6 right-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                 <p className="text-[10px] font-black uppercase tracking-widest text-red-600 mb-1">
@@ -95,11 +100,6 @@ export default async function GalleryPage({ searchParams }) {
                 <h4 className="text-sm font-bold truncate text-white/80 group-hover:text-white">
                   {img.title || "Untitled Fragment"}
                 </h4>
-              </div>
-
-              {/* Interaction Icon */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-white text-black rounded-full flex items-center justify-center scale-0 group-hover:scale-100 transition-all duration-500 shadow-2xl">
-                <Maximize2 size={20} />
               </div>
             </div>
           ))}

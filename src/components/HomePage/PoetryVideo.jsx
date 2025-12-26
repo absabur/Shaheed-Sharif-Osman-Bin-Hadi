@@ -8,25 +8,25 @@ import { getThumbnailSrc } from "@/app/videos/page";
 
 const PoetryVideo = () => {
   return (
-    <section className="py-32 bg-[#050000] px-6 relative overflow-hidden">
+    <section className="py-20 md:py-32 bg-[#050000] px-4 md:px-6 relative overflow-hidden">
       {/* Subtle background glow */}
-      <div className="absolute top-1/2 left-0 w-96 h-96 bg-red-900/10 blur-[120px] -z-10" />
+      <div className="absolute top-1/2 left-0 w-72 md:w-96 h-72 md:h-96 bg-red-900/10 blur-[100px] md:blur-[120px] -z-10" />
 
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-20">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-20">
         {/* Left Side: Content */}
-        <div className="lg:w-1/3 sticky top-32 h-fit">
+        <div className="w-full lg:w-1/3 lg:sticky lg:top-32 h-fit text-center lg:text-left">
           <SectionHeader
             number="03"
             title="শব্দের বিদ্রোহ"
             sub="Poetic Resistance"
           />
-          <p className="mt-8 text-zinc-500 leading-relaxed text-lg">
+          <p className="mt-6 md:mt-8 text-zinc-500 leading-relaxed text-base md:text-lg max-w-xl mx-auto lg:mx-0">
             তার প্রতিটি আবৃত্তি ছিল এক একটি আগ্নেয়াস্ত্র। ভিজ্যুয়াল এবং শব্দের
             মাধ্যমে তিনি ফুটিয়ে তুলতেন এক শোষিত জাতির দীর্ঘশ্বাস।
           </p>
           <Link
             href={`/videos?category=Poetry`}
-            className="w-fit mt-4 flex items-center p-5 border border-red-900/50 text-red-600 font-black hover:bg-red-700 hover:text-white transition-all uppercase tracking-[0.3em] text-[10px] rounded-2xl active:scale-95"
+            className="w-full sm:w-fit mx-auto lg:mx-0 mt-8 flex items-center justify-center gap-3 p-4 md:p-5 border border-red-900/50 text-red-600 font-black hover:bg-red-700 hover:text-white transition-all uppercase tracking-[0.2em] md:tracking-[0.3em] text-[10px] rounded-2xl active:scale-95 group"
           >
             সবগুলো ভিডিও দেখুন
             <ArrowRight
@@ -37,13 +37,13 @@ const PoetryVideo = () => {
         </div>
 
         {/* Right Side: Creative Video List */}
-        <div className="lg:w-2/3 space-y-6">
+        <div className="w-full lg:w-2/3 space-y-4 md:space-y-6">
           {kobita.slice(0, 3).map((video, i) => {
             return (
               <Link
                 key={i}
                 href={`/videos/${encodeURIComponent(video.source_title)}`}
-                className="group relative flex items-center justify-between gap-3 p-10 rounded-[2.5rem] bg-zinc-950/50 border border-white/5 hover:border-red-700/50 transition-all duration-500 cursor-pointer overflow-hidden"
+                className="group relative flex items-center justify-between gap-4 p-6 md:p-10 rounded-[1.5rem] md:rounded-[2.5rem] bg-zinc-950/50 border border-white/5 hover:border-red-700/50 transition-all duration-500 cursor-pointer overflow-hidden"
               >
                 {/* Hover Image Reveal Logic */}
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500 -z-10">
@@ -54,45 +54,46 @@ const PoetryVideo = () => {
                   />
                 </div>
 
-                <div className="flex items-center gap-8 z-10">
-                  {/* The Index Number */}
-                  <span className="text-zinc-800 font-black text-5xl group-hover:text-red-700/40 transition-colors">
+                <div className="flex items-center gap-4 md:gap-8 z-10 min-w-0">
+                  {/* The Index Number - Smaller on mobile */}
+                  <span className="text-zinc-800 font-black text-3xl md:text-5xl group-hover:text-red-700/40 transition-colors shrink-0">
                     0{i + 1}
                   </span>
 
-                  <div>
-                    <span className="text-[10px] font-black uppercase tracking-[0.3em] text-red-600 mb-2 block opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all">
-                      {video.category}
+                  <div className="min-w-0">
+                    <span className="text-[8px] md:text-[10px] font-black uppercase tracking-[0.3em] text-red-600 mb-1 md:mb-2 block opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all">
+                      {video.category || "Poetry"}
                     </span>
-                    <h5 className="text-lg font-black tracking-tighter group-hover:translate-x-2 transition-transform duration-500">
+                    <h5 className="text-base md:text-lg font-black tracking-tighter group-hover:translate-x-2 transition-transform duration-500 truncate md:whitespace-normal">
                       {video.source_title}
                     </h5>
                   </div>
                 </div>
 
                 {/* Right Side: Thumbnail & Play */}
-                <div className="flex items-center gap-6 z-10">
-                  <div className="hidden md:block w-32 aspect-video rounded-xl overflow-hidden border border-white/10 scale-0 group-hover:scale-100 transition-all duration-500 shadow-2xl">
+                <div className="flex items-center gap-3 md:gap-6 z-10 shrink-0">
+                  {/* Hide thumbnail on small mobile, show on tablet+ */}
+                  <div className="hidden sm:block w-24 md:w-32 aspect-video rounded-lg md:rounded-xl overflow-hidden border border-white/10 scale-0 group-hover:scale-100 transition-all duration-500 shadow-2xl">
                     <img
                       src={getThumbnailSrc(video)}
                       className="w-full h-full object-cover"
-                      alt={video.title}
+                      alt={video.source_title}
                     />
                   </div>
 
                   <div className="flex flex-col items-end">
-                    <span className="text-[10px] text-zinc-500 font-black mb-2">
-                      {video.length}
+                    <span className="text-[8px] md:text-[10px] text-zinc-500 font-black mb-1 md:mb-2">
+                      {video.length || "0:00"}
                     </span>
-                    <div className="w-12 h-12 rounded-2xl bg-zinc-900 flex items-center justify-center text-zinc-600 group-hover:bg-red-700 group-hover:text-white group-hover:rotate-[360deg] transition-all duration-700 shadow-xl">
-                      <Play size={18} fill="currentColor" />
+                    <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl md:rounded-2xl bg-zinc-900 flex items-center justify-center text-zinc-600 group-hover:bg-red-700 group-hover:text-white group-hover:rotate-[360deg] transition-all duration-700 shadow-xl">
+                      <Play size={16} fill="currentColor" />
                     </div>
                   </div>
                 </div>
 
-                {/* Background overlay that grows on hover */}
+                {/* Background overlay */}
                 <div
-                  className={`absolute inset-0 ${video.color} translate-y-full group-hover:translate-y-0 transition-transform duration-500 -z-20`}
+                  className={`absolute inset-0 bg-red-950 translate-y-full group-hover:translate-y-0 transition-transform duration-500 -z-20 opacity-30`}
                 />
               </Link>
             );

@@ -1,15 +1,9 @@
-"use client";
 import React from "react";
 import {
   Play,
   ArrowUpRight,
-  Search,
-  Download,
-  Volume2,
-  Clock,
   Maximize2,
   Heart,
-  Share2,
   ShieldCheck,
   Award,
   BookOpen,
@@ -18,11 +12,8 @@ import {
   Shield,
   Scale,
   ArrowRight,
-  Mic2,
   Quote,
-  Youtube,
   Zap,
-  X,
 } from "lucide-react";
 
 import Link from "next/link";
@@ -36,7 +27,7 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-[#050000] text-white selection:bg-red-600/40 selection:text-red-100 font-sans">
       {/* 2. HERO SECTION */}
-      <header className="relative h-screen flex items-center justify-center overflow-hidden">
+      <header className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background Layer */}
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-t from-[#050000] via-transparent to-black/80 z-10" />
@@ -49,7 +40,7 @@ const Home = () => {
         </div>
 
         {/* Content Layer */}
-        <div className="relative z-20 text-center px-6 w-full max-w-5xl flex flex-col items-center">
+        <div className="relative h-fit mt-[100px] z-20 text-center px-6 w-full max-w-5xl flex flex-col items-center">
           {/* 1. Top Badge - Made smaller and cleaner */}
           <div className="inline-flex items-center gap-2 px-3 py-1.5 mb-8 rounded-full bg-red-600/10 border border-red-600/20 text-red-500 text-[10px] md:text-xs font-bold backdrop-blur-md tracking-[0.2em] uppercase">
             <span className="relative flex h-2 w-2">
@@ -105,85 +96,98 @@ const Home = () => {
             </Link>
           </div>
         </div>
-
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
-          <span className="text-[10px] text-zinc-600 uppercase tracking-widest font-bold">
-            Scroll
-          </span>
-          <div className="w-[1px] h-12 bg-gradient-to-b from-red-600 to-transparent animate-pulse" />
-        </div>
       </header>
 
       {/* 3. BENTO IDENTITY MATRIX */}
-      <section id="biography" className="py-32 px-6 max-w-[1400px] mx-auto">
-        <div className="mb-20">
-          <h3 className="text-red-600 font-black uppercase tracking-[0.3em] mb-4 flex items-center gap-2">
+      <section
+        id="biography"
+        className="py-20 md:py-32 px-6 max-w-[1400px] mx-auto"
+      >
+        <div className="mb-12 md:mb-20">
+          <h3 className="text-red-600 font-black uppercase tracking-[0.3em] mb-4 flex items-center gap-2 text-sm md:text-base">
             <Zap size={18} /> Identity Matrix
           </h3>
-          <h2 className="text-4xl md:text-6xl font-black">
-            বিবিধ পরিচয়ে ওসমান হাদী
+          <h2 className="text-3xl md:text-6xl font-black leading-tight">
+            বিবিধ পরিচয়ে ওসমান হাদী
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 h-full">
-          {/* Identity: The Activist */}
-          <div className="md:col-span-2 md:row-span-2 bg-gradient-to-br from-red-900/20 to-zinc-950 border border-white/5 rounded-[2.5rem] p-12 flex flex-col justify-between group hover:border-red-600/40 transition-all">
+        {/* Grid container: 
+      - Mobile: 1 column, auto rows
+      - Desktop: 4 columns, 2 fixed rows
+  */}
+        <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 lg:gap-6">
+          {/* Identity: The Activist (Main Feature Card) */}
+          <div className="md:col-span-2 md:row-span-2 bg-gradient-to-br from-red-900/30 to-zinc-950 border border-white/5 rounded-[2rem] md:rounded-[2.5rem] p-8 md:p-12 flex flex-col justify-between group hover:border-red-600/40 transition-all">
             <div className="space-y-6">
-              <div className="w-16 h-16 bg-red-700 rounded-2xl flex items-center justify-center shadow-lg shadow-red-700/20">
-                <ShieldCheck size={32} />
+              <div className="w-14 h-14 md:w-16 md:h-16 bg-red-700 rounded-2xl flex items-center justify-center shadow-lg shadow-red-700/20">
+                <ShieldCheck size={32} className="text-white" />
               </div>
-              <h4 className="text-4xl font-black">বিপ্লবী ও সমন্বয়ক</h4>
-              <p className="text-zinc-400 text-lg leading-relaxed">
-                ২০২৪ সালের জুলাই বিপ্লব চলাকালে ওসমান হাদী ঢাকার রামপুরা এলাকায়
-                সমন্বয়কের দায়িত্ব পালন করেন। তিনি মাঠপর্যায়ের সংগঠন ও আন্দোলনে
-                সরাসরি যুক্ত ছিলেন। এই সময়েই তিনি জাতীয়ভাবে পরিচিত মুখ হয়ে ওঠেন।
-              </p>
+              <div>
+                <h4 className="text-3xl md:text-4xl font-black mb-4">
+                  বিপ্লবী ও সমন্বয়ক
+                </h4>
+                <p className="text-zinc-400 text-base md:text-lg leading-relaxed">
+                  ২০২৪ সালের জুলাই বিপ্লব চলাকালে ওসমান হাদী ঢাকার রামপুরা
+                  এলাকায় সমন্বয়কের দায়িত্ব পালন করেন। তিনি মাঠপর্যায়ের সংগঠন
+                  ও আন্দোলনে সরাসরি যুক্ত ছিলেন।
+                </p>
+              </div>
             </div>
-            <div className="relative mt-8 rounded-2xl overflow-hidden grayscale group-hover:grayscale-0 transition-all">
+            <div className="relative mt-8 rounded-xl overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-700 aspect-video md:aspect-auto">
               <img
                 src="/static/osman-hadi.jpg"
                 alt="Activity"
-                className="w-full object-cover"
+                className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
             </div>
           </div>
 
           {/* Identity: The Poet */}
-          <div className="md:col-span-2 bg-zinc-900/50 border border-white/5 rounded-[2.5rem] p-10 flex gap-8 items-center hover:bg-zinc-800 transition-all">
-            <div className="shrink-0 w-24 h-24 bg-rose-700/10 border border-rose-700/20 rounded-full flex items-center justify-center text-rose-500">
-              <Heart size={40} />
+          <div className="md:col-span-2 bg-zinc-900/40 border border-white/5 rounded-[2rem] md:rounded-[2.5rem] p-6 md:p-10 flex flex-col sm:flex-row gap-6 items-start sm:items-center hover:bg-zinc-800/60 transition-all group">
+            <div className="shrink-0 w-20 h-20 md:w-24 md:h-24 bg-rose-700/10 border border-rose-700/20 rounded-full flex items-center justify-center text-rose-500 group-hover:scale-110 transition-transform">
+              <Heart
+                size={40}
+                fill="currentColor"
+                className="opacity-20 group-hover:opacity-100 transition-opacity"
+              />
             </div>
             <div>
-              <h4 className="text-2xl font-bold mb-2">কবি ও সাহিত্যিক</h4>
-              <p className="text-zinc-400">
-                তার কবিতাগুলো ছিল প্রতিবাদের ভাষা। শব্দের বুননে তিনি ফুটিয়ে
+              <h4 className="text-xl md:text-2xl font-bold mb-2">
+                কবি ও সাহিত্যিক
+              </h4>
+              <p className="text-zinc-400 text-sm md:text-base leading-relaxed">
+                তার কবিতাগুলো ছিল প্রতিবাদের ভাষা। শব্দের বুননে তিনি ফুটিয়ে
                 তুলতেন পরাধীনতার শৃঙ্খল ভাঙার গান।
               </p>
             </div>
           </div>
 
           {/* Identity: The Scholar */}
-          <div className="md:col-span-1 bg-zinc-900/50 border border-white/5 rounded-[2.5rem] p-8 hover:bg-zinc-800 transition-all text-center md:text-left">
-            <Award className="text-red-600 mb-6 mx-auto md:mx-0" size={40} />
-            <h4 className="text-xl font-bold mb-2">শিক্ষকতা পেশা</h4>
-            <p className="text-zinc-400 text-sm">
-              পড়াশোনা শেষে ওসমান হাদী ঢাকার বেসরকারি বিশ্ববিদ্যালয় University of
-              Scholars-এর ইংরেজি বিভাগে প্রভাষক হিসেবে কর্মরত ছিলেন। শিক্ষকতার
-              পাশাপাশি তিনি চিন্তাশীল লেখক ও রাজনৈতিক বিশ্লেষক হিসেবে পরিচিতি
-              লাভ করেন।
+          <div className="md:col-span-1 bg-zinc-900/40 border border-white/5 rounded-[2rem] md:rounded-[2.5rem] p-8 hover:bg-zinc-800/60 transition-all flex flex-col justify-center">
+            <Award className="text-red-600 mb-6" size={40} />
+            <h4 className="text-lg md:text-xl font-bold mb-2">শিক্ষকতা পেশা</h4>
+            <p className="text-zinc-500 text-xs md:text-sm leading-relaxed">
+              তিনি University of Scholars-এর ইংরেজি বিভাগে প্রভাষক হিসেবে কর্মরত
+              ছিলেন। চিন্তাশীল লেখক হিসেবে তাঁর পরিচিতি ছিল অনন্য।
             </p>
           </div>
 
-          {/* Identity: The Legacy */}
-          <div className="md:col-span-1 bg-red-700 rounded-[2.5rem] p-8 flex flex-col justify-center items-center text-center space-y-4 shadow-2xl shadow-red-700/20">
-            <span className="text-5xl font-black tracking-tighter">২০২৫</span>
-            <p className="font-black uppercase tracking-widest text-sm">
-              The Martyrdom
+          {/* Identity: The Legacy (Martyrdom Card) */}
+          <div className="md:col-span-1 bg-red-700 rounded-[2rem] md:rounded-[2.5rem] p-8 flex flex-col justify-center items-center text-center space-y-4 shadow-2xl shadow-red-700/40 hover:scale-[1.02] transition-transform">
+            <span className="text-5xl md:text-6xl font-black tracking-tighter text-white">
+              ২০২৫
+            </span>
+            <div className="space-y-1">
+              <p className="font-black uppercase tracking-widest text-xs md:text-sm text-white/90">
+                The Martyrdom
+              </p>
+              <div className="w-12 h-1 bg-white/30 mx-auto rounded-full" />
+            </div>
+            <p className="text-[10px] md:text-xs font-bold text-red-100 uppercase tracking-tighter">
+              ইতিহাস তাকে মনে রাখবে চিরকাল
             </p>
-            <div className="w-full h-px bg-white/10" />
-            <p className="text-xs font-medium">ইতিহাস তাকে মনে রাখবে চিরকাল</p>
           </div>
         </div>
       </section>
@@ -295,7 +299,10 @@ const Home = () => {
             </div>
 
             {/* Middle Square */}
-            <Link href={`/gallery`} className="md:col-span-3 md:row-span-2 relative group rounded-[2.5rem] overflow-hidden border border-white/5 bg-zinc-950 flex flex-col items-center justify-center p-8 text-center border-dashed border-zinc-800">
+            <Link
+              href={`/gallery`}
+              className="md:col-span-3 md:row-span-2 relative group rounded-[2.5rem] overflow-hidden border border-white/5 bg-zinc-950 flex flex-col items-center justify-center p-8 text-center border-dashed border-zinc-800"
+            >
               <History
                 size={48}
                 className="text-zinc-800 mb-4 group-hover:text-red-600 transition-colors"
@@ -373,127 +380,6 @@ const Home = () => {
 
       {/* 11. SECTION 03: POETIC RESISTANCE (Video Edition) */}
       <PoetryVideo />
-
-      {/* 13. TRIBUTE GUESTBOOK */}
-      <section className="py-32 text-center max-w-4xl mx-auto px-6 relative">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-red-900/10 blur-[100px] -z-10" />
-        <Heart className="mx-auto text-red-600 mb-10 animate-pulse" size={80} />
-        <h2 className="text-5xl md:text-7xl font-black mb-8 tracking-tighter">
-          আপনার শ্রদ্ধা জানান
-        </h2>
-        <p className="text-zinc-500 text-xl mb-16 max-w-2xl mx-auto leading-relaxed">
-          শহীদ ওসমান হাদীর স্মরণে আপনার ব্যক্তিগত অনুভূতি বা শ্রদ্ধা বার্তা
-          আমাদের ডিজিটাল গেস্টবুক-এ লিখে পাঠান।
-        </p>
-        <div className="relative group">
-          <textarea
-            placeholder="আপনার বার্তা এখানে লিখুন..."
-            className="w-full h-56 bg-zinc-950 border border-white/10 rounded-[2.5rem] p-10 text-white focus:outline-none focus:border-red-700 transition-all placeholder:text-zinc-700 text-lg shadow-2xl"
-          />
-          <button className="absolute bottom-8 right-8 bg-red-700 text-white px-12 py-4 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-red-600 hover:scale-105 active:scale-95 transition-all shadow-xl shadow-red-700/20">
-            পাঠিয়ে দিন
-          </button>
-        </div>
-      </section>
-
-      {/* 14. FOOTER */}
-      <footer className="bg-black py-24 border-t border-white/5">
-        <div className="max-w-[1400px] mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-20 mb-20">
-            <div className="col-span-1 md:col-span-2 space-y-10">
-              <div className="flex items-center gap-4">
-                <div className="w-14 h-14 bg-red-700 rounded-2xl flex items-center justify-center font-black text-3xl rotate-3">
-                  হ
-                </div>
-                <h1 className="text-3xl font-black tracking-tighter">
-                  OSMAN HADI LEGACY
-                </h1>
-              </div>
-              <p className="text-zinc-500 max-w-md leading-relaxed text-lg">
-                এই ওয়েবসাইটটি শহীদ শরীফ ওসমান বিন হাদীর স্মৃতি এবং তার আদর্শকে
-                ধারণ করে তৈরি একটি ডিজিটাল সংগ্রহশালা। তার দর্শন ছড়িয়ে পড়ুক
-                প্রতিটি প্রান্তে।
-              </p>
-              <div className="flex gap-4">
-                {[Youtube, Share2, Search].map((Icon, i) => (
-                  <div
-                    key={i}
-                    className="w-14 h-14 rounded-2xl border border-white/10 flex items-center justify-center hover:bg-red-700 hover:border-red-700 transition-all cursor-pointer bg-zinc-950 shadow-xl group"
-                  >
-                    <Icon
-                      size={24}
-                      className="text-zinc-500 group-hover:text-white transition-colors"
-                    />
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="space-y-8">
-              <h6 className="font-black text-red-600 uppercase tracking-[0.4em] text-xs">
-                Navigation
-              </h6>
-              <ul className="space-y-5 text-zinc-400 font-bold uppercase tracking-widest text-xs">
-                <li>
-                  <a href="#" className="hover:text-red-500 transition-colors">
-                    Home Page
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-red-500 transition-colors">
-                    Biography
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-red-500 transition-colors">
-                    Video Vault
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-red-500 transition-colors">
-                    Poetry
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div className="space-y-8">
-              <h6 className="font-black text-red-600 uppercase tracking-[0.4em] text-xs">
-                Resources
-              </h6>
-              <ul className="space-y-5 text-zinc-400 font-bold uppercase tracking-widest text-xs">
-                <li>
-                  <a href="#" className="hover:text-red-500 transition-colors">
-                    Inqilab Moncho
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-red-500 transition-colors">
-                    Press Material
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-red-500 transition-colors">
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-zinc-700 text-xs font-black uppercase tracking-widest">
-            <p>© ২০২৫ ওসমান হাদী মেমোরিয়াল আর্কাইভ। সর্বস্বত্ব সংরক্ষিত।</p>
-            <div className="flex gap-10">
-              <a href="#" className="hover:text-white transition-colors">
-                Privacy Policy
-              </a>
-              <a href="#" className="hover:text-white transition-colors">
-                Terms of Archive
-              </a>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 };
@@ -533,51 +419,5 @@ export const SectionHeader = ({ number, title, sub }) => (
   </div>
 );
 
-export const FeaturedVideo = ({ title, url }) => (
-  <Link
-    href={`/videos/${encodeURIComponent(title)}`}
-    className="relative group cursor-pointer overflow-hidden rounded-[3.5rem] bg-zinc-950 border border-white/5 hover:border-red-600 transition-all shadow-2xl"
-  >
-    <div className="aspect-video relative overflow-hidden">
-      <img
-        src={`https://i.ytimg.com/vi/${getYouTubeID(url)}/hqdefault.jpg`}
-        className="w-full h-full object-cover grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-1000 group-hover:scale-105"
-        alt={title}
-      />
-      <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-red-700 rounded-full flex items-center justify-center shadow-[0_0_50px_rgba(185,28,28,0.5)] scale-90 group-hover:scale-100 transition-all duration-500">
-        <Play fill="white" size={32} />
-      </div>
-    </div>
-    <div className="p-12">
-      <h3 className="text-2xl font-black mb-6 leading-tight group-hover:text-red-500 transition-colors">
-        {title}
-      </h3>
-    </div>
-  </Link>
-);
-
-export const CompactVideo = ({ title, url }) => (
-  <Link
-    href={`/videos/${encodeURIComponent(title)}`}
-    className="flex gap-6 items-center p-6 bg-zinc-950 border border-white/5 rounded-3xl hover:bg-red-950/20 hover:border-red-900/50 transition-all duration-300 group cursor-pointer shadow-xl"
-  >
-    <div className="w-32 h-20 bg-black rounded-2xl overflow-hidden shrink-0 border border-white/5">
-      <img
-        src={`https://i.ytimg.com/vi/${getYouTubeID(url)}/hqdefault.jpg`}
-        className="w-full h-full object-cover grayscale group-hover:grayscale-0 opacity-30 group-hover:opacity-60 transition-opacity"
-        alt="thumbnail"
-      />
-    </div>
-    <div className="flex-1">
-      <h5 className="font-black text-lg leading-tight line-clamp-2 group-hover:text-white transition-colors">
-        {title}
-      </h5>
-    </div>
-    <div className="w-10 h-10 bg-zinc-900 rounded-full flex items-center justify-center text-zinc-700 group-hover:bg-red-700 group-hover:text-white transition-all">
-      <Play size={16} fill="currentColor" />
-    </div>
-  </Link>
-);
 
 export default Home;
