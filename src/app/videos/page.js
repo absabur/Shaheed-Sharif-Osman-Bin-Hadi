@@ -15,8 +15,6 @@ import { songs } from "../../../public/videos/song";
 import { electionCampaign } from "../../../public/videos/electionCampaign";
 import VideosPage from "@/components/VideosPage";
 
-export const dynamic = "force-static";
-
 export async function generateMetadata() {
   const canonicalUrl = `https://shorif-osman-hadi.netlify.app/videos/}`;
   return {

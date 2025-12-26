@@ -1,10 +1,11 @@
 import React from "react";
-import { Camera } from "lucide-react";
+import { Camera, Home } from "lucide-react";
 
 // ... Paste your osmanarchiveImages array here or import it
 import { osmanarchiveImages } from "../../public/images/images";
 import Pagination from "@/components/common/Pagination";
 import ImageDownload from "@/components/common/ImageDownload";
+import BackSection from "./common/BackSection";
 const ITEMS_PER_PAGE = 24;
 
 const ImagesPage = ({ resolvedParams }) => {
@@ -20,6 +21,10 @@ const ImagesPage = ({ resolvedParams }) => {
   return (
     <div className="min-h-screen bg-[#050000] text-white pt-32 pb-20 px-6">
       <div className="max-w-[1400px] mx-auto">
+        <BackSection
+          links={[{ path: "/", text: "", icon: <Home size={15} /> }]}
+          current={`Gallery`}
+        />
         {/* HEADER SECTION */}
         <div className="flex flex-col md:flex-row justify-between items-end gap-8 mb-16 border-b border-white/5 pb-12">
           <div className="space-y-4">

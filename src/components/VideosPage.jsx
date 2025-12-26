@@ -1,6 +1,7 @@
 import React from "react";
 import {
   AlertTriangle,
+  Home,
   MonitorPlay,
   Play,
   RefreshCcw,
@@ -12,6 +13,7 @@ import SearchField from "@/components/common/SearchVideo";
 import Pagination from "@/components/common/Pagination";
 import VideoCategoryFilter from "@/components/common/VideoCategoryFilter";
 import { getThumbnailSrc, videoCategories } from "@/app/videos/page";
+import BackSection from "./common/BackSection";
 
 const VideosPage = ({ resolvedParams }) => {
   const activeTab = resolvedParams.category || "All";
@@ -43,6 +45,10 @@ const VideosPage = ({ resolvedParams }) => {
   return (
     <section id="vault" className="py-32 text-white bg-[#050000]">
       <div className="max-w-[1400px] mx-auto px-6">
+        <BackSection
+          links={[{ path: "/", text: "", icon: <Home size={15} /> }]}
+          current={`Videos`}
+        />
         <div className="flex flex-col justify-between items-end gap-10">
           <div className="space-y-4 w-full">
             <h3 className="text-red-600 font-black uppercase flex items-center gap-2">

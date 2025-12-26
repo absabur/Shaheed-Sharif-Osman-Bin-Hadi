@@ -6,10 +6,12 @@ import {
   Shield,
   ExternalLink,
   Download,
+  Home,
 } from "lucide-react";
 import { getYouTubeID } from "@/utils/ytId";
 import Link from "next/link";
 import { videoCategories } from "@/app/videos/page";
+import BackSection from "../common/BackSection";
 
 const VideoPlayerPage = async ({ params, searchParams }) => {
   const resolvedParams = await params;
@@ -92,6 +94,13 @@ const VideoPlayerPage = async ({ params, searchParams }) => {
   return (
     <div className="min-h-screen bg-[#050000] text-white selection:bg-red-600/40 font-sans">
       <main className="pt-24 md:pt-28 pb-20 px-4 md:px-6 max-w-[1400px] mx-auto">
+        <BackSection
+          links={[
+            { path: "/", text: "", icon: <Home size={15} /> },
+            { path: "/videos", text: "Videos" },
+          ]}
+          current={videoTitle}
+        />
         <div className="flex flex-col gap-6 md:gap-8">
           {/* SOURCE SWITCHER */}
           <div className="space-y-4">

@@ -44,9 +44,12 @@ const Navbar = () => {
             className="group flex items-center gap-3 relative z-[250]"
             onClick={() => setMobileMenuOpen(false)}
           >
-            <div className="w-10 h-10 bg-red-700 rounded-lg flex items-center justify-center font-black text-xl shadow-lg shadow-red-700/20 group-hover:rotate-0 transition-transform duration-500 rotate-3 text-white">
-              হ
-            </div>
+            <img
+              width={45}
+              height={45}
+              className="object-cover rounded-sm"
+              src="/static/hadi.jpg"
+            />
             <div>
               <h1 className="text-lg text-white font-black tracking-tighter leading-none">
                 OSMAN HADI
