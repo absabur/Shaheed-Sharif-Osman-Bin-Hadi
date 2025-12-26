@@ -4,13 +4,15 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+    "build": "npm run postbuild && next build",
+    "postbuild": "next-sitemap",
+    "export": "npm run build && npm run postbuild && next export",
+    "start": "next start"
   },
   "dependencies": {
     "lucide-react": "^0.562.0",
     "next": "16.1.0",
+    "next-sitemap": "^4.2.3",
     "react": "19.2.3",
     "react-dom": "19.2.3"
   },

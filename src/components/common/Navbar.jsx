@@ -15,7 +15,7 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 w-full z-[100] transition-all duration-500 ${
         scrolled
-          ? "bg-black/90 backdrop-blur-xl py-3 shadow-2xl"
+          ? "bg-black/90 backdrop-blur-xl py-3 shadow-2xl border-b border-white/10"
           : "bg-transparent py-6"
       }`}
     >
@@ -34,7 +34,7 @@ const Navbar = () => {
           </div>
         </Link>
 
-        <div className="hidden lg:flex items-center gap-10 text-sm font-bold tracking-wide text-zinc-400">
+        <div className="ml-auto hidden lg:flex items-center gap-10 text-sm font-bold tracking-wide text-zinc-400">
           <Link
             href="/bio"
             className="hover:text-red-500 transition-colors uppercase"
@@ -42,28 +42,16 @@ const Navbar = () => {
             জীবনী
           </Link>
           <Link
-            href="#vision"
+            href="/গ্যালারি "
             className="hover:text-red-500 transition-colors uppercase"
           >
-            দর্শন
+            ছবি
           </Link>
           <Link
             href="/videos"
             className="hover:text-red-500 transition-colors uppercase"
           >
             ভিডিও
-          </Link>
-          <Link
-            href="#poetry"
-            className="hover:text-red-500 transition-colors uppercase"
-          >
-            সাহিত্য
-          </Link>
-          <Link
-            href="#research"
-            className="hover:text-red-500 transition-colors uppercase"
-          >
-            গবেষণা
           </Link>
         </div>
 
