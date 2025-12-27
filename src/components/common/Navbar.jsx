@@ -28,6 +28,8 @@ const Navbar = () => {
     { name: "ছবি", href: "/gallery" },
     { name: "ভিডিও", href: "/videos" },
     { name: "উক্তি", href: "/quotes" },
+    { name: "যুক্ত করুন", href: "/add-content" },
+    { name: "পরামর্শ দিন", href: "/suggestion" },
   ];
 
   return (
@@ -84,7 +86,7 @@ const Navbar = () => {
 
           <div className="flex items-center gap-6 relative z-[250]">
             <Link
-              href="/tribute"
+              href="/tributes"
               className="hidden md:flex items-center gap-2 bg-white text-black px-5 py-2 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-red-700 hover:text-white transition-all"
             >
               শ্রদ্ধাঞ্জলি <ArrowRight size={14} />
@@ -145,6 +147,13 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
+
+            <Link
+              href="/tributes"
+              className="flex items-center justify-center text-center gap-2 bg-white text-black px-5 py-2 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-red-700 hover:text-white transition-all"
+            >
+              শ্রদ্ধাঞ্জলি <ArrowRight size={14} />
+            </Link>
           </div>
         </div>
       </div>

@@ -12,7 +12,7 @@ import SearchField from "@/components/common/SearchVideo";
 
 import Pagination from "@/components/common/Pagination";
 import VideoCategoryFilter from "@/components/common/VideoCategoryFilter";
-import { getThumbnailSrc, videoCategories } from "@/app/videos/page";
+import { getThumbnailSrc, videoCategories } from "@/app/(frontend)/videos/page";
 import BackSection from "./common/BackSection";
 
 const VideosPage = ({ resolvedParams }) => {

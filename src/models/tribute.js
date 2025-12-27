@@ -1,0 +1,15 @@
+const { Schema, mongoose } = require("mongoose");
+
+const tributeSchema = new Schema({
+  name: { type: String, trim: true, required: true },
+  relation: {
+    type: String,
+    default: "সাধারণ নাগরিক",
+  }, // e.g., Student, Family, Comrade
+  message: { type: String, required: true },
+  is_approved: { type: Boolean, default: false },
+  createDate: { type: Object },
+});
+
+module.exports =
+  mongoose.models.Tribute || mongoose.model("Tribute", tributeSchema);

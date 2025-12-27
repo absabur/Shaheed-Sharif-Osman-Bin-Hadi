@@ -10,4 +10,4 @@ const contactMessageSchema = new Schema({
 });
 
 module.exports =
-  mongoose.models.ContactMessage || mongoose.model("ContactMessage", contactMessageSchema);
+  mongoose.models.Suggestion || mongoose.model("Suggestion", contactMessageSchema);

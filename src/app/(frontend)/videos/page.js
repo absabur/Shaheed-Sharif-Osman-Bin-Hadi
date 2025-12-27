@@ -1,18 +1,18 @@
 import React from "react";
-import { talkshow } from "../../../public/videos/talkshow";
-import { interview } from "../../../public/videos/interviews";
-import { rajpoth } from "../../../public/videos/protests";
-import { lecture } from "../../../public/videos/lectures";
-import { kobita } from "../../../public/videos/poetry";
-import { discussion } from "../../../public/videos/discussion";
-import { biography } from "../../../public/videos/biography";
-import { speeches } from "../../../public/videos/speeches";
-import { activities } from "../../../public/videos/activities";
-import { pressConference } from "../../../public/videos/pressConference";
+import { talkshow } from "../../../../public/videos/talkshow";
+import { interview } from "../../../../public/videos/interviews";
+import { rajpoth } from "../../../../public/videos/protests";
+import { lecture } from "../../../../public/videos/lectures";
+import { kobita } from "../../../../public/videos/poetry";
+import { discussion } from "../../../../public/videos/discussion";
+import { biography } from "../../../../public/videos/biography";
+import { speeches } from "../../../../public/videos/speeches";
+import { activities } from "../../../../public/videos/activities";
+import { pressConference } from "../../../../public/videos/pressConference";
 import { getYouTubeID } from "@/utils/ytId";
-import { peoplesLove } from "../../../public/videos/peoplesLove";
-import { songs } from "../../../public/videos/song";
-import { electionCampaign } from "../../../public/videos/electionCampaign";
+import { peoplesLove } from "../../../../public/videos/peoplesLove";
+import { songs } from "../../../../public/videos/song";
+import { electionCampaign } from "../../../../public/videos/electionCampaign";
 import VideosPage from "@/components/VideosPage";
 
 export async function generateMetadata() {

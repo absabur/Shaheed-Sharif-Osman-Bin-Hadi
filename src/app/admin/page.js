@@ -1,5 +1,4 @@
 "use client";
-import "./admin.css";
 
 import Link from "next/link";
 
@@ -16,15 +15,6 @@ export default function Dashboard() {
         </Link>
         <Link href="/admin/experience" className="dashboard-card">
           <h2>Experience</h2>
-        </Link>
-        <Link href="/admin/certifications" className="dashboard-card">
-          <h2>Certification</h2>
-        </Link>
-        <Link href="/admin/education" className="dashboard-card">
-          <h2>Education</h2>
-        </Link>
-        <Link href="/admin/messages" className="dashboard-card">
-          <h2>Messages</h2>
         </Link>
       </div>
     </div>

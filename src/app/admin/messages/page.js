@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { toast } from "sonner";
 import { revalidate } from "./action";
-import "./css/message.css";
 
 // Note: Ensure the CSS above is imported or available globally.
 // e.g., import './messages-list.css';
