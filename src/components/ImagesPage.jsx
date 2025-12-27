@@ -9,7 +9,7 @@ import BackSection from "./common/BackSection";
 const ITEMS_PER_PAGE = 24;
 
 const ImagesPage = ({ resolvedParams }) => {
-  const currentPage = Number(resolvedParams.page) || 1;
+  const currentPage = Number(resolvedParams.get("page")) || 1;
 
   const totalPages = Math.ceil(osmanarchiveImages.length / ITEMS_PER_PAGE);
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
@@ -38,7 +38,8 @@ const ImagesPage = ({ resolvedParams }) => {
               </span>
             </h1>
             <p className="text-zinc-500 max-w-xl text-lg italic">
-              &quot;প্রতিটি ফ্রেম একটি নীরব বিপ্লব, প্রতিটি ছবি একটি জীবন্ত ইতিহাস।&quot;
+              &quot;প্রতিটি ফ্রেম একটি নীরব বিপ্লব, প্রতিটি ছবি একটি জীবন্ত
+              ইতিহাস।&quot;
             </p>
           </div>
 

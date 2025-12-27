@@ -5,8 +5,6 @@ import {
   MessageSquare,
   FileUp,
   Heart,
-  LayoutDashboard,
-  Settings,
   ArrowUpRight,
   ShieldCheck,
   LogOut,

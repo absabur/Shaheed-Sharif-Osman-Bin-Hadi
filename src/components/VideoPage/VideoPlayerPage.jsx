@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 import { getYouTubeID } from "@/utils/ytId";
 import Link from "next/link";
-import { videoCategories } from "@/app/(frontend)/videos/page";
+import { videoCategories } from "@/app/data/videos";
 import BackSection from "../common/BackSection";
 import { formatDuration, formatUploadDate } from "../VideosPage";
 

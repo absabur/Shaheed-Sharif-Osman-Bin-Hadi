@@ -4,7 +4,7 @@ import React from "react";
 import { SectionHeader } from "./Home";
 import { getYouTubeID } from "@/utils/ytId";
 import { kobita } from "../../../public/videos/poetry";
-import { getThumbnailSrc } from "@/app/(frontend)/videos/page";
+import { getThumbnailSrc } from "@/utils/getThumbnail";
 
 const PoetryVideo = () => {
   return (

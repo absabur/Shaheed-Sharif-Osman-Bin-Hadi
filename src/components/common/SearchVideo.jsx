@@ -2,7 +2,7 @@
 
 import { Search } from "lucide-react";
 import { useRouter, useSearchParams, usePathname } from "next/navigation";
-import { useTransition, useEffect, useState } from "react";
+import { useTransition, useEffect, useState, useCallback } from "react";
 
 export default function SearchField() {
   const searchParams = useSearchParams();
@@ -10,43 +10,53 @@ export default function SearchField() {
   const { replace } = useRouter();
   const [isPending, startTransition] = useTransition();
 
+  // Local state for the input field (UI feels fast)
   const [searchTerm, setSearchTerm] = useState(
     searchParams.get("search") || ""
   );
 
-  // URL আপডেট ফাংশন
-  function updateURL(key, value) {
-    const params = new URLSearchParams(searchParams);
-    params.set("page", "1");
+  // 1. Wrap updateURL in useCallback to prevent it from changing on every render
+  const updateURL = useCallback(
+    (key, value) => {
+      const params = new URLSearchParams(searchParams.toString());
+      params.set("page", "1");
 
-    if (value) {
-      params.set(key, value);
-    } else {
-      params.delete(key);
-    }
-
-    startTransition(() => {
-      replace(`${pathname}?${params.toString()}`, { scroll: false });
-    });
-  }
-
-  // লজিক ১: টাইপ করলে ইউআরএল আপডেট হবে (Debounce)
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      if (searchTerm !== (searchParams.get("search") || "")) {
-        updateURL("search", searchTerm);
+      if (value) {
+        params.set(key, value);
+      } else {
+        params.delete(key);
       }
-    }, 500);
-    return () => clearTimeout(timer);
-  }, [searchTerm]);
 
-  // লজিক ২: ইউআরএল চেঞ্জ হলে (যেমন ব্যাক বাটন বা রিসেট) ইনপুট আপডেট হবে
+      startTransition(() => {
+        replace(`${pathname}?${params.toString()}`, { scroll: false });
+      });
+    },
+    [pathname, replace, searchParams]
+  ); // Dependencies for useCallback
+
+  // Logic 1: Debounce search input to update URL
+  useEffect(() => {
+    const currentSearchFromURL = searchParams.get("search") || "";
+
+    // Only update URL if the user has actually typed something different than what's in the URL
+    if (searchTerm === currentSearchFromURL) return;
+
+    const timer = setTimeout(() => {
+      updateURL("search", searchTerm);
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, [searchTerm, searchParams, updateURL]); // All dependencies included
+
+  // Logic 2: Handle external URL changes (back/forward button)
   useEffect(() => {
     const fromURL = searchParams.get("search") || "";
     if (fromURL !== searchTerm) {
       setSearchTerm(fromURL);
     }
-  }, [searchParams]); // watch the params
+    // We omit searchTerm here to prevent the cascading render loop
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [searchParams]);
 
   return (
     <div className="flex flex-col md:flex-row gap-4 w-full md:w-2/3 items-stretch">
@@ -63,12 +73,11 @@ export default function SearchField() {
           type="text"
           placeholder="SEARCH ARCHIVE..."
           value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)} // লোকাল স্টেট আপডেট
+          onChange={(e) => setSearchTerm(e.target.value)}
           className="w-full h-full bg-zinc-950 border border-white/5 rounded-2xl py-4 pl-16 pr-12 text-xs font-black tracking-widest uppercase text-white focus:outline-none focus:border-red-600/50 transition-all shadow-2xl"
         />
       </div>
 
-      {/* Sort Dropdown: এটিতে কোনো ডিবounce নেই, ক্লিক করলেই কাজ করবে */}
       <select
         value={searchParams.get("sort") || "views"}
         onChange={(e) => updateURL("sort", e.target.value)}

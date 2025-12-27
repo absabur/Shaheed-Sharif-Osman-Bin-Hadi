@@ -12,13 +12,14 @@ import SearchField from "@/components/common/SearchVideo";
 
 import Pagination from "@/components/common/Pagination";
 import VideoCategoryFilter from "@/components/common/VideoCategoryFilter";
-import { getThumbnailSrc, videoCategories } from "@/app/(frontend)/videos/page";
 import BackSection from "./common/BackSection";
+import { getThumbnailSrc } from "@/utils/getThumbnail";
+import { videoCategories } from "@/app/data/videos";
 
 const VideosPage = ({ resolvedParams }) => {
-  const activeTab = resolvedParams.category || "All";
-  const searchQuery = resolvedParams.search || "";
-  const sortBy = resolvedParams.sort || "";
+  const activeTab = resolvedParams.get("category") || "All";
+  const searchQuery = resolvedParams.get("search") || "";
+  const sortBy = resolvedParams.get("sort") || "";
 
   const currentCategory =
     videoCategories.find((v) => v.id === activeTab) || videoCategories[0];
@@ -56,7 +57,7 @@ const VideosPage = ({ resolvedParams }) => {
     });
 
   const ITEMS_PER_PAGE = 12;
-  const currentPage = Number(resolvedParams.page) || 1;
+  const currentPage = Number(resolvedParams.get("page")) || 1;
 
   const totalPages = Math.ceil(filteredVideos.length / ITEMS_PER_PAGE);
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
@@ -178,8 +179,10 @@ const VideosPage = ({ resolvedParams }) => {
             </h3>
             <p className="text-zinc-500 max-w-sm mx-auto text-sm leading-relaxed mb-10">
               The archive could not locate any files matching{" "}
-              <span className="text-red-600 font-bold">&quot;{searchQuery}&quot;</span> in
-              the{" "}
+              <span className="text-red-600 font-bold">
+                &quot;{searchQuery}&quot;
+              </span>{" "}
+              in the{" "}
               <span className="text-white font-bold">
                 {currentCategory.label}
               </span>{" "}
@@ -266,10 +269,3 @@ export function formatUploadDate(dateStr) {
   return `${monthName} ${parseInt(day, 10)}, ${year}`;
 }
 
-export const durationToSeconds = (duration) => {
-  if (!duration) return 0;
-  const parts = duration.split(":").map(Number);
-  if (parts.length === 3) return parts[0] * 3600 + parts[1] * 60 + parts[2];
-  if (parts.length === 2) return parts[0] * 60 + parts[1];
-  return parts[0] || 0;
-};

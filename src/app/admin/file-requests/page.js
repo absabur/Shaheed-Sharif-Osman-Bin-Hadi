@@ -17,6 +17,7 @@ import {
   FolderOpen,
 } from "lucide-react";
 import { revalidate } from "./action";
+import Link from "next/link";
 
 const FileRequestsAdmin = () => {
   const [items, setItems] = useState([]);
@@ -164,14 +165,14 @@ const FileRequestsAdmin = () => {
                   </div>
 
                   {/* Source Link */}
-                  <a
+                  <Link
                     href={it.source_url}
                     target="_blank"
                     className="inline-flex items-center gap-3 bg-zinc-900 px-6 py-3 rounded-xl border border-white/5 text-xs font-black uppercase tracking-widest hover:bg-white hover:text-black transition-all"
                   >
                     <LinkIcon size={14} /> View Source Link{" "}
                     <ExternalLink size={12} />
-                  </a>
+                  </Link>
                 </div>
 
                 {/* Admin Actions */}

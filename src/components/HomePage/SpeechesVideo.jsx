@@ -4,7 +4,7 @@ import { Play, ArrowRight, MonitorPlay } from "lucide-react"; // Added icons
 import { getYouTubeID } from "@/utils/ytId";
 import { speeches } from "../../../public/videos/speeches";
 import Link from "next/link";
-import { getThumbnailSrc } from "@/app/(frontend)/videos/page";
+import { getThumbnailSrc } from "@/utils/getThumbnail";
 
 const SpeechesVideo = () => {
   return (

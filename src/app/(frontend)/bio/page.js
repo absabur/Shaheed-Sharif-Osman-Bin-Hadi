@@ -15,6 +15,7 @@ import {
   Crosshair,
 } from "lucide-react";
 import AchievementSection from "@/components/common/Achivement";
+import Link from "next/link";
 
 /**
  * ENHANCED BIODATA - SHAHEED OSMAN HADI MEMORIAL
@@ -226,7 +227,7 @@ const AboutPage = () => {
           </div>
           <h2 className="text-3xl md:text-5xl font-black tracking-tighter">
             নজরুলের পাশে <br className="hidden md:block" />{" "}
-            <span className="text-red-700">অনন্ত শয়ানে</span>
+            <span className="text-red-700">চিরনিদ্রায় এক বিপ্লবী</span>
           </h2>
           <p className="text-zinc-500 text-base md:text-xl max-w-3xl mx-auto leading-relaxed">
             ২০শে ডিসেম্বর ২০২৫ তারিখে ঢাকা বিশ্ববিদ্যালয় কেন্দ্রীয় মসজিদ
@@ -234,17 +235,10 @@ const AboutPage = () => {
             হয়।
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4 md:gap-6 pt-6 md:pt-10">
-            <button className="group flex items-center justify-center gap-3 bg-white text-black px-8 py-4 md:px-10 md:py-5 rounded-xl md:rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-red-700 hover:text-white transition-all active:scale-95">
-              সম্পূর্ণ টাইমলাইন
-              <ArrowRight
-                size={16}
-                className="group-hover:translate-x-2 transition-transform"
-              />
-            </button>
-            <button className="group flex items-center justify-center gap-3 bg-transparent border border-white/20 text-white px-8 py-4 md:px-10 md:py-5 rounded-xl md:rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-all active:scale-95">
+            <Link href={`/tributes`} className="group flex items-center justify-center gap-3 bg-transparent border border-white/20 text-white px-8 py-4 md:px-10 md:py-5 rounded-xl md:rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-all active:scale-95">
               শ্রদ্ধাঞ্জলি দিন
               <HeartHandshake size={16} />
-            </button>
+            </Link>
           </div>
         </section>
       </main>
