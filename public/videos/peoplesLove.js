@@ -500,4 +500,90 @@ export const peoplesLove = [
       uploader: "Naya Diganta News",
     },
   },
+  {
+    category: "Love",
+    yt_personal_url: "",
+    fb_url: "https://www.facebook.com/watch/?ref=saved&v=1557971705450673",
+    drive_url:
+      "https://drive.google.com/file/d/1_SWRov6o-DlpnZBGzcr5osYrc0jB4v34/view?usp=drive_link",
+    source_title:
+      "'মাওলানা ভাসানীকে দেখিনি, জিয়াউর রহমানকে দেখিনি আমি এই হাদিকে লালন করবো'",
+    yt_source_url: "",
+  },
+  {
+    category: "Love",
+    yt_personal_url: "",
+    fb_url: "https://www.facebook.com/watch/?ref=saved&v=1581531186456855",
+    drive_url:
+      "https://drive.google.com/file/d/1RXTIbEcG2a-MCX9Homq4d9EQ4YVtOScT/view?usp=drive_link",
+    source_title: "'হাদি দেশের সম্পদ'",
+    yt_source_url: "",
+  },
+  {
+    category: "Love",
+    yt_personal_url: "",
+    fb_url: "https://www.facebook.com/watch/?ref=saved&v=870649671991276",
+    drive_url:
+      "https://drive.google.com/file/d/1x_BTf7CeACfTsOltiiVAbV5xI3iFuK0M/view?usp=drive_link",
+    source_title: "হা/দির জন্য কান্নায় ভেঙ্গে পরছেন সাধারন মানুষ।",
+    yt_source_url: "",
+  },
+  {
+    category: "Love",
+    yt_personal_url: "",
+    fb_url: "https://www.facebook.com/watch/?ref=saved&v=1869770043655661",
+    drive_url:
+      "https://drive.google.com/file/d/17n9qpW7eqFlG3wqECF4gXalsvESfi1sO/view?usp=drive_link",
+    source_title:
+      "শহীদ হাদির কবর জিয়ারতে এসে শিশু থেকে বৃদ্ধ—সবাই কান্নায় ভেঙে পড়ছেন। 📹 Courtesy: Ekattor TV",
+    yt_source_url: "",
+  },
+  {
+    category: "Love",
+    yt_personal_url: "",
+    fb_url: "https://www.facebook.com/watch/?ref=saved&v=1365592875009315",
+    drive_url:
+      "https://drive.google.com/file/d/1H4iAW8o-mi_bUjN8AUcSlqEP9vIf5G7Z/view?usp=drive_link",
+    source_title:
+      "আমার সন্তানরা যেনো শহীদ ওসমান হাদির মতন আদর্শ নিয়ে বড় হয় #JusticeForHadi",
+    yt_source_url: "",
+  },
+  {
+    category: "Love",
+    yt_personal_url: "",
+    fb_url: "https://www.facebook.com/watch/?ref=saved&v=1377555730505805",
+    drive_url:
+      "https://drive.google.com/file/d/1VmbGfVqq-d-FWSKxa7bcXqhCaeiG3GaC/view?usp=drive_link",
+    source_title: "হাদির জন্য অঝোরে কেঁদেছি, আপন ভাই মরলেও এত কষ্ট পেতাম না |",
+    yt_source_url: "",
+  },
+  {
+    category: "Love",
+    yt_personal_url: "",
+    fb_url: "https://www.facebook.com/watch/?ref=saved&v=1187904116205836",
+    drive_url:
+      "https://drive.google.com/file/d/1KQXsFuyG6bF7AyfKy8N6JEsNHsGsGbJh/view?usp=drive_link",
+    source_title:
+      "হাদির কবর জিয়ারতে এসে শিশু থেকে বৃদ্ধ কেউ কান্না থামাতে পারছে না",
+    yt_source_url: "",
+  },
+  {
+    category: "Love",
+    yt_personal_url: "",
+    fb_url: "https://www.facebook.com/watch/?ref=saved&v=856704107247315",
+    drive_url:
+      "https://drive.google.com/file/d/19VKg5jQAGWZFJ8m3iXZolKc9cK8afzAb/view?usp=drive_link",
+    source_title: "ওসমান হাদির কবরের পাশে এসে অঝোরে কাঁদছে মানুষ।",
+    yt_source_url: "",
+  },
+  {
+    category: "Love",
+    yt_personal_url: "",
+    fb_url: "https://www.facebook.com/watch/?ref=saved&v=845796448373246",
+    drive_url:
+      "https://drive.google.com/file/d/14jVD6P3TBY524teA_fJ-JIaBYRJC0vki/view?usp=drive_link",
+    source_title:
+      "শিশু সন্তানের আবদারে হাদির কবর জিয়ারতে আসেন বাবা | Face The People",
+    yt_source_url: "",
+  },
 ];

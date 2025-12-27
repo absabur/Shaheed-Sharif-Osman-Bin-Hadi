@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 import { getYouTubeID } from "@/utils/ytId";
 import Link from "next/link";
-import { videoCategories } from "@/app/data/videos";
+import { videoCategories } from "@/data/videos"; 
 import BackSection from "../common/BackSection";
 import { formatDuration, formatUploadDate } from "../VideosPage";
 
@@ -173,10 +173,10 @@ const VideoPlayerPage = async ({ params, searchParams }) => {
 
                   <div className="ml-auto">
                     <span className="py-1 flex items-center text-zinc-300 rounded-lg text-[10px] font-black tracking-widest uppercase">
-                      {formatDuration(video.fetched_metadata.duration)}
+                      {formatDuration(video?.fetched_metadata?.duration)}
                     </span>
                     <span className="text-sm text-zinc-500 font-bold uppercase">
-                      {formatUploadDate(video.fetched_metadata.upload_date)}
+                      {formatUploadDate(video?.fetched_metadata?.upload_date)}
                     </span>
                   </div>
                 </div>

@@ -24,6 +24,7 @@ import PoetryVideo from "./PoetryVideo";
 import { osmanarchiveImages } from "../../../public/images/images";
 import AchievementSection from "../common/Achivement";
 import OsmanAboutSection from "../common/OsmanAbout";
+import VideoCategoryCards from "../common/VideoCategoryCard";
 
 const Home = () => {
   return (
@@ -364,6 +365,8 @@ const Home = () => {
         </div>
       </section>
 
+      <VideoCategoryCards />
+
       <OsmanAboutSection />
 
       {/* 7. SECTION 01: FRONTLINE BATTLES */}
@@ -375,9 +378,9 @@ const Home = () => {
         <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
           <Quote className="text-red-700 mx-auto mb-10 opacity-40" size={80} />
           <h2 className="text-2xl md:text-3xl font-serif italic leading-tight text-zinc-100">
-            &quot;সবাই যখন মৃত্যুটাকে ভীষণ ভয় পায়, আমি তখন হাসতে হাসতে আল্লাহর কাছে
-            ভীষণ সন্তুষ্টি নিয়ে পৌছাতে চাই। যে আমি নুন্যতম একটা জীবন লিড করতে
-            পারলাম। আমি একটা ইনসাফের হাসি নিয়ে আমি আমার আল্লাহর কাছে পাঁছাত
+            &quot;সবাই যখন মৃত্যুটাকে ভীষণ ভয় পায়, আমি তখন হাসতে হাসতে আল্লাহর
+            কাছে ভীষণ সন্তুষ্টি নিয়ে পৌছাতে চাই। যে আমি নুন্যতম একটা জীবন লিড
+            করতে পারলাম। আমি একটা ইনসাফের হাসি নিয়ে আমি আমার আল্লাহর কাছে পাঁছাত
             পেরেছি&quot;
           </h2>
           <div className="mt-12 flex items-center justify-center gap-6">

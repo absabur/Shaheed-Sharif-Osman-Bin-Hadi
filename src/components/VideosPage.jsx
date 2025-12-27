@@ -14,7 +14,7 @@ import Pagination from "@/components/common/Pagination";
 import VideoCategoryFilter from "@/components/common/VideoCategoryFilter";
 import BackSection from "./common/BackSection";
 import { getThumbnailSrc } from "@/utils/getThumbnail";
-import { videoCategories } from "@/app/data/videos";
+import { videoCategories } from "@/data/videos";
 
 const VideosPage = ({ resolvedParams }) => {
   const activeTab = resolvedParams.get("category") || "All";
@@ -133,7 +133,7 @@ const VideosPage = ({ resolvedParams }) => {
                     </div>
                   </div>
                   <div className="absolute bottom-4 right-4 bg-black/80 backdrop-blur-md px-3 py-1 rounded-lg text-[10px] font-black tracking-widest uppercase">
-                    {formatDuration(video.fetched_metadata.duration)}
+                    {formatDuration(video?.fetched_metadata?.duration)}
                   </div>
                 </div>
                 <div className="p-6 space-y-3">
@@ -142,7 +142,7 @@ const VideosPage = ({ resolvedParams }) => {
                       {video.category}
                     </span>
                     <span className="text-[10px] text-zinc-500 font-bold uppercase">
-                      {formatUploadDate(video.fetched_metadata.upload_date)}
+                      {formatUploadDate(video?.fetched_metadata?.upload_date)}
                     </span>
                   </div>
                   <h4 className="text-xl font-bold leading-tight line-clamp-2 group-hover:text-red-500 transition-colors">
@@ -268,4 +268,3 @@ export function formatUploadDate(dateStr) {
 
   return `${monthName} ${parseInt(day, 10)}, ${year}`;
 }
-

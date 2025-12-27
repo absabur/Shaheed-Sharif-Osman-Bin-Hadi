@@ -754,4 +754,13 @@ export const speeches = [
       uploader: " Osman Hadi SQUAD",
     },
   },
+  {
+    category: "Speech",
+    yt_personal_url: "",
+    fb_url: "https://www.facebook.com/watch/?v=912700261394300",
+    drive_url:
+      "https://drive.google.com/file/d/1iN3TtGGxZEHygEchXwCbdacoUkidqxpi/view?usp=drive_link",
+    source_title: "শহীদ ওসমান হাদীর নসিহত",
+    yt_source_url: "",
+  },
 ];

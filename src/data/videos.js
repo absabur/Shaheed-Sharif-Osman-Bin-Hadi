@@ -1,16 +1,17 @@
-import { talkshow } from "../../../public/videos/talkshow";
-import { interview } from "../../../public/videos/interviews";
-import { rajpoth } from "../../../public/videos/protests";
-import { lecture } from "../../../public/videos/lectures";
-import { kobita } from "../../../public/videos/poetry";
-import { discussion } from "../../../public/videos/discussion";
-import { biography } from "../../../public/videos/biography";
-import { speeches } from "../../../public/videos/speeches";
-import { activities } from "../../../public/videos/activities";
-import { pressConference } from "../../../public/videos/pressConference";
-import { peoplesLove } from "../../../public/videos/peoplesLove";
-import { songs } from "../../../public/videos/song";
-import { electionCampaign } from "../../../public/videos/electionCampaign"; 
+import { talkshow } from "../../public/videos/talkshow";
+import { interview } from "../../public/videos/interviews";
+import { rajpoth } from "../../public/videos/protests";
+import { lecture } from "../../public/videos/lectures";
+import { kobita } from "../../public/videos/poetry";
+import { discussion } from "../../public/videos/discussion";
+import { biography } from "../../public/videos/biography";
+import { speeches } from "../../public/videos/speeches";
+import { activities } from "../../public/videos/activities";
+import { pressConference } from "../../public/videos/pressConference";
+import { peoplesLove } from "../../public/videos/peoplesLove";
+import { songs } from "../../public/videos/song";
+import { electionCampaign } from "../../public/videos/electionCampaign";
+import { justiceForHadi } from "../../public/videos/justice";
 
 export const videoCategories = [
   {
@@ -30,6 +31,7 @@ export const videoCategories = [
       ...peoplesLove,
       ...songs,
       ...electionCampaign,
+      ...justiceForHadi,
     ],
   },
   { id: "Speeches", label: "ভাষণ (Speeches)", videos: speeches },
@@ -64,5 +66,10 @@ export const videoCategories = [
     id: "procharona",
     label: "নির্বাচনী প্রচারণা (Campaign)",
     videos: electionCampaign,
+  },
+  {
+    id: "justiceForHadi",
+    label: "হাদির জন্য বিচার (Justice For Hadi)",
+    videos: justiceForHadi,
   },
 ];

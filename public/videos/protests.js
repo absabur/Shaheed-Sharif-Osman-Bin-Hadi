@@ -94,4 +94,14 @@ export const rajpoth = [
       uploader: "Daily Manab Zamin",
     },
   },
+  {
+    category: "Rajpoth",
+    yt_personal_url: "",
+    fb_url: "https://www.facebook.com/watch/?ref=saved&v=908139074900561",
+    drive_url:
+      "https://drive.google.com/file/d/1ac-_3dPE1mSlDVF1A9k0bj9aL3gAUc6Y/view?usp=drive_link",
+    source_title:
+      "১৬ জুলাই, ২০২৪! সাঈদ, ওয়াসিম সহ পাঁচজন শহীদ! সেদিনই শহীদ মিনারে জনতার প্রতিরোধে শরীক হলাম আমরা।",
+    yt_source_url: "",
+  },
 ];

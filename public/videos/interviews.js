@@ -877,4 +877,34 @@ export const interview = [
       uploader: "Daily Jugantor",
     },
   },
+  {
+    category: "Interview",
+    yt_personal_url: "",
+    fb_url: "https://www.facebook.com/watch/?ref=saved&v=913654274990554",
+    drive_url:
+      "https://drive.google.com/file/d/1gv0rIqktDL_nZt8f0GLPXfQxXQtkB60i/view?usp=drive_link",
+    source_title:
+      "হাদির দৃষ্টিতে বিপ্লবের পর তরুণদের যেমন হওয়া উচিৎ ছিলো | Nagorik TV",
+    yt_source_url: "",
+  },
+  {
+    category: "Interview",
+    yt_personal_url: "",
+    fb_url: "https://www.facebook.com/watch/?v=4333052583599157",
+    drive_url:
+      "https://drive.google.com/file/d/1CG5UdY6CyfkR1JaiL7skTeVB_xnJHxcx/view?usp=drive_link",
+    source_title:
+      "শহীদ শরিফ ওসমান হাদির ২ ডিসেম্বর ২০২৫ তারিখে ধারণকৃত বক্তব্য",
+    yt_source_url: "",
+  },
+  {
+    category: "Interview",
+    yt_personal_url: "",
+    fb_url: "https://www.facebook.com/watch/?v=1804215876960541",
+    drive_url:
+      "https://drive.google.com/file/d/1btFoeYz0cq4-kM68BY58ZRjMi9SGpKee/view?usp=drive_link",
+    source_title:
+      "কীভাবে ঢাকা বিশ্ববিদ্যালয়ে শিক্ষার সুষ্ঠু পরিবেশ নিশ্চিত করা যায়?",
+    yt_source_url: "",
+  },
 ];
