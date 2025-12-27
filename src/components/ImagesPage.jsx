@@ -121,6 +121,7 @@ const ImagesPage = ({ resolvedParams }) => {
       {/* The Gallery Modal */}
       <ImageGalleryModal
         isOpen={selectedIndex !== null}
+        key={selectedIndex}
         onClose={() => setSelectedIndex(null)}
         images={osmanarchiveImages} // Full Array
         initialIndex={selectedIndex} // Active Image Index

@@ -8,11 +8,6 @@ const ImageGalleryModal = ({ isOpen, onClose, images, initialIndex }) => {
   const [isAnimating, setIsAnimating] = useState(false);
   const [touchStart, setTouchStart] = useState(null);
 
-  useEffect(() => {
-    setCurrentIndex(initialIndex);
-    setDirection("");
-  }, [initialIndex, isOpen]);
-
   const handleNext = useCallback(() => {
     if (isAnimating) return;
     setDirection("right");
@@ -28,6 +23,16 @@ const ImageGalleryModal = ({ isOpen, onClose, images, initialIndex }) => {
     setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
     setTimeout(() => setIsAnimating(false), 500);
   }, [images.length, isAnimating]);
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") onClose();
+    };
+    if (isOpen) window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [isOpen, onClose]);
+
+  if (!isOpen) return null;
 
   // --- RE-ADDED SWIPE LOGIC ---
   const handleTouchStart = (e) => {
