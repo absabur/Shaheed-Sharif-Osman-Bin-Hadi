@@ -53,32 +53,6 @@ export const kobita = [
     yt_personal_url: "",
     fb_url: "",
     drive_url:
-      "https://drive.google.com/file/d/1x68pP5V_Zlh9CIXUdS9-zdDINrQPThfO/view?usp=drive_link",
-    source_title:
-      "নজরুলের বিদ্রোহী কবিতা আবৃত্তি, প্রশংসায় ভাসছেন হাদি | Kazi Nazrul's Poet | Osman Hadi | NPB N    N    News",
-    yt_source_url: "https://www.youtube.com/watch?v=yoguqolU7HM",
-    yt_metadata: {
-      title:
-        "নজরুলের বিদ্রোহী কবিতা আবৃত্তি, প্রশংসায় ভাসছেন হাদি | Kazi Nazrul's Poet | Osman Hadi | NPB News",
-      duration: "1:31",
-      upload_date: "20251130",
-      view_count: 90625,
-      channel: "NPB News",
-    },
-    fetched_metadata: {
-      title:
-        "নজরুলের বিদ্রোহী কবিতা আবৃত্তি, প্রশংসায় ভাসছেন হাদি | Kazi Nazrul's Poet | Osman Hadi | NPB News",
-      duration: "1:31",
-      upload_date: "20251130",
-      view_count: 94155,
-      uploader: "NPB News",
-    },
-  },
-  {
-    category: "Kobita",
-    yt_personal_url: "",
-    fb_url: "",
-    drive_url:
       "https://drive.google.com/file/d/1OOs_uye1TFbFJ4sRO1_a-eXW7Eq1pmF7/view?usp=drive_link",
     source_title: "মানুষের রেটিং শুরু হওয়া উচিত মৃত্যুর পর। Rokomari",
     yt_source_url: "https://www.youtube.com/watch?v=p3ve3DAFQ30",
@@ -216,5 +190,49 @@ export const kobita = [
       "https://drive.google.com/file/d/1dWpDzQ_h9k133Q64gm2-rlfxgYEdsDrp/view?usp=drive_link",
     source_title: "How could you kill such a person?",
     yt_source_url: "",
+    fetched_metadata: {
+      title:
+        "57K views · 4.3K reactions | এমন মানুষটাকে কিভাবে মারতে পারলি? | সাইদুল ইসলাম",
+      duration: "1:42",
+      upload_date: "20251224",
+      view_count: 41224,
+      uploader: "সাইদুল ইসলাম",
+    },
+  },
+  {
+    category: "Kobita",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/14uM0usSJYsBecyXNWVD4zVehAEjX4Jky/view?usp=drive_link",
+    source_title:
+      "আগুন ঝড়া আবৃত্তি। কবিতাটা যেন এবার পূর্ণতা পেল। Osman Hadi | Kazi Nazrul Islam",
+    yt_source_url: "https://www.youtube.com/watch?v=LTgDzprmfHg",
+    fetched_metadata: {
+      title:
+        "আগুন ঝড়া আবৃত্তি। কবিতাটা যেন এবার পূর্ণতা পেল। Osman Hadi | Kazi Nazrul Islam",
+      duration: "40",
+      upload_date: "20251129",
+      view_count: 1696,
+      uploader: "শ্রাবণের গল্পগুচ্ছ ",
+    },
+  },
+  {
+    category: "Kobita",
+    yt_personal_url: "",
+    fb_url: "",
+    drive_url:
+      "https://drive.google.com/file/d/1UPmt69uz5x6BUNA9x04RCI6sKyBEZLqU/view?usp=drive_link",
+    source_title:
+      "ওসমান হাদির মুখে বিদ্রোহী কবিতা (পুনঃপ্রকাশ) | Osman Hadi | বিদ্রোহী কবিতা | The Daily Campus",
+    yt_source_url: "https://www.youtube.com/watch?v=-Je6bv4PBOM",
+    fetched_metadata: {
+      title:
+        "ওসমান হাদির মুখে বিদ্রোহী কবিতা  (পুনঃপ্রকাশ) | Osman Hadi | বিদ্রোহী কবিতা | The Daily Campus",
+      duration: "1:27",
+      upload_date: "20251213",
+      view_count: 9863,
+      uploader: "The Daily Campus",
+    },
   },
 ];

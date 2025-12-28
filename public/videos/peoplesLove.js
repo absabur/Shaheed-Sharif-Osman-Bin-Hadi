@@ -509,6 +509,14 @@ export const peoplesLove = [
     source_title:
       "'মাওলানা ভাসানীকে দেখিনি, জিয়াউর রহমানকে দেখিনি আমি এই হাদিকে লালন করবো'",
     yt_source_url: "",
+    fetched_metadata: {
+      title:
+        "'মাওলানা ভাসানীকে দেখিনি, জিয়াউর রহমানকে দেখিনি আমি এই হাদিকে লালন করবো'",
+      duration: "3:35",
+      upload_date: "20251219",
+      view_count: 254941,
+      uploader: "Rtv । আরটিভি",
+    },
   },
   {
     category: "Love",
@@ -518,6 +526,13 @@ export const peoplesLove = [
       "https://drive.google.com/file/d/1RXTIbEcG2a-MCX9Homq4d9EQ4YVtOScT/view?usp=drive_link",
     source_title: "'হাদি দেশের সম্পদ'",
     yt_source_url: "",
+    fetched_metadata: {
+      title: "'হাদি দেশের সম্পদ'",
+      duration: "44",
+      upload_date: "20251219",
+      view_count: 148993,
+      uploader: "Rtv । আরটিভি",
+    },
   },
   {
     category: "Love",
@@ -527,6 +542,14 @@ export const peoplesLove = [
       "https://drive.google.com/file/d/1x_BTf7CeACfTsOltiiVAbV5xI3iFuK0M/view?usp=drive_link",
     source_title: "হা/দির জন্য কান্নায় ভেঙ্গে পরছেন সাধারন মানুষ।",
     yt_source_url: "",
+    fetched_metadata: {
+      title:
+        "196K views · 17K reactions | হা/দির জন্য কান্নায় ভেঙ্গে পরছেন সাধারন মানুষ। | Patuakhali 24 News",
+      duration: "15",
+      upload_date: "20251221",
+      view_count: 96287,
+      uploader: "Patuakhali 24 News",
+    },
   },
   {
     category: "Love",
@@ -537,6 +560,14 @@ export const peoplesLove = [
     source_title:
       "শহীদ হাদির কবর জিয়ারতে এসে শিশু থেকে বৃদ্ধ—সবাই কান্নায় ভেঙে পড়ছেন। 📹 Courtesy: Ekattor TV",
     yt_source_url: "",
+    fetched_metadata: {
+      title:
+        "6.1K views · 639 reactions | শহীদ হাদির কবর জিয়ারতে এসে শিশু থেকে বৃদ্ধ—সবাই কান্নায় ভেঙে পড়ছেন। 📹  📹 Courtesy: Ekattor TV | Archive of Osman Hadi",
+      duration: "5:17",
+      upload_date: "20251223",
+      view_count: 3161,
+      uploader: "Archive of Osman Hadi",
+    },
   },
   {
     category: "Love",
@@ -547,6 +578,14 @@ export const peoplesLove = [
     source_title:
       "আমার সন্তানরা যেনো শহীদ ওসমান হাদির মতন আদর্শ নিয়ে বড় হয় #JusticeForHadi",
     yt_source_url: "",
+    fetched_metadata: {
+      title:
+        "768K views · 81K reactions | আমার সন্তানরা যেনো শহীদ ওসমান হাদির মতন আদর্শ নিয়ে বড় হয় #JusticeForHa adi | ইনকিলাব মঞ্চ",
+      duration: "2:02",
+      upload_date: "20251224",
+      view_count: 452821,
+      uploader: "ইনকিলাব মঞ্চ",
+    },
   },
   {
     category: "Love",
@@ -556,6 +595,14 @@ export const peoplesLove = [
       "https://drive.google.com/file/d/1VmbGfVqq-d-FWSKxa7bcXqhCaeiG3GaC/view?usp=drive_link",
     source_title: "হাদির জন্য অঝোরে কেঁদেছি, আপন ভাই মরলেও এত কষ্ট পেতাম না |",
     yt_source_url: "",
+    fetched_metadata: {
+      title:
+        "হাদির জন্য অঝোরে কেঁদেছি, আপন ভাই মরলেও এত কষ্ট পেতাম না | Osman Hadi | Naya Diganta",
+      duration: "2:17",
+      upload_date: "20251222",
+      view_count: 240569,
+      uploader: "Daily Naya Diganta",
+    },
   },
   {
     category: "Love",
@@ -566,6 +613,13 @@ export const peoplesLove = [
     source_title:
       "হাদির কবর জিয়ারতে এসে শিশু থেকে বৃদ্ধ কেউ কান্না থামাতে পারছে না",
     yt_source_url: "",
+    fetched_metadata: {
+      title: "হাদির কবর জিয়ারতে এসে শিশু থেকে বৃদ্ধ কেউ কান্না থামাতে পারছে না",
+      duration: "5:17",
+      upload_date: "20251222",
+      view_count: 450757,
+      uploader: "Ekattor",
+    },
   },
   {
     category: "Love",
@@ -575,6 +629,13 @@ export const peoplesLove = [
       "https://drive.google.com/file/d/19VKg5jQAGWZFJ8m3iXZolKc9cK8afzAb/view?usp=drive_link",
     source_title: "ওসমান হাদির কবরের পাশে এসে অঝোরে কাঁদছে মানুষ।",
     yt_source_url: "",
+    fetched_metadata: {
+      title: "ওসমান হাদির কবরের পাশে এসে অঝোরে কাঁদছে মানুষ।",
+      duration: "3:17",
+      upload_date: "20251221",
+      view_count: 581634,
+      uploader: "Durbin News",
+    },
   },
   {
     category: "Love",
@@ -585,5 +646,13 @@ export const peoplesLove = [
     source_title:
       "শিশু সন্তানের আবদারে হাদির কবর জিয়ারতে আসেন বাবা | Face The People",
     yt_source_url: "",
+    fetched_metadata: {
+      title:
+        "শিশু সন্তানের আবদারে হাদির কবর জিয়ারতে আসেন বাবা | Face The People",
+      duration: "3:54",
+      upload_date: "20251222",
+      view_count: 146029,
+      uploader: "Face the People News-ফেইস দ্যা পিপল নিউজ",
+    },
   },
 ];

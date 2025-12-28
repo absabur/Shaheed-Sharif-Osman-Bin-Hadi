@@ -886,6 +886,14 @@ export const interview = [
     source_title:
       "হাদির দৃষ্টিতে বিপ্লবের পর তরুণদের যেমন হওয়া উচিৎ ছিলো | Nagorik TV",
     yt_source_url: "",
+    fetched_metadata: {
+      title:
+        "হাদির দৃষ্টিতে বিপ্লবের পর তরুণদের যেমন হওয়া উচিৎ ছিলো | Nagorik TV",
+      duration: "33",
+      upload_date: "20251220",
+      view_count: 32680,
+      uploader: "Nagorik TV",
+    },
   },
   {
     category: "Interview",
@@ -896,6 +904,13 @@ export const interview = [
     source_title:
       "শহীদ শরিফ ওসমান হাদির ২ ডিসেম্বর ২০২৫ তারিখে ধারণকৃত বক্তব্য",
     yt_source_url: "",
+    fetched_metadata: {
+      title: "শহীদ শরিফ ওসমান হাদির ২ ডিসেম্বর ২০২৫ তারিখে ধারণকৃত বক্তব্য",
+      duration: "2:58",
+      upload_date: "20251219",
+      view_count: 380702,
+      uploader: "Bangladesh Television",
+    },
   },
   {
     category: "Interview",
@@ -906,5 +921,13 @@ export const interview = [
     source_title:
       "কীভাবে ঢাকা বিশ্ববিদ্যালয়ে শিক্ষার সুষ্ঠু পরিবেশ নিশ্চিত করা যায়?",
     yt_source_url: "",
+    fetched_metadata: {
+      title:
+        "কীভাবে ঢাকা বিশ্ববিদ্যালয়ে শিক্ষার সুষ্ঠু পরিবেশ নিশ্চিত করা যায়?",
+      duration: "4:39",
+      upload_date: "20251221",
+      view_count: 37941,
+      uploader: "School of Excellence",
+    },
   },
 ];

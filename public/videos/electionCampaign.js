@@ -799,6 +799,13 @@ export const electionCampaign = [
       "https://drive.google.com/file/d/1pEP59JB1Li0IZlKOmTyFXOSxwMfBlq6Z/view?usp=drive_link",
     source_title: "#JusticeForHadi | Hadi Bhai we have really lost you.",
     yt_source_url: "",
+    fetched_metadata: {
+      title: "5.7M views · 637K reactions | #JusticeForHadi | ইনকিলাব মঞ্চ",
+      duration: "1:09",
+      upload_date: "20251226",
+      view_count: 3891310,
+      uploader: "ইনকিলাব মঞ্চ",
+    },
   },
   {
     category: "Campaign",
@@ -808,6 +815,14 @@ export const electionCampaign = [
       "https://drive.google.com/file/d/1Gmwb1HYPEr1HUTgvW94JNaIP6rm-nodo/view?usp=drive_link",
     source_title: "হাদি ভাই আমরা আসলেই আপনাকে হারাইয়া ফালাইছি। #JusticeForHadi",
     yt_source_url: "",
+    fetched_metadata: {
+      title:
+        "1M views · 65K reactions | হাদি ভাই আমরা আসলেই আপনাকে হারাইয়া ফালাইছি। #JusticeForHadi | Bringing Justice to You",
+      duration: "29",
+      upload_date: "20251225",
+      view_count: 641099,
+      uploader: "Bringing Justice to You",
+    },
   },
   {
     category: "Campaign",
@@ -818,6 +833,14 @@ export const electionCampaign = [
     source_title:
       "নির্বাচনী প্রচারণায় শহীদ শরীফ ওসমান বিন হাদি 📹 Courtesy - জাগো বাংলা",
     yt_source_url: "",
+    fetched_metadata: {
+      title:
+        "9.7K views · 447 reactions | নির্বাচনী প্রচারণায় শহীদ শরীফ ওসমান বিন হাদি 📹 Courtesy - জাগো বাংলা া | Archive of Osman Hadi",
+      duration: "32",
+      upload_date: "20251222",
+      view_count: 4886,
+      uploader: "Archive of Osman Hadi",
+    },
   },
   {
     category: "Campaign",
@@ -828,6 +851,14 @@ export const electionCampaign = [
     source_title:
       "গু/লিবিদ্ধ হওয়ার আগের দিন শহীদ শরীফ ওসমান বিন হাদি 📹 Courtesy - Bangla News",
     yt_source_url: "",
+    fetched_metadata: {
+      title:
+        "10K views · 587 reactions | গু/লিবিদ্ধ হওয়ার আগের দিন শহীদ শরীফ ওসমান বিন হাদি 📹 Courtesy - Bangla a News | Archive of Osman Hadi",
+      duration: "14",
+      upload_date: "20251223",
+      view_count: 5046,
+      uploader: "Archive of Osman Hadi",
+    },
   },
   {
     category: "Campaign",
@@ -836,8 +867,16 @@ export const electionCampaign = [
     drive_url:
       "https://drive.google.com/file/d/1olCF_lpNqkFDQYkNA9FCpytSblFwvKO2/view?usp=drive_link",
     source_title:
-      "“এক লোক কি কইছে জানো? কইসে ছবির চেয়েও তো তুমি বেশি হ্যান্ডসাম” — শহীদ শরীফ ওসমান বিন হাদি 📹 Courtesy -Viral BD News",
+      "“এক লোক কি কইছে জানো? কইসে ছবির চেয়েও তো তুমি বেশি হ্যান্ডসাম” — শহীদ শরীফ ওসমান বিন হাদি 📹 C  Courtesy -Viral BD News",
     yt_source_url: "",
+    fetched_metadata: {
+      title:
+        "54K views · 2.6K reactions | “এক লোক কি কইছে জানো? কইসে ছবির চেয়েও তো তুমি বেশি হ্যান্ডসাম” — শহীদ    শরীফ ওসমান বিন হাদি 📹 Courtesy -Viral BD News | Archive of Osman Hadi",
+      duration: "15",
+      upload_date: "20251225",
+      view_count: 27601,
+      uploader: "Archive of Osman Hadi",
+    },
   },
   {
     category: "Campaign",
@@ -848,5 +887,13 @@ export const electionCampaign = [
     source_title:
       "বাতাসা মুড়ি নিয়ে শহীদ ওসমান হাদি নির্বাচনী প্রচারণা করেছিলেন।",
     yt_source_url: "",
+    fetched_metadata: {
+      title:
+        "10K views · 1.1K reactions | বাতাসা মুড়ি নিয়ে শহীদ ওসমান হাদি নির্বাচনী প্রচারণা করেছিলেন। 📹 Court  tesy - Bangla News | Archive of Osman Hadi",
+      duration: "33",
+      upload_date: "20251225",
+      view_count: 5849,
+      uploader: "Archive of Osman Hadi",
+    },
   },
 ];

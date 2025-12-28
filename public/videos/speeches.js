@@ -762,5 +762,13 @@ export const speeches = [
       "https://drive.google.com/file/d/1iN3TtGGxZEHygEchXwCbdacoUkidqxpi/view?usp=drive_link",
     source_title: "শহীদ ওসমান হাদীর নসিহত",
     yt_source_url: "",
+    fetched_metadata: {
+      title:
+        "165K views · 7.3K reactions | শহীদ ওসমান হাদীর নসিহত | Munadi Al Islam",
+      duration: "7:33",
+      upload_date: "20251222",
+      view_count: 105732,
+      uploader: "Munadi Al Islam",
+    },
   },
 ];
