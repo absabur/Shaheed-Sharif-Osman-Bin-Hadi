@@ -880,7 +880,7 @@ export const interview = [
   {
     category: "Interview",
     yt_personal_url: "",
-    fb_url: "https://www.facebook.com/watch/?ref=saved&v=913654274990554",
+    fb_url: "https://www.facebook.com/reel/913654274990554",
     drive_url:
       "https://drive.google.com/file/d/1gv0rIqktDL_nZt8f0GLPXfQxXQtkB60i/view?usp=drive_link",
     source_title:
@@ -898,7 +898,7 @@ export const interview = [
   {
     category: "Interview",
     yt_personal_url: "",
-    fb_url: "https://www.facebook.com/watch/?v=4333052583599157",
+    fb_url: "https://www.facebook.com/reel/4333052583599157",
     drive_url:
       "https://drive.google.com/file/d/1CG5UdY6CyfkR1JaiL7skTeVB_xnJHxcx/view?usp=drive_link",
     source_title:
@@ -915,7 +915,7 @@ export const interview = [
   {
     category: "Interview",
     yt_personal_url: "",
-    fb_url: "https://www.facebook.com/watch/?v=1804215876960541",
+    fb_url: "https://www.facebook.com/reel/1804215876960541",
     drive_url:
       "https://drive.google.com/file/d/1btFoeYz0cq4-kM68BY58ZRjMi9SGpKee/view?usp=drive_link",
     source_title:

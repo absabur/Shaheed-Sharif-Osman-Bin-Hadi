@@ -88,7 +88,7 @@ export const activities = [
   {
     category: "Activity",
     yt_personal_url: "",
-    fb_url: "https://www.facebook.com/watch/?ref=saved&v=1372376413919964",
+    fb_url: "https://www.facebook.com/reel/1372376413919964",
     drive_url:
       "https://drive.google.com/file/d/1AqlDrpLORJAYuZflxufxUSEMgcMx5VT8/view?usp=drive_link",
     source_title:
@@ -106,7 +106,7 @@ export const activities = [
   {
     category: "Activity",
     yt_personal_url: "",
-    fb_url: "https://www.facebook.com/watch/?ref=saved&v=1034673142168142",
+    fb_url: "https://www.facebook.com/reel/1034673142168142",
     drive_url:
       "https://drive.google.com/file/d/1Fvex4AZ7ROe_mMVMFttEtbeVTRwY2pJa/view?usp=drive_link",
     source_title:
@@ -124,7 +124,7 @@ export const activities = [
   {
     category: "Activity",
     yt_personal_url: "",
-    fb_url: "https://www.facebook.com/watch/?ref=saved&v=4410700839161987",
+    fb_url: "https://www.facebook.com/reel/4410700839161987",
     drive_url:
       "https://drive.google.com/file/d/1Lu-ploCFJSCiUXkN0lFkde9R4TdwyjMZ/view?usp=drive_link",
     source_title:
@@ -142,7 +142,7 @@ export const activities = [
   {
     category: "Activity",
     yt_personal_url: "",
-    fb_url: "https://www.facebook.com/watch/?v=1401647814748758",
+    fb_url: "https://www.facebook.com/reel/1401647814748758",
     drive_url:
       "https://drive.google.com/file/d/1s4Hn00d6RN60cPRdqd0ljGj8vGNOsy2w/view?usp=drive_link",
     source_title:

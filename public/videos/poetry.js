@@ -185,7 +185,7 @@ export const kobita = [
   {
     category: "Kobita",
     yt_personal_url: "",
-    fb_url: "https://www.facebook.com/watch/?v=1101185008662623",
+    fb_url: "https://www.facebook.com/reel/1101185008662623",
     drive_url:
       "https://drive.google.com/file/d/1dWpDzQ_h9k133Q64gm2-rlfxgYEdsDrp/view?usp=drive_link",
     source_title: "How could you kill such a person?",

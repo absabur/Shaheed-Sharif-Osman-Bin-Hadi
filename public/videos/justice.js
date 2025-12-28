@@ -68,7 +68,7 @@ export const justiceForHadi = [
   {
     category: "Justice For Hadi",
     yt_personal_url: "",
-    fb_url: "https://www.facebook.com/watch/?ref=saved&v=724167977411763",
+    fb_url: "https://www.facebook.com/reel/724167977411763",
     drive_url:
       "https://drive.google.com/file/d/11UhUO8O0UXWkwh2xSM0wtXvcdnqzeNtc/view?usp=drive_link",
     source_title: "শহীদ হাদি চত্বর #JusticeForHadi",
@@ -85,7 +85,7 @@ export const justiceForHadi = [
   {
     category: "Justice For Hadi",
     yt_personal_url: "",
-    fb_url: "https://www.facebook.com/watch/?ref=saved&v=4216040125333588",
+    fb_url: "https://www.facebook.com/reel/4216040125333588",
     drive_url:
       "https://drive.google.com/file/d/1jGl45NClRT1df6PBgf_QWOb7PxWj2Uk1/view?usp=drive_link",
     source_title:
@@ -103,7 +103,7 @@ export const justiceForHadi = [
   {
     category: "Justice For Hadi",
     yt_personal_url: "",
-    fb_url: "https://www.facebook.com/watch/?ref=saved&v=1194179089095730",
+    fb_url: "https://www.facebook.com/reel/1194179089095730",
     drive_url:
       "https://drive.google.com/file/d/1cBTsF74Mhv8K-Gp-XtGryW9DnJKQFTIa/view?usp=drive_link",
     source_title: "রাতভর আমাদের অবস্থান কর্মসূচি চলবে #justiceforhadi",
@@ -119,7 +119,7 @@ export const justiceForHadi = [
   {
     category: "Justice For Hadi",
     yt_personal_url: "",
-    fb_url: "https://www.facebook.com/watch/?ref=saved&v=1774815969845654",
+    fb_url: "https://www.facebook.com/reel/1774815969845654",
     drive_url:
       "https://drive.google.com/file/d/1aKrOVQy0ijXzyYdPhh8QqtzqDlU7TUMT/view?usp=drive_link",
     source_title: "তুমি কে আমি কে?",
@@ -135,7 +135,7 @@ export const justiceForHadi = [
   {
     category: "Justice For Hadi",
     yt_personal_url: "",
-    fb_url: "https://www.facebook.com/watch/?ref=saved&v=1191538319200343",
+    fb_url: "https://www.facebook.com/reel/1191538319200343",
     drive_url:
       "https://drive.google.com/file/d/1MKx8a7yeaaR6msnM3zR7AYmoYGEbozeB/view?usp=drive_link",
     source_title: "#JusticeForHadi #শহীদ_ওসমান_হাদি",
@@ -151,7 +151,7 @@ export const justiceForHadi = [
   {
     category: "Justice For Hadi",
     yt_personal_url: "",
-    fb_url: "https://www.facebook.com/watch/?ref=saved&v=2368398443621589",
+    fb_url: "https://www.facebook.com/reel/2368398443621589",
     drive_url:
       "https://drive.google.com/file/d/1FtCKBIatcmvuDB_gGF0Lan-RXrh8qIU5/view?usp=drive_link",
     source_title: "#JusticeForHadi #WeWantJustice #WeAreHadi",
@@ -168,7 +168,7 @@ export const justiceForHadi = [
   {
     category: "Justice For Hadi",
     yt_personal_url: "",
-    fb_url: "https://www.facebook.com/watch/?ref=saved&v=852139427795803",
+    fb_url: "https://www.facebook.com/reel/852139427795803",
     drive_url:
       "https://drive.google.com/file/d/1Tt1-dZPuqz9wEWNNzCtswp9k0Dehd9jX/view?usp=drive_link",
     source_title: "#WeWantJustice #JusticeForHadi",
@@ -185,7 +185,7 @@ export const justiceForHadi = [
   {
     category: "Justice For Hadi",
     yt_personal_url: "",
-    fb_url: "https://www.facebook.com/watch/?ref=saved&v=2014419796005015",
+    fb_url: "https://www.facebook.com/reel/2014419796005015",
     drive_url:
       "https://drive.google.com/file/d/1TybQ4yUwSqpL4rkSN1AgBkYxu72Q2WS_/view?usp=drive_link",
     source_title:
@@ -203,7 +203,7 @@ export const justiceForHadi = [
   {
     category: "Justice For Hadi",
     yt_personal_url: "",
-    fb_url: "https://www.facebook.com/watch/?ref=saved&v=1597744521220349",
+    fb_url: "https://www.facebook.com/reel/1597744521220349",
     drive_url:
       "https://drive.google.com/file/d/16IFstR47X2_RUw3bxu0FgaJdFqVeK19c/view?usp=drive_link",
     source_title: "#JusticeForHadi #WeAreHadi",
@@ -219,7 +219,7 @@ export const justiceForHadi = [
   {
     category: "Justice For Hadi",
     yt_personal_url: "",
-    fb_url: "https://www.facebook.com/watch/?ref=saved&v=1349102303620607",
+    fb_url: "https://www.facebook.com/reel/1349102303620607",
     drive_url:
       "https://drive.google.com/file/d/1fe7pPtLrEzALtQBRWY9uaNfchIBc51O_/view?usp=drive_link",
     source_title: "#JusticeForHadi #WeWantJusticeForHadi",
@@ -236,7 +236,7 @@ export const justiceForHadi = [
   {
     category: "Justice For Hadi",
     yt_personal_url: "",
-    fb_url: "https://www.facebook.com/watch/?ref=saved&v=1204893438274417",
+    fb_url: "https://www.facebook.com/reel/1204893438274417",
     drive_url:
       "https://drive.google.com/file/d/1MMoBdMByrAadXuGtLYwbNZcOizBMm8BV/view?usp=drive_link",
     source_title: "নিউ মার্কেট, চট্রগ্রাম #JusticeForHadi",
@@ -253,7 +253,7 @@ export const justiceForHadi = [
   {
     category: "Justice For Hadi",
     yt_personal_url: "",
-    fb_url: "https://www.facebook.com/watch/?ref=saved&v=897925876246507",
+    fb_url: "https://www.facebook.com/reel/897925876246507",
     drive_url:
       "https://drive.google.com/file/d/14-Uz7luemZiNX3uJy6iSuDASaNcR0-Yy/view?usp=drive_link",
     source_title: "নিউ মার্কেট চট্রগ্রাম #JusticeForHadi",
@@ -270,7 +270,7 @@ export const justiceForHadi = [
   {
     category: "Justice For Hadi",
     yt_personal_url: "",
-    fb_url: "https://www.facebook.com/watch/?ref=saved&v=1172371678410644",
+    fb_url: "https://www.facebook.com/reel/1172371678410644",
     drive_url:
       "https://drive.google.com/file/d/1ESPzP8mv7x6dV2mZ7_8spkSMOm8ekpfI/view?usp=drive_link",
     source_title: "বীর চট্টলা #JusticeForHadi",
@@ -287,7 +287,7 @@ export const justiceForHadi = [
   {
     category: "Justice For Hadi",
     yt_personal_url: "",
-    fb_url: "https://www.facebook.com/watch/?ref=saved&v=1973659889864934",
+    fb_url: "https://www.facebook.com/reel/1973659889864934",
     drive_url:
       "https://drive.google.com/file/d/12hMRYaxGWGgK9hQ4cgRiZhvQdumfpr9Y/view?usp=drive_link",
     source_title: "#JusticeForHadi #WeAreHadi #WeWantJustice",
@@ -303,7 +303,7 @@ export const justiceForHadi = [
   {
     category: "Justice For Hadi",
     yt_personal_url: "",
-    fb_url: "https://www.facebook.com/watch/?ref=saved&v=25445726758422318",
+    fb_url: "https://www.facebook.com/reel/25445726758422318",
     drive_url:
       "https://drive.google.com/file/d/119yE9w_tJMGyTAy_mgOdaddY2i7SRt0z/view?usp=drive_link",
     source_title: "আজাদী #JusticeForHadi",
@@ -320,7 +320,7 @@ export const justiceForHadi = [
   {
     category: "Justice For Hadi",
     yt_personal_url: "",
-    fb_url: "https://www.facebook.com/watch/?ref=saved&v=1195458742768042",
+    fb_url: "https://www.facebook.com/reel/1195458742768042",
     drive_url:
       "https://drive.google.com/file/d/1Aexna4OiqpdH6Dp0zljDVMZp61AE7WVN/view?usp=drive_link",
     source_title:
@@ -338,7 +338,7 @@ export const justiceForHadi = [
   {
     category: "Justice For Hadi",
     yt_personal_url: "",
-    fb_url: "https://www.facebook.com/watch/?ref=saved&v=866561439666371",
+    fb_url: "https://www.facebook.com/reel/866561439666371",
     drive_url:
       "https://drive.google.com/file/d/15FZHtlmu7bqvJbzreaE9AP_f2CroPyf6/view?usp=drive_link",
     source_title:
@@ -356,7 +356,7 @@ export const justiceForHadi = [
   {
     category: "Justice For Hadi",
     yt_personal_url: "",
-    fb_url: "https://www.facebook.com/watch/?ref=saved&v=1293020539304064",
+    fb_url: "https://www.facebook.com/reel/1293020539304064",
     drive_url:
       "https://drive.google.com/file/d/1OXCtIWYqjY-6YiR8cKdoBsZekfX4qdLP/view?usp=drive_link",
     source_title: "#JusticeForHadi #WeAreHadi #WeWantJustice #শহীদ_ওসমান_হাদি",
@@ -372,7 +372,7 @@ export const justiceForHadi = [
   {
     category: "Justice For Hadi",
     yt_personal_url: "",
-    fb_url: "https://www.facebook.com/watch/?ref=saved&v=844423451753449",
+    fb_url: "https://www.facebook.com/reel/844423451753449",
     drive_url:
       "https://drive.google.com/file/d/1KXJ101devuHGsB8byjHtCBvKRaaK0UaF/view?usp=drive_link",
     source_title:

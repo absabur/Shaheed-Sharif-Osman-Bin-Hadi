@@ -7,10 +7,11 @@ import {
   ExternalLink,
   Download,
   Home,
+  FacebookIcon,
 } from "lucide-react";
 import { getYouTubeID } from "@/utils/ytId";
 import Link from "next/link";
-import { videoCategories } from "@/data/videos"; 
+import { videoCategories } from "@/data/videos";
 import BackSection from "../common/BackSection";
 import { formatDuration, formatUploadDate } from "../VideosPage";
 
@@ -149,17 +150,43 @@ const VideoPlayerPage = async ({ params, searchParams }) => {
 
           {/* VIDEO PLAYER CONTAINER */}
           <div className="space-y-6">
-            <div className="relative w-full bg-black rounded-xl md:rounded-2xl border border-white/10 shadow-2xl overflow-hidden aspect-video group">
+            <div className="relative w-full bg-black rounded-xl md:rounded-2xl border border-white/10 shadow-2xl shadow-black/40 overflow-hidden">
               {isDrive && (
                 <GetDriveDownloadLink driveUrl={getEmbedUrl(activeSource)} />
               )}
 
-              <iframe
-                className="absolute inset-0 w-full h-full border-0"
-                src={getEmbedUrl(activeSource)}
-                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                allowFullScreen
-              />
+              {isFacebook ? (
+                <>
+                  <iframe
+                    src={getEmbedUrl(activeSource)}
+                    className="h-full m-auto min-h-[520px] border-0"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                    allowFullScreen
+                    loading="lazy"
+                  />
+                  <Link
+                    target="_blank"
+                    href={video.fb_url}
+                    className="inline-block absolute right-4 top-4 z-10"
+                  >
+                    <div className="flex items-center gap-2 bg-red-900/10 border border-red-900/30 px-3 py-1 rounded-full hover:bg-red-900/20 transition-all">
+                      <span className="text-xs font-black uppercase text-red-500">
+                        Open in FB App
+                      </span>
+                      <FacebookIcon size={10} />
+                    </div>
+                  </Link>
+                </>
+              ) : (
+                <div className="relative aspect-video">
+                  <iframe
+                    src={getEmbedUrl(activeSource)}
+                    className="absolute inset-0 w-full h-full border-0"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                    allowFullScreen
+                  />
+                </div>
+              )}
             </div>
 
             {/* INFO CARD */}

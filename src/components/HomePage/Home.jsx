@@ -17,7 +17,6 @@ import {
 } from "lucide-react";
 
 import Link from "next/link";
-import { getYouTubeID } from "@/utils/ytId";
 import DiscussionVideo from "./DiscussionVideo";
 import SpeechesVideo from "./SpeechesVideo";
 import PoetryVideo from "./PoetryVideo";

@@ -794,7 +794,7 @@ export const electionCampaign = [
   {
     category: "Campaign",
     yt_personal_url: "",
-    fb_url: "https://www.facebook.com/watch/?v=1997298937807366",
+    fb_url: "https://www.facebook.com/reel/1997298937807366",
     drive_url:
       "https://drive.google.com/file/d/1pEP59JB1Li0IZlKOmTyFXOSxwMfBlq6Z/view?usp=drive_link",
     source_title: "#JusticeForHadi | Hadi Bhai we have really lost you.",
@@ -810,7 +810,7 @@ export const electionCampaign = [
   {
     category: "Campaign",
     yt_personal_url: "",
-    fb_url: "http://facebook.com/watch/?ref=saved&v=857457017006440",
+    fb_url: "http://facebook.com/reel/857457017006440",
     drive_url:
       "https://drive.google.com/file/d/1Gmwb1HYPEr1HUTgvW94JNaIP6rm-nodo/view?usp=drive_link",
     source_title: "হাদি ভাই আমরা আসলেই আপনাকে হারাইয়া ফালাইছি। #JusticeForHadi",
@@ -827,7 +827,7 @@ export const electionCampaign = [
   {
     category: "Campaign",
     yt_personal_url: "",
-    fb_url: "https://www.facebook.com/watch/?ref=saved&v=1161456646156307",
+    fb_url: "https://www.facebook.com/reel/1161456646156307",
     drive_url:
       "https://drive.google.com/file/d/1z2MKiuKG6Go33o-udBQ4KF-nsjR857LJ/view?usp=drive_link",
     source_title:
@@ -845,7 +845,7 @@ export const electionCampaign = [
   {
     category: "Campaign",
     yt_personal_url: "",
-    fb_url: "https://www.facebook.com/watch/?ref=saved&v=1955093632088149",
+    fb_url: "https://www.facebook.com/reel/1955093632088149",
     drive_url:
       "https://drive.google.com/file/d/1Ab_qrKjtxGxWRZWEiBnmJHa8RIAxZwDF/view?usp=drive_link",
     source_title:
@@ -863,7 +863,7 @@ export const electionCampaign = [
   {
     category: "Campaign",
     yt_personal_url: "",
-    fb_url: "https://www.facebook.com/watch/?ref=saved&v=950727408119780",
+    fb_url: "https://www.facebook.com/reel/950727408119780",
     drive_url:
       "https://drive.google.com/file/d/1olCF_lpNqkFDQYkNA9FCpytSblFwvKO2/view?usp=drive_link",
     source_title:
@@ -881,7 +881,7 @@ export const electionCampaign = [
   {
     category: "Campaign",
     yt_personal_url: "",
-    fb_url: "https://www.facebook.com/watch/?ref=saved&v=3587009864790577",
+    fb_url: "https://www.facebook.com/reel/3587009864790577",
     drive_url:
       "https://drive.google.com/file/d/1A1eXcIOIoSTCgZm3GS5cZfOOpY8ggI6C/view?usp=drive_link",
     source_title:

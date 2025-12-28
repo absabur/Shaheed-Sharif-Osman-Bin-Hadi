@@ -122,9 +122,9 @@ const ImageGalleryModal = ({ isOpen, onClose, images, initialIndex }) => {
               onClick={() =>
                 handleDownload(activeImg.url, `archive-${currentIndex}.jpg`)
               }
-              className="bg-white text-black hover:bg-red-700 hover:text-white px-8 py-3 rounded-full text-[11px] font-black uppercase tracking-widest transition-all"
+              className="flex gap-3 bg-white text-black hover:bg-red-700 hover:text-white px-8 py-3 rounded-full text-[11px] font-black uppercase tracking-widest transition-all"
             >
-              Download
+              Download <Download size={14} />
             </button>
           </div>
         </div>
