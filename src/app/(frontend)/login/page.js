@@ -71,7 +71,7 @@ export default function LoginPage() {
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full bg-zinc-900 border border-white/5 rounded-2xl px-6 py-4 text-sm focus:outline-none focus:border-red-600 transition-all placeholder:text-zinc-700"
+                  className="w-full bg-zinc-900 border border-white/10 rounded-2xl px-6 py-4 text-sm focus:outline-none focus:border-red-600 transition-all placeholder:text-zinc-700"
                   placeholder="admin@osmanhadi.com"
                   required
                 />
@@ -86,7 +86,7 @@ export default function LoginPage() {
                   type="password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="w-full bg-zinc-900 border border-white/5 rounded-2xl px-6 py-4 text-sm focus:outline-none focus:border-red-600 transition-all placeholder:text-zinc-700"
+                  className="w-full bg-zinc-900 border border-white/10 rounded-2xl px-6 py-4 text-sm focus:outline-none focus:border-red-600 transition-all placeholder:text-zinc-700"
                   placeholder="••••••••"
                   required
                 />

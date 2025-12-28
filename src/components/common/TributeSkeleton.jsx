@@ -49,7 +49,7 @@ const TributeSkeleton = () => {
                 <div className="absolute left-0 md:left-1/2 top-12 w-3 h-3 rounded-full bg-zinc-800 border-4 border-[#050000] z-10 md:-translate-x-1/2 hidden sm:block"></div>
 
                 <div className="md:w-1/2 w-full">
-                  <div className="bg-zinc-950/50 border border-white/5 p-8 md:p-10 rounded-[2.5rem] relative overflow-hidden h-[300px]">
+                  <div className="bg-zinc-950/50 border border-white/10 p-8 md:p-10 rounded-[2.5rem] relative overflow-hidden h-[300px]">
                     {/* Decorative Quote Icon Placeholder */}
                     <Quote
                       className="absolute right-6 top-6 text-zinc-900/50"
@@ -71,7 +71,7 @@ const TributeSkeleton = () => {
                       </div>
 
                       {/* Footer Metadata */}
-                      <div className="pt-8 mt-4 border-t border-white/5 flex justify-between items-center">
+                      <div className="pt-8 mt-4 border-t border-white/10 flex justify-between items-center">
                         <div className="flex items-center gap-2">
                           <div className="w-4 h-4 bg-zinc-900 rounded-full"></div>
                           <div className="h-3 w-24 bg-zinc-900 rounded"></div>

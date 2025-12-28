@@ -6,14 +6,14 @@ import { videoCategories } from "@/data/videos";
 
 const VideoCategoryCards = () => {
   return (
-    <div className="w-full max-w-[1400px] mx-auto px-6 mb-20">
+    <div className="w-full max-w-[1400px] mx-auto px-6 py-12 md:py-20">
       {/* HEADER FOR HOMEPAGE SECTION */}
       <div className="flex justify-between items-end mb-10">
         <div>
-          <h3 className="text-red-600 font-black uppercase tracking-[0.3em] text-[10px] mb-5">
+          <h3 className="text-red-600 font-black uppercase tracking-[0.3em] text-[10px] mb-3">
             Browse Archives
           </h3>
-          <h2 className="text-3xl md:text-5xl font-black tracking-tighter italic text-white">
+          <h2 className="text-2xl md:text-4xl font-black tracking-tighter italic text-white">
             ভিডিও <span className="text-zinc-800 not-italic">ক্যাটাগরি</span>
           </h2>
         </div>
@@ -37,7 +37,7 @@ const VideoCategoryCards = () => {
             <Link
               key={cat.id}
               href={`/videos?category=${cat.id}`}
-              className="group relative h-48 bg-zinc-950 rounded-3xl overflow-hidden border border-white/5 hover:border-red-600/50 transition-all duration-700 shadow-2xl"
+              className="group relative h-48 bg-zinc-950 rounded-3xl overflow-hidden border border-white/10 hover:border-red-600/50 transition-all duration-700 shadow-2xl"
             >
               {/* Background Decorative Element */}
               <div className="absolute inset-0 bg-gradient-to-br from-red-900/10 to-transparent opacity-50" />

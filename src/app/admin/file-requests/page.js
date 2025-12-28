@@ -112,7 +112,7 @@ const FileRequestsAdmin = () => {
 
           <button
             onClick={fetchItems}
-            className="flex items-center gap-2 px-6 py-3 bg-zinc-900 border border-white/5 rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-red-700 transition-all"
+            className="flex items-center gap-2 px-6 py-3 bg-zinc-900 border border-white/10 rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-red-700 transition-all"
           >
             <RefreshCw size={14} className={loading ? "animate-spin" : ""} />{" "}
             Refresh
@@ -122,7 +122,7 @@ const FileRequestsAdmin = () => {
         {/* Requests List */}
         <div className="space-y-6">
           {items.length === 0 && !loading && (
-            <div className="text-center py-32 border border-dashed border-white/5 rounded-[3rem] text-zinc-600 font-bold uppercase tracking-widest text-xs">
+            <div className="text-center py-32 border border-dashed border-white/10 rounded-[3rem] text-zinc-600 font-bold uppercase tracking-widest text-xs">
               No content requests found.
             </div>
           )}
@@ -168,7 +168,7 @@ const FileRequestsAdmin = () => {
                   <Link
                     href={it.source_url}
                     target="_blank"
-                    className="inline-flex items-center gap-3 bg-zinc-900 px-6 py-3 rounded-xl border border-white/5 text-xs font-black uppercase tracking-widest hover:bg-white hover:text-black transition-all"
+                    className="inline-flex items-center gap-3 bg-zinc-900 px-6 py-3 rounded-xl border border-white/10 text-xs font-black uppercase tracking-widest hover:bg-white hover:text-black transition-all"
                   >
                     <LinkIcon size={14} /> View Source Link{" "}
                     <ExternalLink size={12} />

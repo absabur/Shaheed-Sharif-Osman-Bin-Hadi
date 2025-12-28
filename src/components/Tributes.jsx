@@ -7,14 +7,14 @@ import Link from "next/link";
 const Tributes = ({ tributes, totalPages, currentPage }) => {
   return (
     <div className="min-h-screen bg-[#050000] text-white selection:bg-red-600/40 pb-32 pt-32 px-6">
-      <div className="max-w-[1400px] px-6 mx-auto">
+      <div className="max-w-[1400px] mx-auto">
         <BackSection
           links={[{ path: "/", text: "", icon: <Home size={15} /> }]}
           current={`Tributes`}
         />
 
         {/* Header Section */}
-        <div className="flex flex-col md:flex-row justify-between items-end gap-8 mb-20">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-20">
           <div className="max-w-2xl text-center md:text-left">
             <h3 className="text-red-600 font-black uppercase tracking-[0.4em] text-[10px] mb-4 flex items-center justify-center md:justify-start gap-2">
               <span className="w-12 h-px bg-red-600 hidden md:block"></span>
@@ -49,7 +49,7 @@ const Tributes = ({ tributes, totalPages, currentPage }) => {
                   <div className="absolute left-0 md:left-1/2 top-12 w-3 h-3 rounded-full bg-red-700 border-4 border-[#050000] z-10 md:-translate-x-1/2 hidden sm:block"></div>
 
                   <div className="md:w-1/2">
-                    <article className="group bg-zinc-950 border border-white/5 p-8 md:p-10 rounded-[2.5rem] hover:border-red-900/40 transition-all duration-700 shadow-2xl relative overflow-hidden">
+                    <article className="group bg-zinc-950 border border-white/10 p-8 md:p-10 rounded-[2.5rem] hover:border-red-900/40 transition-all duration-700 shadow-2xl relative overflow-hidden">
                       <Quote
                         className="absolute right-6 top-6 text-zinc-900 group-hover:text-red-900/10 transition-colors duration-700"
                         size={80}
@@ -68,7 +68,7 @@ const Tributes = ({ tributes, totalPages, currentPage }) => {
                         <p className="text-zinc-400 text-lg md:text-xl leading-relaxed italic font-serif mb-8 italic">
                           &quot;{tribute.message}&quot;
                         </p>
-                        <div className="pt-6 border-t border-white/5 flex items-center justify-between">
+                        <div className="pt-6 border-t border-white/10 flex items-center justify-between">
                           <div className="flex items-center gap-2 text-zinc-600">
                             <ShieldCheck size={14} className="text-red-900" />
                             <span className="text-[10px] font-bold uppercase tracking-tighter">
@@ -88,7 +88,7 @@ const Tributes = ({ tributes, totalPages, currentPage }) => {
               ))}
             </div>
           ) : (
-            <div className="text-center py-32 border border-dashed border-white/10 rounded-[3rem]">
+            <div className="text-center py-32 border border-dashed border-white/20 rounded-[3rem]">
               <Heart className="mx-auto text-zinc-800 mb-6" size={40} />
               <p className="text-zinc-600 font-bold uppercase tracking-widest text-xs italic">
                 এখনো কোনো শ্রদ্ধাঞ্জলি নেই।

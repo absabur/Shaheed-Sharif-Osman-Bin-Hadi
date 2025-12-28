@@ -88,7 +88,7 @@ const TributesAdmin = () => {
           <button 
             onClick={fetchItems} 
             disabled={loading}
-            className="flex items-center gap-2 px-6 py-3 bg-zinc-900 border border-white/5 rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-red-700 transition-all disabled:opacity-50"
+            className="flex items-center gap-2 px-6 py-3 bg-zinc-900 border border-white/10 rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-red-700 transition-all disabled:opacity-50"
           >
             <RefreshCw size={14} className={loading ? "animate-spin" : ""} /> Refresh List
           </button>
@@ -97,7 +97,7 @@ const TributesAdmin = () => {
         {/* Tributes Feed */}
         <div className="space-y-6">
           {items.length === 0 && !loading && (
-            <div className="text-center py-32 border border-dashed border-white/5 rounded-[3rem] text-zinc-600 font-bold uppercase tracking-widest text-xs italic">
+            <div className="text-center py-32 border border-dashed border-white/10 rounded-[3rem] text-zinc-600 font-bold uppercase tracking-widest text-xs italic">
               No tributes submitted yet.
             </div>
           )}
@@ -106,7 +106,7 @@ const TributesAdmin = () => {
             <div 
               key={it._id} 
               className={`group bg-zinc-950 border transition-all duration-500 rounded-[2.5rem] p-8 md:p-10 relative overflow-hidden ${
-                it.is_approved ? "border-white/5 opacity-70" : "border-red-900/30 shadow-[0_0_40px_-15px_rgba(220,38,38,0.25)]"
+                it.is_approved ? "border-white/10 opacity-70" : "border-red-900/30 shadow-[0_0_40px_-15px_rgba(220,38,38,0.25)]"
               }`}
             >
               {/* Approval Status Overlay for Unapproved */}

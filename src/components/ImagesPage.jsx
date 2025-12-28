@@ -28,7 +28,7 @@ const ImagesPage = ({ resolvedParams }) => {
           current={`Gallery`}
         />
         {/* HEADER SECTION */}
-        <div className="flex flex-col md:flex-row justify-between items-end gap-8 mb-16 border-b border-white/5 pb-12">
+        <div className="flex flex-col md:flex-row justify-between items-end gap-8 mb-16 border-b border-white/10 pb-12">
           <div className="space-y-4">
             <h1 className="text-3xl md:text-5xl font-black tracking-tighter">
               স্মৃতির{" "}
@@ -45,7 +45,7 @@ const ImagesPage = ({ resolvedParams }) => {
             </p>
           </div>
 
-          <div className="bg-zinc-950 border border-white/5 p-4 rounded-2xl flex items-center gap-6 shadow-2xl">
+          <div className="bg-zinc-950 border border-white/10 p-4 rounded-2xl flex items-center gap-6 shadow-2xl">
             <div className="flex flex-col">
               <span className="text-[10px] font-black text-zinc-600 uppercase tracking-widest">
                 Total Assets
@@ -74,7 +74,7 @@ const ImagesPage = ({ resolvedParams }) => {
               <div
                 key={idx}
                 onClick={() => setSelectedIndex(globalIndex)}
-                className="group relative aspect-[4/5] bg-zinc-900 rounded-xl overflow-hidden border border-white/5 hover:border-red-600/50 transition-all duration-500 shadow-xl"
+                className="group relative aspect-[4/5] bg-zinc-900 rounded-xl overflow-hidden border border-white/10 hover:border-red-600/50 transition-all duration-500 shadow-xl"
               >
                 <div className="cursor-pointer relative w-full h-full overflow-hidden bg-zinc-950 flex items-center justify-center group">
                   <div className="relative w-full h-full overflow-hidden bg-black group">

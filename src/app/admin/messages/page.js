@@ -88,7 +88,7 @@ const MessagesList = () => {
           <button
             onClick={fetchItems}
             disabled={loading}
-            className="flex items-center gap-2 px-6 py-3 bg-zinc-900 border border-white/5 rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-red-700 transition-all disabled:opacity-50"
+            className="flex items-center gap-2 px-6 py-3 bg-zinc-900 border border-white/10 rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-red-700 transition-all disabled:opacity-50"
           >
             <RefreshCw size={14} className={loading ? "animate-spin" : ""} />{" "}
             Refresh Feed
@@ -98,7 +98,7 @@ const MessagesList = () => {
         {/* Messages List */}
         <div className="space-y-4">
           {items.length === 0 && !loading && (
-            <div className="text-center py-32 border border-dashed border-white/5 rounded-[3rem]">
+            <div className="text-center py-32 border border-dashed border-white/10 rounded-[3rem]">
               <Mail className="mx-auto text-zinc-900 mb-4" size={48} />
               <p className="text-zinc-600 font-bold uppercase tracking-widest text-xs italic">
                 No new messages in the archive.
@@ -111,7 +111,7 @@ const MessagesList = () => {
               key={it._id}
               className={`group relative bg-zinc-950 border transition-all duration-500 rounded-[2rem] overflow-hidden ${
                 it.is_read
-                  ? "border-white/5 opacity-60"
+                  ? "border-white/10 opacity-60"
                   : "border-red-900/30 shadow-[0_0_30px_-15px_rgba(220,38,38,0.2)]"
               }`}
             >

@@ -24,15 +24,15 @@ const OsmanAboutSection = () => {
   ];
 
   return (
-    <section className="py-10 bg-[#050000] text-white overflow-hidden selection:bg-red-600/30">
+    <section className="py-12 md:py-20 bg-[#050000] text-white overflow-hidden selection:bg-red-600/30">
       <div className="max-w-[1400px] mx-auto px-6">
         {/* HEADER AREA: Asymmetric Layout */}
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-20 md:mb-28">
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-12 md:mb-20">
           <div className="max-w-2xl">
             <h3 className="text-red-600 font-black uppercase tracking-[0.4em] text-xs mb-4 flex items-center gap-2">
               <span className="w-12 h-px bg-red-600"></span> The Profile
             </h3>
-            <h2 className="text-3xl md:text-5xl font-black tracking-tighter leading-none italic">
+            <h2 className="text-2xl md:text-4xl font-black tracking-tighter leading-none italic">
               ওসমান হাদী <br />{" "}
               <span className="text-zinc-800 not-italic">সম্পর্কে</span>
             </h2>
@@ -48,7 +48,7 @@ const OsmanAboutSection = () => {
           {highlights.map((item, i) => (
             <div
               key={i}
-              className="group relative bg-zinc-950 p-10 md:p-14 border border-white/5 hover:bg-zinc-900 transition-all duration-500"
+              className="group relative bg-zinc-950 p-10 md:p-14 border border-white/10 hover:bg-zinc-900 transition-all duration-500"
             >
               <div className="text-red-600 mb-8 group-hover:scale-110 transition-transform origin-left">
                 {item.icon}
@@ -69,7 +69,7 @@ const OsmanAboutSection = () => {
         </div>
 
         {/* BOTTOM NARRATIVE: Massive Typography Background */}
-        <div className="relative mt-12 bg-zinc-950 border border-white/5 rounded-[2rem] md:rounded-[4rem] p-8 md:p-20 overflow-hidden group">
+        <div className="relative mt-12 bg-zinc-950 border border-white/10 rounded-[2rem] md:rounded-[4rem] p-8 md:p-20 overflow-hidden group">
           {/* Subtle Background Text */}
           <div className="absolute top-0 right-0 text-[12rem] font-black text-white/[0.02] leading-none pointer-events-none select-none translate-x-20 -translate-y-10 group-hover:text-red-600/5 transition-colors duration-1000">
             HADI

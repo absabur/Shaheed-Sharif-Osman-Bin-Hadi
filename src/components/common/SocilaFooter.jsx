@@ -114,7 +114,7 @@ const SocialFooter = () => {
               rel="noopener noreferrer"
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
-              className="group flex flex-col items-center gap-3 p-4 bg-zinc-950 border border-white/5 rounded-2xl transition-all duration-300"
+              className="group flex flex-col items-center gap-3 p-4 bg-zinc-950 border border-white/10 rounded-2xl transition-all duration-300"
               style={{
                 borderColor: isHovered
                   ? social.color

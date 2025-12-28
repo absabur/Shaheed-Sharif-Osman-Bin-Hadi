@@ -8,8 +8,8 @@ import { getThumbnailSrc } from "@/utils/getThumbnail";
 
 const SpeechesVideo = () => {
   return (
-    <section className="max-w-[1400px] mx-auto py-32 bg-[#050000] border-b border-white/5 relative">
-      <div className="px-6 mb-16 max-w-4xl flex flex-col md:flex-row justify-between items-end gap-8">
+    <section className="max-w-[1400px] mx-auto py-12 md:py-20 bg-[#050000] border-b border-white/10 relative">
+      <div className="px-6 mb-8 max-w-4xl flex flex-col md:flex-row justify-between items-end gap-8">
         <SectionHeader
           number="02"
           title="চিন্তা ও দর্শন"
@@ -19,7 +19,7 @@ const SpeechesVideo = () => {
 
       <div
         id="intellectual-scroll"
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 pb-12"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 pb-10"
       >
         {speeches.slice(0, 6).map((item, index) => (
           <Link
@@ -27,7 +27,7 @@ const SpeechesVideo = () => {
             key={index}
             className="group cursor-pointer"
           >
-            <div className="aspect-video bg-zinc-950 overflow-hidden relative border border-white/5 group-hover:border-red-700 transition-all rounded-[2rem]">
+            <div className="aspect-video bg-zinc-950 overflow-hidden relative border border-white/10 group-hover:border-red-700 transition-all rounded-[2rem]">
               <img
                 src={getThumbnailSrc(item)}
                 className="w-full h-full object-cover grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
@@ -59,7 +59,7 @@ const SpeechesVideo = () => {
           <div
             className="
       relative flex flex-col sm:flex-row items-start sm:items-center justify-between 
-      p-5 md:p-6 bg-zinc-950 border border-white/5 rounded-[1.5rem] md:rounded-[2rem] 
+      p-5 md:p-6 bg-zinc-950 border border-white/10 rounded-[1.5rem] md:rounded-[2rem] 
       group-hover:border-red-600/50 transition-all duration-500 overflow-hidden
     "
           >

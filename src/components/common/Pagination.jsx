@@ -42,7 +42,7 @@ const Pagination = ({ currentPage, totalPages }) => {
           scroll={false}
           className={`w-8 h-8 md:w-12 md:h-12 flex items-center justify-center rounded-xl md:rounded-2xl border transition-all ${
             currentPage === 1
-              ? "opacity-10 pointer-events-none border-white/5"
+              ? "opacity-10 pointer-events-none border-white/10"
               : "bg-zinc-950 border-white/10 hover:border-red-600 hover:text-red-600 text-white"
           }`}
         >
@@ -88,7 +88,7 @@ const Pagination = ({ currentPage, totalPages }) => {
           scroll={false}
           className={`w-8 h-8 md:w-12 md:h-12 flex items-center justify-center rounded-xl md:rounded-2xl border transition-all ${
             currentPage === totalPages
-              ? "opacity-10 pointer-events-none border-white/5"
+              ? "opacity-10 pointer-events-none border-white/10"
               : "bg-zinc-950 border-white/10 hover:border-red-600 hover:text-red-600 text-white"
           }`}
         >

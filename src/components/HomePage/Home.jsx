@@ -30,7 +30,7 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-[#050000] text-white selection:bg-red-600/40 selection:text-red-100 font-sans">
       {/* 2. HERO SECTION */}
-      <header className="relative flex flex-col items-center justify-center overflow-hidden border-b border-white/5 pt-32 pb-32 md:pt-48 ">
+      <header className="relative flex flex-col items-center justify-center overflow-hidden py-20 md:py-32 pt-32 md:pt-48">
         {/* Background Layer - First Component এর স্টাইল অনুযায়ী */}
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-t from-[#050000] via-black/60 to-transparent z-10" />
@@ -57,7 +57,7 @@ const Home = () => {
           </div>
 
           {/* 2. Main Name */}
-          <div className="relative mb-6">
+          <div className="relative mb-3">
             <h1 className="text-4xl md:text-8xl font-black text-white tracking-tighter leading-[0.9]">
               শহীদ শরীফ ওসমান <br />
               <span className="text-red-700 drop-shadow-[0_0_50px_rgba(185,28,28,0.5)]">
@@ -67,16 +67,20 @@ const Home = () => {
           </div>
 
           {/* 3. Subtitle / Designation */}
-          <p className="text-zinc-400 font-bold uppercase tracking-[0.3em] text-xs md:text-sm mb-8">
+          <p className="text-zinc-400 font-bold uppercase tracking-[0.3em] text-xs md:text-sm mb-0 md:mb-4">
             ইনকিলাব মঞ্চের মুখপাত্র
           </p>
 
           {/* 4. Quote */}
-          <div className="max-w-2xl mb-12">
-            <h2 className="text-xl md:text-3xl font-medium italic text-zinc-200 leading-relaxed">
-              <span className="text-red-600 text-4xl mr-2 font-serif">“</span>
+          <div className="max-w-2xl mb-4">
+            <h2 className="text-sm md:text-3xl font-medium italic text-zinc-200 leading-relaxed">
+              <span className="text-red-600 text-4xl mr-2 font-serif relative bottom-[-15px]">
+                “
+              </span>
               মৃত্যুর ফায়সালা জমীনে না, আসমানে হয়
-              <span className="text-red-600 text-4xl ml-2 font-serif">”</span>
+              <span className="text-red-600 text-4xl ml-2 font-serif relative bottom-[-15px]">
+                ”
+              </span>
             </h2>
           </div>
 
@@ -107,26 +111,26 @@ const Home = () => {
       {/* 3. BENTO IDENTITY MATRIX */}
       <section
         id="biography"
-        className="py-20 md:py-32 px-6 max-w-[1400px] mx-auto"
+        className="py-12 md:py-20 px-6 max-w-[1400px] mx-auto"
       >
-        <div className="mb-12 md:mb-20">
+        <div className="mb-8 md:mb-12">
           <h3 className="text-red-600 font-black uppercase tracking-[0.3em] mb-4 flex items-center gap-2 text-sm md:text-base">
             <Zap size={18} /> Identity Matrix
           </h3>
-          <h2 className="text-3xl md:text-5xl font-black leading-tight">
+          <h2 className="text-2xl md:text-4xl font-black leading-tight">
             বিবিধ পরিচয়ে ওসমান হাদি
           </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 lg:gap-6">
           {/* Identity: The Activist (Main Feature Card) */}
-          <div className="md:col-span-2 md:row-span-2 bg-gradient-to-br from-red-900/30 to-zinc-950 border border-white/5 rounded-[2rem] md:rounded-[2.5rem] p-8 md:p-12 flex flex-col justify-between group hover:border-red-600/40 transition-all">
+          <div className="md:col-span-2 md:row-span-2 bg-gradient-to-br from-red-900/30 to-zinc-950 border border-white/10 rounded-[2rem] md:rounded-[2.5rem] p-8 md:p-12 flex flex-col justify-between group hover:border-red-600/40 transition-all">
             <div className="space-y-6">
               <div className="w-14 h-14 md:w-16 md:h-16 bg-red-700 rounded-2xl flex items-center justify-center shadow-lg shadow-red-700/20">
                 <ShieldCheck size={32} className="text-white" />
               </div>
               <div>
-                <h4 className="text-3xl md:text-4xl font-black mb-4">
+                <h4 className="text-xl md:text-3xl font-black mb-4">
                   বিপ্লবী ও সমন্বয়ক
                 </h4>
                 <p className="text-zinc-400 text-base md:text-lg leading-relaxed">
@@ -147,7 +151,7 @@ const Home = () => {
           </div>
 
           {/* Identity: The Poet */}
-          <div className="md:col-span-2 bg-zinc-900/40 border border-white/5 rounded-[2rem] md:rounded-[2.5rem] p-6 md:p-10 flex flex-col sm:flex-row gap-6 items-start sm:items-center hover:bg-zinc-800/60 transition-all group">
+          <div className="md:col-span-2 bg-zinc-900/40 border border-white/10 rounded-[2rem] md:rounded-[2.5rem] p-6 md:p-10 flex flex-col sm:flex-row gap-6 items-start sm:items-center hover:bg-zinc-800/60 transition-all group">
             <div className="shrink-0 w-20 h-20 md:w-24 md:h-24 bg-rose-700/10 border border-rose-700/20 rounded-full flex items-center justify-center text-rose-500 group-hover:scale-110 transition-transform">
               <Heart
                 size={40}
@@ -156,7 +160,7 @@ const Home = () => {
               />
             </div>
             <div>
-              <h4 className="text-xl md:text-2xl font-bold mb-2">
+              <h4 className="text-xl md:text-3xl font-bold mb-2">
                 কবি ও সাহিত্যিক
               </h4>
               <p className="text-zinc-400 text-sm md:text-base leading-relaxed">
@@ -167,7 +171,7 @@ const Home = () => {
           </div>
 
           {/* Identity: The Scholar */}
-          <div className="md:col-span-1 bg-zinc-900/40 border border-white/5 rounded-[2rem] md:rounded-[2.5rem] p-8 hover:bg-zinc-800/60 transition-all flex flex-col justify-center">
+          <div className="md:col-span-1 bg-zinc-900/40 border border-white/10 rounded-[2rem] md:rounded-[2.5rem] p-8 hover:bg-zinc-800/60 transition-all flex flex-col justify-center">
             <Award className="text-red-600 mb-6" size={40} />
             <h4 className="text-lg md:text-xl font-bold mb-2">শিক্ষকতা পেশা</h4>
             <p className="text-zinc-500 text-xs md:text-sm leading-relaxed">
@@ -197,10 +201,10 @@ const Home = () => {
       {/* 4. PILLARS OF PHILOSOPHY */}
       <section
         id="vision"
-        className="max-w-[1400px] mx-auto py-24 px-6 bg-black"
+        className="max-w-[1400px] mx-auto py-12 md:py-20 px-6 bg-black"
       >
         <div className="w-full mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1 rounded-3xl overflow-hidden border border-white/5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1 rounded-3xl overflow-hidden border border-white/10">
             <PillarCard
               icon={<Scale size={32} />}
               title="Justice (ইনসাফ)"
@@ -233,19 +237,19 @@ const Home = () => {
       {/* 6. VISUAL ARCHIVE / GALLERY (Redesigned from Poetry) */}
       <section
         id="gallery"
-        className="py-32 relative overflow-hidden bg-[#050000]"
+        className="py-12 md:py-20 relative overflow-hidden bg-[#050000]"
       >
         {/* Decorative Background Elements */}
         <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-red-900/5 blur-[120px] -z-10" />
         <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-zinc-900/20 blur-[100px] -z-10" />
 
         <div className="max-w-[1400px] mx-auto px-6">
-          <div className="flex flex-col lg:flex-row justify-between items-end gap-10 mb-20">
-            <div className="space-y-6">
+          <div className="flex flex-col lg:flex-row justify-between items-end gap-10 mb-12">
+            <div className="space-y-3 self-start">
               <h3 className="text-red-600 font-black uppercase tracking-[0.4em] flex items-center gap-2">
                 <Maximize2 size={16} /> Visual Legacy
               </h3>
-              <h2 className="text-3xl md:text-5xl font-black tracking-tighter">
+              <h2 className="text-2xl md:text-4xl font-black tracking-tighter">
                 স্মৃতির কোলাজ <br />
                 <span
                   className="text-zinc-800"
@@ -255,7 +259,7 @@ const Home = () => {
                 </span>
               </h2>
             </div>
-            <div className="max-w-md text-right">
+            <div className="max-w-md text-center md:text-right">
               <p className="text-zinc-500 text-lg leading-relaxed italic mb-6">
                 &quot;ছবি কথা বলে, ইতিহাসকে জীবন্ত রাখে। প্রতিটি ফ্রেমে মিশে আছে
                 বিপ্লব ও ভালোবাসার গল্প।&quot;
@@ -276,7 +280,7 @@ const Home = () => {
           {/* UNIQUE MASONRY GRID */}
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-[200px] md:auto-rows-[150px]">
             {/* Main Featured Image */}
-            <div className="md:col-span-6 md:row-span-4 relative group rounded-[2.5rem] overflow-hidden border border-white/5">
+            <div className="md:col-span-6 md:row-span-4 relative group rounded-[2.5rem] overflow-hidden border border-white/10">
               <img
                 src={osmanarchiveImages[0].url}
                 className="w-full h-full object-cover group-hover:grayscale-0 group-hover:scale-110 transition-all duration-1000"
@@ -294,7 +298,7 @@ const Home = () => {
             </div>
 
             {/* Top Right Vertical */}
-            <div className="md:col-span-3 md:row-span-3 relative group rounded-[2.5rem] overflow-hidden border border-white/5">
+            <div className="md:col-span-3 md:row-span-3 relative group rounded-[2.5rem] overflow-hidden border border-white/10">
               <img
                 src={osmanarchiveImages[1].url}
                 className="w-full h-full object-cover group-hover:grayscale-0 transition-all duration-700"
@@ -306,7 +310,7 @@ const Home = () => {
             {/* Middle Square */}
             <Link
               href={`/gallery`}
-              className="md:col-span-3 md:row-span-1 hover:border-red-500/40 relative group rounded-[2.5rem] overflow-hidden border border-white/5 bg-zinc-950 flex flex-col items-center justify-center p-8 text-center border-dashed border-zinc-800"
+              className="md:col-span-3 md:row-span-1 hover:border-red-500/40 relative group rounded-[2.5rem] overflow-hidden border border-white/10 bg-zinc-950 flex flex-col items-center justify-center p-8 text-center border-dashed border-zinc-800"
             >
               <History
                 size={48}
@@ -320,7 +324,7 @@ const Home = () => {
               </h3>
             </Link>
 
-            <div className="md:col-span-3 md:row-span-2 relative group rounded-[2.5rem] overflow-hidden border border-white/5">
+            <div className="md:col-span-3 md:row-span-2 relative group rounded-[2.5rem] overflow-hidden border border-white/10">
               <div className="absolute inset-0 bg-red-700 mix-blend-multiply opacity-20" />
               <img
                 src={osmanarchiveImages[59].url}
@@ -330,7 +334,7 @@ const Home = () => {
             </div>
 
             {/* Bottom Wide */}
-            <div className="md:col-span-6 md:row-span-3 relative group rounded-[2.5rem] overflow-hidden border border-white/5">
+            <div className="md:col-span-6 md:row-span-3 relative group rounded-[2.5rem] overflow-hidden border border-white/10">
               <img
                 src={osmanarchiveImages[2].url}
                 className="w-full h-full object-cover opacity-40 group-hover:opacity-100 transition-all"
@@ -344,7 +348,7 @@ const Home = () => {
             </div>
 
             {/* Smallest Detail */}
-            <div className="md:col-span-3 md:row-span-2 relative group rounded-[2.5rem] overflow-hidden border border-white/5">
+            <div className="md:col-span-3 md:row-span-2 relative group rounded-[2.5rem] overflow-hidden border border-white/10">
               <div className="absolute inset-0 bg-red-700 mix-blend-multiply opacity-20" />
               <img
                 src={osmanarchiveImages[3].url}
@@ -353,7 +357,7 @@ const Home = () => {
               />
             </div>
             {/* Smallest Detail */}
-            <div className="md:col-span-3 md:row-span-2 relative group rounded-[2.5rem] overflow-hidden border border-white/5">
+            <div className="md:col-span-3 md:row-span-2 relative group rounded-[2.5rem] overflow-hidden border border-white/10">
               <div className="absolute inset-0 bg-red-700 mix-blend-multiply opacity-20" />
               <img
                 src={osmanarchiveImages[4].url}
@@ -373,7 +377,7 @@ const Home = () => {
       <DiscussionVideo />
 
       {/* 8. PHILOSOPHY INTERSTITIAL */}
-      <section className="py-40 bg-red-950/40 relative overflow-hidden border-y border-red-900/20">
+      <section className="py-12 md:py-20 my-12 bg-red-950/40 relative overflow-hidden border-y border-red-900/20">
         <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/brushed-alum.png')] opacity-5" />
         <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
           <Quote className="text-red-700 mx-auto mb-10 opacity-40" size={80} />
@@ -429,7 +433,7 @@ export const SectionHeader = ({ number, title, sub }) => (
       {number}
     </span>
     <div>
-      <h2 className="text-3xl md:text-5xl font-black tracking-tighter leading-none">
+      <h2 className="text-2xl md:text-4xl font-black tracking-tighter leading-none">
         {title}
       </h2>
       <p className="text-red-600 text-[10px] font-black uppercase tracking-[0.5em] mt-3">

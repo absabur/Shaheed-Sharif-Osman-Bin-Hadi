@@ -41,15 +41,15 @@ const AchievementSection = ({ from = "" }) => {
   return (
     <section
       className={`py-0 bg-[#050000] ${
-        from == "home" ? "max-w-[1400px] px-6 mx-auto" : ""
+        from == "home" ? "max-w-[1400px] px-6 py-12 md:py-20 mx-auto" : ""
       }`}
     >
       {/* Section Header */}
-      <div className={`mb-16 md:mb-24`}>
+      <div className={`mb-10 md:mb-16`}>
         <h3 className="text-red-600 font-black uppercase tracking-[0.4em] text-xs mb-4 flex items-center gap-2">
           <div className="w-8 h-px bg-red-600" /> Honors & Impact
         </h3>
-        <h2 className="text-3xl md:text-5xl font-black tracking-tighter text-white">
+        <h2 className="text-2xl md:text-4xl font-black tracking-tighter text-white">
           অবদান ও <span className="text-red-700">অর্জিত সম্মান</span>
         </h2>
         <p className="text-zinc-500 mt-6 max-w-xl text-lg">
@@ -63,7 +63,7 @@ const AchievementSection = ({ from = "" }) => {
         {achievements.map((item, index) => (
           <div
             key={index}
-            className={`group relative overflow-hidden bg-gradient-to-br ${item.color} to-zinc-950 border border-white/5 p-8 md:p-12 rounded-[2rem] md:rounded-[3rem] hover:border-red-600/30 transition-all duration-500`}
+            className={`group relative overflow-hidden bg-gradient-to-br ${item.color} to-zinc-950 border border-white/10 p-8 md:p-12 rounded-[2rem] md:rounded-[3rem] hover:border-red-600/30 transition-all duration-500`}
           >
             {/* Decorative Background Icon */}
             <div className="absolute -right-8 -bottom-8 opacity-[0.03] group-hover:opacity-[0.07] transition-opacity duration-500">

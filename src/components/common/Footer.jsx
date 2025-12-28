@@ -4,7 +4,7 @@ import SocialFooter from "./SocilaFooter";
 
 const Footer = () => {
   return (
-    <footer className="bg-black py-24 border-t border-white/5">
+    <footer className="bg-black py-24 border-t border-white/10">
       <div className="max-w-[1400px] mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-20 mb-20">
           <div className="col-span-1 md:col-span-2 space-y-10">
@@ -97,7 +97,7 @@ const Footer = () => {
         </div>
         <SocialFooter />
 
-        <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-zinc-700 text-xs font-black uppercase tracking-widest">
+        <div className="pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-8 text-zinc-700 text-xs font-black uppercase tracking-widest">
           <p>© ২০২৫ ওসমান হাদি মেমোরিয়াল আর্কাইভ। সর্বস্বত্ব সংরক্ষিত।</p>
           <div className="flex gap-10">
             <Link

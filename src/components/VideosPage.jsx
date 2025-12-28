@@ -94,7 +94,7 @@ const VideosPage = ({ resolvedParams }) => {
           <SearchField />
 
           {/* Right: Search Field */}
-          <div className="group flex flex-1 md:flex-initial md:w-1/3 items-center gap-4 bg-zinc-950 border border-white/5 px-6 py-2 rounded-2xl hover:border-red-600/30 transition-all shadow-xl">
+          <div className="group flex flex-1 md:flex-initial md:w-1/3 items-center gap-4 bg-zinc-950 border border-white/10 px-6 py-2 rounded-2xl hover:border-red-600/30 transition-all shadow-xl">
             <div className="p-2 bg-zinc-900 rounded-xl group-hover:bg-red-700 transition-colors">
               <MonitorPlay
                 size={16}
@@ -118,7 +118,7 @@ const VideosPage = ({ resolvedParams }) => {
               <Link
                 key={video.source_title}
                 href={`/videos/${encodeURIComponent(video?.source_title)}`}
-                className="group relative bg-zinc-950 border border-white/5 rounded-3xl overflow-hidden hover:border-red-600/50 transition-all shadow-xl"
+                className="group relative bg-zinc-950 border border-white/10 rounded-3xl overflow-hidden hover:border-red-600/50 transition-all shadow-xl"
               >
                 <div className="relative aspect-video overflow-hidden">
                   <img
@@ -191,7 +191,7 @@ const VideosPage = ({ resolvedParams }) => {
 
             <Link
               href="?"
-              className="flex items-center gap-2 px-8 py-4 bg-zinc-900 hover:bg-red-700 text-xs font-black uppercase tracking-widest rounded-2xl transition-all border border-white/5"
+              className="flex items-center gap-2 px-8 py-4 bg-zinc-900 hover:bg-red-700 text-xs font-black uppercase tracking-widest rounded-2xl transition-all border border-white/10"
             >
               <RefreshCcw size={14} /> Reset Filters
             </Link>

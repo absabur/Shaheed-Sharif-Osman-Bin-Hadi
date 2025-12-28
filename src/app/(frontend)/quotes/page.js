@@ -152,7 +152,7 @@ const QuotesPage = () => {
   return (
     <div className="min-h-screen bg-[#050000] text-white selection:bg-red-600/40 font-sans pb-32">
       {/* HEADER SECTION */}
-      <section className="relative pt-32 pb-20 px-6 overflow-hidden border-b border-white/5">
+      <section className="relative pt-32 pb-20 px-6 overflow-hidden border-b border-white/10">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-t from-[#050000] via-transparent to-transparent z-10" />
           <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-red-900/10 blur-[150px] rounded-full opacity-50" />
@@ -181,7 +181,7 @@ const QuotesPage = () => {
           {quotes.map((quote, index) => (
             <article
               key={index}
-              className={`group relative flex flex-col h-full rounded-[2rem] md:rounded-[2.5rem] p-8 md:p-12 bg-gradient-to-br ${quote.color} to-zinc-950 border border-white/5 hover:border-red-600/40 transition-all duration-700 shadow-2xl overflow-hidden`}
+              className={`group relative flex flex-col h-full rounded-[2rem] md:rounded-[2.5rem] p-8 md:p-12 bg-gradient-to-br ${quote.color} to-zinc-950 border border-white/10 hover:border-red-600/40 transition-all duration-700 shadow-2xl overflow-hidden`}
             >
               {/* Featured Badge */}
               {quote.featured && (
@@ -207,7 +207,7 @@ const QuotesPage = () => {
                 )}
               </div>
 
-              <div className="mt-auto pt-8 border-t border-white/5 flex items-end justify-between">
+              <div className="mt-auto pt-8 border-t border-white/10 flex items-end justify-between">
                 <div className="space-y-1">
                   <span className="text-[10px] font-black uppercase tracking-[0.2em] text-red-600 block">
                     {quote.category}
@@ -230,7 +230,7 @@ const QuotesPage = () => {
 
       {/* FOOTER CTA */}
       <section className="max-w-[1400px] mx-auto px-6 mt-32">
-        <div className=" bg-zinc-950 border border-white/5 p-12 md:p-24 rounded-[3.5rem] text-center relative overflow-hidden group">
+        <div className=" bg-zinc-950 border border-white/10 p-12 md:p-24 rounded-[3.5rem] text-center relative overflow-hidden group">
           <div className="absolute inset-0 bg-red-900/[0.02] pointer-events-none" />
           <MessageCircle
             className="mx-auto text-red-700 opacity-20 mb-8"

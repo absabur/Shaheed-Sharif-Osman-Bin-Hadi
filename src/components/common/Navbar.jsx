@@ -143,7 +143,11 @@ const Navbar = () => {
                     : "translateX(-20px)",
                   opacity: mobileMenuOpen ? 1 : 0,
                 }}
-                className="text-lg text-center font-black tracking-tighter uppercase transition-all duration-500 hover:text-red-700 text-white"
+                className={`text-lg text-center font-black uppercase tracking-widest transition-all duration-300 relative group ${
+                  pathname === link.href
+                    ? "text-red-500"
+                    : "text-zinc-400 hover:text-white"
+                }`}
               >
                 {link.name}
               </Link>
@@ -151,6 +155,7 @@ const Navbar = () => {
 
             <Link
               href="/tributes"
+              onClick={() => setMobileMenuOpen(false)}
               className="flex items-center justify-center text-center gap-2 bg-white text-black px-5 py-2 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-red-700 hover:text-white transition-all"
             >
               শ্রদ্ধাঞ্জলি <ArrowRight size={14} />

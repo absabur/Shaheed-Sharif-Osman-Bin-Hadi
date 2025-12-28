@@ -28,7 +28,7 @@ export default function Dashboard() {
             </h1>
           </div>
 
-          <button className="flex items-center gap-2 px-6 py-3 bg-zinc-900/50 border border-white/5 rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-red-700 transition-all group">
+          <button className="flex items-center gap-2 px-6 py-3 bg-zinc-900/50 border border-white/10 rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-red-700 transition-all group">
             <LogOut
               size={14}
               className="group-hover:translate-x-1 transition-transform"
@@ -74,7 +74,7 @@ function DashboardCard({ href, title, icon, description, count, color }) {
   return (
     <Link
       href={href}
-      className={`group block p-8 bg-zinc-950 border border-white/5 rounded-[3rem] transition-all duration-500 ${color} hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(220,38,38,0.1)]`}
+      className={`group block p-8 bg-zinc-950 border border-white/10 rounded-[3rem] transition-all duration-500 ${color} hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(220,38,38,0.1)]`}
     >
       <div className="flex justify-between items-start mb-8">
         <div className="w-16 h-16 bg-zinc-900 rounded-[1.5rem] flex items-center justify-center text-zinc-500 group-hover:text-red-600 group-hover:bg-red-600/10 transition-all duration-500">

@@ -57,7 +57,7 @@ export default DiscussionVideo;
 export const FeaturedVideo = ({ title, url }) => (
   <Link
     href={`/videos/${encodeURIComponent(title)}`}
-    className="relative group cursor-pointer overflow-hidden rounded-[2rem] md:rounded-[3.5rem] bg-zinc-950 border border-white/5 hover:border-red-600 transition-all shadow-2xl flex flex-col"
+    className="relative group cursor-pointer overflow-hidden rounded-[2rem] md:rounded-[3.5rem] bg-zinc-950 border border-white/10 hover:border-red-600 transition-all shadow-2xl flex flex-col"
   >
     <div className="aspect-video relative overflow-hidden">
       <img
@@ -84,10 +84,10 @@ export const FeaturedVideo = ({ title, url }) => (
 export const CompactVideo = ({ title, url }) => (
   <Link
     href={`/videos/${encodeURIComponent(title)}`}
-    className="flex gap-4 md:gap-6 items-center p-4 md:p-6 bg-zinc-950 border border-white/5 rounded-2xl md:rounded-3xl hover:bg-red-950/20 hover:border-red-900/50 transition-all duration-300 group cursor-pointer shadow-xl"
+    className="flex gap-4 md:gap-6 items-center p-4 md:p-6 bg-zinc-950 border border-white/10 rounded-2xl md:rounded-3xl hover:bg-red-950/20 hover:border-red-900/50 transition-all duration-300 group cursor-pointer shadow-xl"
   >
     {/* Thumbnail: Scales down on mobile */}
-    <div className="w-24 h-16 md:w-32 md:h-20 bg-black rounded-lg md:rounded-2xl overflow-hidden shrink-0 border border-white/5">
+    <div className="w-24 h-16 md:w-32 md:h-20 bg-black rounded-lg md:rounded-2xl overflow-hidden shrink-0 border border-white/10">
       <img
         src={`https://i.ytimg.com/vi/${getYouTubeID(url)}/hqdefault.jpg`}
         className="w-full h-full object-cover grayscale group-hover:grayscale-0 opacity-30 group-hover:opacity-60 transition-opacity"

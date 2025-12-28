@@ -12,7 +12,7 @@ const PoetryVideo = () => {
       {/* Subtle background glow */}
       <div className="absolute top-1/2 left-0 w-72 md:w-96 h-72 md:h-96 bg-red-900/10 blur-[100px] md:blur-[120px] -z-10" />
 
-      <div className="max-w-[1400px] px-6 mx-auto flex flex-col lg:flex-row gap-12 lg:gap-20">
+      <div className="max-w-[1400px] mx-auto flex flex-col lg:flex-row gap-12 lg:gap-20">
         {/* Left Side: Content */}
         <div className="w-full lg:w-1/3 lg:sticky lg:top-32 h-fit text-center lg:text-left">
           <SectionHeader
@@ -43,7 +43,7 @@ const PoetryVideo = () => {
               <Link
                 key={i}
                 href={`/videos/${encodeURIComponent(video.source_title)}`}
-                className="group relative flex items-center justify-between gap-4 p-6 md:p-10 rounded-[1.5rem] md:rounded-[2.5rem] bg-zinc-950/50 border border-white/5 hover:border-red-700/50 transition-all duration-500 cursor-pointer overflow-hidden"
+                className="group relative flex items-center justify-between gap-4 p-6 md:p-10 rounded-[1.5rem] md:rounded-[2.5rem] bg-zinc-950/50 border border-white/10 hover:border-red-700/50 transition-all duration-500 cursor-pointer overflow-hidden"
               >
                 {/* Hover Image Reveal Logic */}
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500 -z-10">

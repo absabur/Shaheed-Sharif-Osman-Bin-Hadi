@@ -75,7 +75,7 @@ export default function TributeForm() {
       </div>
 
       {submitted ? (
-        <div className="text-center py-12 mb-10 max-w-2xl mx-auto bg-zinc-950 rounded-[2.5rem] border border-white/5 animate-in fade-in zoom-in duration-500">
+        <div className="text-center py-12 mb-10 max-w-2xl mx-auto bg-zinc-950 rounded-[2.5rem] border border-white/10 animate-in fade-in zoom-in duration-500">
           <div className="w-20 h-20 bg-green-500/10 border border-green-500/20 rounded-full flex items-center justify-center mx-auto text-green-500 mb-6">
             <CheckCircle2 size={40} />
           </div>
@@ -96,7 +96,7 @@ export default function TributeForm() {
       ) : (
         <form
           onSubmit={handleSubmit}
-          className="space-y-6 mb-12 w-full mx-auto p-8 w-full border border-white/5 rounded-[2.5rem] bg-zinc-950/50 backdrop-blur-sm"
+          className="space-y-6 mb-12 w-full mx-auto p-8 w-full border border-white/10 rounded-[2.5rem] bg-zinc-950/50 backdrop-blur-sm"
         >
           {error && (
             <div className="bg-red-500/10 border border-red-500/20 p-4 rounded-xl text-red-500 text-xs font-bold">
@@ -116,7 +116,7 @@ export default function TributeForm() {
               <input
                 required
                 type="text"
-                className="w-full bg-zinc-900/50 border border-white/5 rounded-2xl pl-14 pr-6 py-4 text-sm focus:border-red-600 focus:bg-zinc-900 outline-none transition-all text-white placeholder:text-zinc-700"
+                className="w-full bg-zinc-900/50 border border-white/10 rounded-2xl pl-14 pr-6 py-4 text-sm focus:border-red-600 focus:bg-zinc-900 outline-none transition-all text-white placeholder:text-zinc-700"
                 placeholder="নাম লিখুন..."
                 value={formData.name}
                 onChange={(e) =>
@@ -131,7 +131,7 @@ export default function TributeForm() {
               পরিচয় / সম্পর্ক
             </label>
             <select
-              className="w-full bg-zinc-900/50 border border-white/5 rounded-2xl px-6 py-4 text-sm focus:border-red-600 outline-none cursor-pointer text-white appearance-none"
+              className="w-full bg-zinc-900/50 border border-white/10 rounded-2xl px-6 py-4 text-sm focus:border-red-600 outline-none cursor-pointer text-white appearance-none"
               value={formData.relation}
               onChange={(e) =>
                 setFormData({ ...formData, relation: e.target.value })
@@ -156,7 +156,7 @@ export default function TributeForm() {
               <textarea
                 required
                 rows={5}
-                className="w-full bg-zinc-900/50 border border-white/5 rounded-2xl pl-14 pr-6 py-4 text-sm focus:border-red-600 outline-none transition-all resize-none text-white placeholder:text-zinc-700"
+                className="w-full bg-zinc-900/50 border border-white/10 rounded-2xl pl-14 pr-6 py-4 text-sm focus:border-red-600 outline-none transition-all resize-none text-white placeholder:text-zinc-700"
                 placeholder="আপনার শ্রদ্ধাঞ্জলি লিখুন..."
                 value={formData.message}
                 onChange={(e) =>

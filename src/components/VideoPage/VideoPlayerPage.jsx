@@ -117,7 +117,7 @@ const VideoPlayerPage = async ({ params, searchParams }) => {
                     className={`flex items-center justify-center gap-2 md:gap-3 p-3 md:p-5 rounded-xl md:rounded-3xl border transition-all text-[9px] md:text-[10px] font-black uppercase tracking-widest ${
                       isActive
                         ? "bg-red-700 border-red-600 text-white shadow-xl shadow-red-700/20"
-                        : "bg-zinc-950 border-white/5 text-zinc-500 hover:border-red-900/50 hover:text-zinc-300"
+                        : "bg-zinc-950 border-white/10 text-zinc-500 hover:border-red-900/50 hover:text-zinc-300"
                     }`}
                   >
                     {src.icon} <span className="truncate">{src.label}</span>
@@ -149,7 +149,7 @@ const VideoPlayerPage = async ({ params, searchParams }) => {
 
           {/* VIDEO PLAYER CONTAINER */}
           <div className="space-y-6">
-            <div className="relative w-full bg-black rounded-xl md:rounded-2xl border border-white/5 shadow-2xl overflow-hidden aspect-video group">
+            <div className="relative w-full bg-black rounded-xl md:rounded-2xl border border-white/10 shadow-2xl overflow-hidden aspect-video group">
               {isDrive && (
                 <GetDriveDownloadLink driveUrl={getEmbedUrl(activeSource)} />
               )}
@@ -163,7 +163,7 @@ const VideoPlayerPage = async ({ params, searchParams }) => {
             </div>
 
             {/* INFO CARD */}
-            <div className="bg-zinc-950/50 border border-white/5 rounded-2xl md:rounded-[2.5rem] p-6 md:p-10 shadow-xl">
+            <div className="bg-zinc-950/50 border border-white/10 rounded-2xl md:rounded-[2.5rem] p-6 md:p-10 shadow-xl">
               <div className="flex flex-col gap-4">
                 <div className="flex items-center flex-wrap space-x-3">
                   <div className="w-1 h-6 bg-red-700 rounded-full" />

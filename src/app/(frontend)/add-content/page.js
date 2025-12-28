@@ -63,7 +63,7 @@ export default function FileRequestPage() {
   if (submitted) {
     return (
       <div className="mt-32 mb-12 text-white flex items-center justify-center p-6">
-        <div className="text-center py-16 px-10 max-w-2xl bg-zinc-950 rounded-[3rem] border border-white/5 shadow-2xl animate-in fade-in zoom-in duration-500">
+        <div className="text-center py-16 px-10 max-w-2xl bg-zinc-950 rounded-[3rem] border border-white/10 shadow-2xl animate-in fade-in zoom-in duration-500">
           <div className="w-24 h-24 bg-red-600/10 border border-red-600/20 rounded-full flex items-center justify-center mx-auto text-red-600 mb-8">
             <CheckCircle2 size={48} />
           </div>
@@ -87,7 +87,7 @@ export default function FileRequestPage() {
 
   return (
     <div className="min-h-screen bg-[#050000] text-white pb-32 pt-32 px-6 font-sans">
-      <div className="max-w-[1400px] px-6 mx-auto">
+      <div className="max-w-[1400px] mx-auto">
         <BackSection
           links={[{ path: "/", text: "", icon: <Home size={15} /> }]}
           current={`Contribution`}
@@ -109,7 +109,7 @@ export default function FileRequestPage() {
         >
           {/* Left Column: Personal Info */}
           <div className="space-y-6">
-            <div className="bg-zinc-950/50 p-8 rounded-[2.5rem] border border-white/5 space-y-6">
+            <div className="bg-zinc-950/50 p-8 rounded-[2.5rem] border border-white/10 space-y-6">
               <div className="space-y-2">
                 <label className="text-[10px] font-black uppercase tracking-widest text-zinc-500 ml-4">
                   আপনার নাম
@@ -121,7 +121,7 @@ export default function FileRequestPage() {
                   />
                   <input
                     type="text"
-                    className="w-full bg-zinc-900/50 border border-white/5 rounded-2xl pl-14 pr-6 py-4 text-sm focus:border-red-600 outline-none transition-all text-white"
+                    className="w-full bg-zinc-900/50 border border-white/10 rounded-2xl pl-14 pr-6 py-4 text-sm focus:border-red-600 outline-none transition-all text-white"
                     placeholder="Full Name"
                     value={formData.contributor_name}
                     onChange={(e) =>
@@ -145,7 +145,7 @@ export default function FileRequestPage() {
                   />
                   <input
                     type="email"
-                    className="w-full bg-zinc-900/50 border border-white/5 rounded-2xl pl-14 pr-6 py-4 text-sm focus:border-red-600 outline-none transition-all text-white"
+                    className="w-full bg-zinc-900/50 border border-white/10 rounded-2xl pl-14 pr-6 py-4 text-sm focus:border-red-600 outline-none transition-all text-white"
                     placeholder="email@example.com"
                     value={formData.contributor_email}
                     onChange={(e) =>
@@ -176,7 +176,7 @@ export default function FileRequestPage() {
                   কন্টেন্টের ধরন
                 </label>
                 <select
-                  className="w-full bg-zinc-900/50 border border-white/5 rounded-2xl px-6 py-4 text-sm focus:border-red-600 outline-none cursor-pointer text-white appearance-none"
+                  className="w-full bg-zinc-900/50 border border-white/10 rounded-2xl px-6 py-4 text-sm focus:border-red-600 outline-none cursor-pointer text-white appearance-none"
                   value={formData.content_type}
                   onChange={(e) =>
                     setFormData({ ...formData, content_type: e.target.value })
@@ -200,7 +200,7 @@ export default function FileRequestPage() {
                   <input
                     required
                     type="text"
-                    className="w-full bg-zinc-900/50 border border-white/5 rounded-2xl pl-14 pr-6 py-4 text-sm focus:border-red-600 outline-none transition-all text-white"
+                    className="w-full bg-zinc-900/50 border border-white/10 rounded-2xl pl-14 pr-6 py-4 text-sm focus:border-red-600 outline-none transition-all text-white"
                     placeholder="ফুটেজ বা ছবির নাম..."
                     value={formData.title}
                     onChange={(e) =>
@@ -222,7 +222,7 @@ export default function FileRequestPage() {
                   <input
                     required
                     type="url"
-                    className="w-full bg-zinc-900/50 border border-white/5 rounded-2xl pl-14 pr-6 py-4 text-sm focus:border-red-600 outline-none transition-all text-white placeholder:text-zinc-800"
+                    className="w-full bg-zinc-900/50 border border-white/10 rounded-2xl pl-14 pr-6 py-4 text-sm focus:border-red-600 outline-none transition-all text-white placeholder:text-zinc-800"
                     placeholder="Drive / YouTube / FB Link"
                     value={formData.source_url}
                     onChange={(e) =>
@@ -238,7 +238,7 @@ export default function FileRequestPage() {
                 </label>
                 <textarea
                   rows={3}
-                  className="w-full bg-zinc-900/50 border border-white/5 rounded-2xl px-6 py-4 text-sm focus:border-red-600 outline-none transition-all resize-none text-white"
+                  className="w-full bg-zinc-900/50 border border-white/10 rounded-2xl px-6 py-4 text-sm focus:border-red-600 outline-none transition-all resize-none text-white"
                   placeholder="এই কন্টেন্টটি সম্পর্কে বিস্তারিত কিছু লিখুন..."
                   value={formData.description}
                   onChange={(e) =>

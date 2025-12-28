@@ -53,7 +53,7 @@ export default function ContactPage() {
   if (submitted) {
     return (
       <div className="min-h-screen bg-[#050000] text-white flex items-center justify-center p-6">
-        <div className="text-center py-20 px-10 max-w-xl bg-zinc-950 rounded-[3rem] border border-white/5 shadow-2xl animate-in fade-in zoom-in duration-700">
+        <div className="text-center py-20 px-10 max-w-xl bg-zinc-950 rounded-[3rem] border border-white/10 shadow-2xl animate-in fade-in zoom-in duration-700">
           <div className="w-24 h-24 bg-red-600/10 border border-red-600/20 rounded-full flex items-center justify-center mx-auto text-red-600 mb-8">
             <CheckCircle2 size={48} />
           </div>
@@ -77,7 +77,7 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen bg-[#050000] text-white pb-32 pt-32 px-6 overflow-hidden">
-      <div className="max-w-[1400px] px-6 mx-auto relative">
+      <div className="max-w-[1400px] mx-auto relative">
         {/* Navigation */}
         <BackSection
           links={[{ path: "/", text: "", icon: <Home size={15} /> }]}
@@ -95,20 +95,6 @@ export default function ContactPage() {
                 আর্কাইভ সংক্রান্ত কোনো প্রশ্ন বা তথ্য শেয়ার করতে আমাদের সরাসরি
                 বার্তা পাঠান।
               </p>
-            </div>
-
-            <div className="pt-10 border-t border-white/5 space-y-6">
-              <div className="flex items-center gap-4 group cursor-pointer">
-                <div className="w-12 h-12 rounded-2xl bg-zinc-900 flex items-center justify-center group-hover:bg-red-700 transition-colors">
-                  <Mail size={18} />
-                </div>
-                <div>
-                  <p className="text-[10px] font-black uppercase tracking-widest text-zinc-600">
-                    Email Address
-                  </p>
-                  <p className="font-bold text-sm">archive@osmanhadi.com</p>
-                </div>
-              </div>
             </div>
           </div>
 
@@ -130,7 +116,7 @@ export default function ContactPage() {
                       <input
                         required
                         type="text"
-                        className="w-full bg-zinc-900/50 border border-white/5 rounded-3xl pl-16 pr-6 py-5 text-sm focus:border-red-600 outline-none transition-all text-white placeholder:text-zinc-700"
+                        className="w-full bg-zinc-900/50 border border-white/10 rounded-3xl pl-16 pr-6 py-5 text-sm focus:border-red-600 outline-none transition-all text-white placeholder:text-zinc-700"
                         placeholder="Full Name"
                         value={formData.name}
                         onChange={(e) =>
@@ -153,7 +139,7 @@ export default function ContactPage() {
                       <input
                         required
                         type="email"
-                        className="w-full bg-zinc-900/50 border border-white/5 rounded-3xl pl-16 pr-6 py-5 text-sm focus:border-red-600 outline-none transition-all text-white placeholder:text-zinc-700"
+                        className="w-full bg-zinc-900/50 border border-white/10 rounded-3xl pl-16 pr-6 py-5 text-sm focus:border-red-600 outline-none transition-all text-white placeholder:text-zinc-700"
                         placeholder="Email Address"
                         value={formData.email}
                         onChange={(e) =>
@@ -176,7 +162,7 @@ export default function ContactPage() {
                     />
                     <input
                       type="text"
-                      className="w-full bg-zinc-900/50 border border-white/5 rounded-3xl pl-16 pr-6 py-5 text-sm focus:border-red-600 outline-none transition-all text-white placeholder:text-zinc-700"
+                      className="w-full bg-zinc-900/50 border border-white/10 rounded-3xl pl-16 pr-6 py-5 text-sm focus:border-red-600 outline-none transition-all text-white placeholder:text-zinc-700"
                       placeholder="What is this about?"
                       value={formData.subject}
                       onChange={(e) =>
@@ -199,7 +185,7 @@ export default function ContactPage() {
                     <textarea
                       required
                       rows={6}
-                      className="w-full bg-zinc-900/50 border border-white/5 rounded-[2.5rem] pl-16 pr-8 py-6 text-sm focus:border-red-600 outline-none transition-all resize-none text-white placeholder:text-zinc-700"
+                      className="w-full bg-zinc-900/50 border border-white/10 rounded-[2.5rem] pl-16 pr-8 py-6 text-sm focus:border-red-600 outline-none transition-all resize-none text-white placeholder:text-zinc-700"
                       placeholder="Write your message here..."
                       value={formData.message}
                       onChange={(e) =>

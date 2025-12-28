@@ -74,14 +74,14 @@ export default function SearchField() {
           placeholder="SEARCH ARCHIVE..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="w-full h-full bg-zinc-950 border border-white/5 rounded-2xl py-4 pl-16 pr-12 text-xs font-black tracking-widest uppercase text-white focus:outline-none focus:border-red-600/50 transition-all shadow-2xl"
+          className="w-full h-full bg-zinc-950 border border-white/10 rounded-2xl py-4 pl-16 pr-12 text-xs font-black tracking-widest uppercase text-white focus:outline-none focus:border-red-600/50 transition-all shadow-2xl"
         />
       </div>
 
       <select
         value={searchParams.get("sort") || "views"}
         onChange={(e) => updateURL("sort", e.target.value)}
-        className="bg-zinc-950 flex-1 border border-white/5 rounded-2xl px-4 py-4 text-xs font-black tracking-widest uppercase text-zinc-400 focus:outline-none focus:border-red-600/50 transition-all cursor-pointer"
+        className="bg-zinc-950 flex-1 border border-white/10 rounded-2xl px-4 py-4 text-xs font-black tracking-widest uppercase text-zinc-400 focus:outline-none focus:border-red-600/50 transition-all cursor-pointer"
       >
         <option value="views">Default</option>
         <option value="newest">Newest First</option>
