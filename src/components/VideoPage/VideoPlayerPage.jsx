@@ -38,32 +38,34 @@ const VideoPlayerPage = async ({ params, searchParams }) => {
   const sources = [
     {
       id: "youtube_original",
-      label: "YouTube",
+      label: "YouTube (Source)",
       icon: <Youtube size={14} />,
       url: video.yt_source_url,
     },
     {
-      id: "facebook_orginal",
-      label: "Facebook",
-      icon: <Facebook size={14} />,
-      url: video.fb_url,
+      id: "youtube_personal",
+      label: "Youtube (Backup)",
+      icon: <Shield size={14} />,
+      url: video.yt_personal_url,
     },
     {
       id: "drive",
-      label: "GDrive",
+      label: "GDrive (Backup)",
       icon: <HardDrive size={14} />,
       url: video.drive_url,
     },
     {
-      id: "youtube_personal",
-      label: "Backup",
-      icon: <Shield size={14} />,
-      url: video.yt_personal_url,
+      id: "facebook_orginal",
+      label: "Facebook (Source)",
+      icon: <Facebook size={14} />,
+      url: video.fb_url,
     },
   ];
 
   const activeSource =
     resolvedSearchParams?.source || sources.find((item) => item.url != "")?.id;
+
+  console.log(activeSource);
 
   const getEmbedUrl = (sourceId) => {
     switch (sourceId) {
