@@ -15,6 +15,7 @@ import VideoCategoryFilter from "@/components/common/VideoCategoryFilter";
 import BackSection from "./common/BackSection";
 import { getThumbnailSrc } from "@/utils/getThumbnail";
 import { videoCategories } from "@/data/videos";
+import { durationToSeconds } from "@/utils/durationConvert";
 
 const VideosPage = ({ resolvedParams }) => {
   const activeTab = resolvedParams.get("category") || "All";
