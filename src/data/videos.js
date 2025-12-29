@@ -1,17 +1,17 @@
-import { talkshow } from "../../public/videos/talkshow";
-import { interview } from "../../public/videos/interviews";
-import { rajpoth } from "../../public/videos/protests";
-import { lecture } from "../../public/videos/lectures";
-import { kobita } from "../../public/videos/poetry";
-import { discussion } from "../../public/videos/discussion";
-import { biography } from "../../public/videos/biography";
-import { speeches } from "../../public/videos/speeches";
-import { activities } from "../../public/videos/activities";
-import { pressConference } from "../../public/videos/pressConference";
-import { peoplesLove } from "../../public/videos/peoplesLove";
-import { songs } from "../../public/videos/song";
-import { electionCampaign } from "../../public/videos/electionCampaign";
-import { justiceForHadi } from "../../public/videos/justice";
+import talkshow from "../../public/videos/talkshow.json";
+import interview from "../../public/videos/interviews.json";
+import rajpoth from "../../public/videos/protests.json";
+import lecture from "../../public/videos/lectures.json";
+import kobita from "../../public/videos/poetry.json";
+import discussion from "../../public/videos/discussion.json";
+import biography from "../../public/videos/biography.json";
+import speeches from "../../public/videos/speeches.json";
+import activities from "../../public/videos/activities.json";
+import pressConference from "../../public/videos/pressConference.json";
+import peoplesLove from "../../public/videos/peoplesLove.json";
+import songs from "../../public/videos/song.json";
+import electionCampaign from "../../public/videos/electionCampaign.json";
+import justiceForHadi from "../../public/videos/justice.json";
 
 export const videoCategories = [
   {
