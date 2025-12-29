@@ -1,12 +1,14 @@
 "use client";
 import React, { useEffect, useState, useCallback } from "react";
-import { X, Download, ChevronLeft, ChevronRight } from "lucide-react";
+import { X, Download, ChevronLeft, ChevronRight, Hand } from "lucide-react";
 
 const ImageGalleryModal = ({ isOpen, onClose, images, initialIndex }) => {
   const [currentIndex, setCurrentIndex] = useState(initialIndex);
   const [direction, setDirection] = useState("");
   const [isAnimating, setIsAnimating] = useState(false);
   const [touchStart, setTouchStart] = useState(null);
+
+  const [swipped, setSwipped] = useState(false);
 
   const handleNext = useCallback(() => {
     if (isAnimating) return;
@@ -49,6 +51,7 @@ const ImageGalleryModal = ({ isOpen, onClose, images, initialIndex }) => {
     if (distance < -70) handlePrev(); // Swiped Right -> Show Previous
 
     setTouchStart(null);
+    setSwipped(true);
   };
 
   const handleDownload = async (url, filename) => {
@@ -68,6 +71,15 @@ const ImageGalleryModal = ({ isOpen, onClose, images, initialIndex }) => {
     <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/98 backdrop-blur-3xl transition-opacity duration-300">
       {/* Background Overlay */}
       <div className="absolute inset-0 cursor-pointer" onClick={onClose} />
+
+      {!swipped && (
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-1000 flex flex-col items-center gap-4">
+          {/* The Hand Icon */}
+          <div className="text-white/60 animate-[handSwipe_3s_infinite_ease-in-out]">
+            <Hand size={40} />
+          </div>
+        </div>
+      )}
 
       {/* Close Button */}
       <button
@@ -114,19 +126,14 @@ const ImageGalleryModal = ({ isOpen, onClose, images, initialIndex }) => {
           />
 
           {/* OVERLAYS (Title & Download) */}
-          <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 p-10 flex flex-col items-center opacity-0 group-hover:opacity-100 md:group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0">
-            <h3 className="text-xl md:text-3xl font-black text-white italic uppercase mb-4 text-center">
-              {activeImg?.title || "Archive Image"}
-            </h3>
-            <button
-              onClick={() =>
-                handleDownload(activeImg.url, `archive-${currentIndex}.jpg`)
-              }
-              className="flex gap-3 bg-white text-black hover:bg-red-700 hover:text-white px-8 py-3 rounded-full text-[11px] font-black uppercase tracking-widest transition-all"
-            >
-              Download <Download size={14} />
-            </button>
-          </div>
+          <button
+            onClick={() =>
+              handleDownload(activeImg.url, `archive-${currentIndex}.jpg`)
+            }
+            className="absolute bottom-3 left-1/2 transform -translate-x-1/2 flex gap-3 bg-white text-black hover:bg-red-700 hover:text-white px-8 py-3 rounded-full text-[11px] font-black uppercase tracking-widest transition-all"
+          >
+            Download <Download size={14} />
+          </button>
         </div>
       </div>
 
@@ -160,6 +167,45 @@ const ImageGalleryModal = ({ isOpen, onClose, images, initialIndex }) => {
             opacity: 1;
             transform: scale(1);
           }
+        }
+        @keyframes indicatorFade {
+          0% {
+            opacity: 0;
+            visibility: visible;
+          }
+          10%,
+          80% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0;
+            visibility: hidden;
+          }
+        }
+
+        /* Hand Movement: Press, Slide, Lift, Return */
+        @keyframes handSwipe {
+          0% {
+            transform: translateX(100px) translateY(20px) rotate(0deg)
+              scale(1.1);
+            opacity: 0;
+          }
+          15% {
+            transform: translateX(100px) translateY(0px) rotate(-10deg)
+              scale(0.9);
+            opacity: 1;
+          } /* Touch Down */
+          50% {
+            transform: translateX(-100px) translateY(0px) rotate(-10deg)
+              scale(0.9);
+            opacity: 1;
+          } /* Drag to Left */
+          65%,
+          100% {
+            transform: translateX(-100px) translateY(20px) rotate(0deg)
+              scale(1.1);
+            opacity: 0;
+          } /* Lift Up & Disappear */
         }
       `}</style>
     </div>

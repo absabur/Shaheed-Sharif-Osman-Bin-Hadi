@@ -14,6 +14,8 @@ import Link from "next/link";
 import { videoCategories } from "@/data/videos";
 import BackSection from "../common/BackSection";
 import { formatDuration, formatUploadDate } from "../VideosPage";
+import ShareSection from "../common/ShareSection";
+import { getThumbnailSrc } from "@/utils/getThumbnail";
 
 const VideoPlayerPage = async ({ params, searchParams }) => {
   const resolvedParams = await params;
@@ -94,7 +96,6 @@ const VideoPlayerPage = async ({ params, searchParams }) => {
   const isDrive = activeSource === "drive";
 
   const meta = video?.fetched_metadata;
-  const isPortrait = meta?.height > meta?.width;
   const aspect = meta?.width / meta?.height;
 
   return (
@@ -185,32 +186,68 @@ const VideoPlayerPage = async ({ params, searchParams }) => {
               </div>
             )}
           </div>
-          {/* INFO CARD */}
-          <div className="bg-zinc-950/50 border border-white/10 rounded-2xl md:rounded-[2.5rem] p-6 md:p-10 shadow-xl">
-            <div className="flex flex-col gap-4">
-              <div className="flex items-center flex-wrap space-x-3">
-                <div className="w-1 h-6 bg-red-700 rounded-full" />
-                <span className="text-red-500 text-[10px] font-black uppercase tracking-widest">
-                  {video.category}
-                </span>
+          {/* ASYMMETRICAL GRID: Info takes more space, Share takes less */}
+          <div className="flex flex-col lg:flex-row gap-6 mt-12 items-stretch">
+            {/* COLUMN 1: VIDEO INFO (The dominant side) */}
+            <div className="lg:w-[65%] bg-zinc-950/50 border border-white/10 rounded-[2rem] p-8 md:p-10 shadow-xl relative overflow-hidden group">
+              {/* Subtle Red Glow behind the title */}
+              <div className="absolute -top-24 -left-24 w-64 h-64 bg-red-900/5 blur-[100px] pointer-events-none" />
 
-                <div className="ml-auto">
-                  <span className="py-1 flex items-center text-zinc-300 rounded-lg text-[10px] font-black tracking-widest uppercase">
-                    {formatDuration(video?.fetched_metadata?.duration)}
-                  </span>
-                  <span className="text-sm text-zinc-500 font-bold uppercase">
-                    {formatUploadDate(video?.fetched_metadata?.upload_date)}
-                  </span>
+              <div className="relative z-10 space-y-6">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <div className="w-1.5 h-6 bg-red-700 rounded-full animate-pulse" />
+                    <span className="text-red-500 text-[10px] font-black uppercase tracking-[0.3em]">
+                      {video.category}
+                    </span>
+                  </div>
+
+                  <div className="text-right">
+                    <span className="block text-white text-[10px] font-black tracking-widest uppercase opacity-80">
+                      {formatDuration(video?.fetched_metadata?.duration)}
+                    </span>
+                    <span className="block text-xs text-zinc-600 font-bold uppercase mt-1">
+                      {formatUploadDate(video?.fetched_metadata?.upload_date)}
+                    </span>
+                  </div>
+                </div>
+
+                <h2 className="text-2xl md:text-4xl font-black leading-tight tracking-tighter text-zinc-100 group-hover:text-white transition-colors">
+                  {video.source_title}
+                </h2>
+
+                <div className="h-px w-32 bg-red-900/50" />
+
+                <p className="text-zinc-500 text-sm md:text-base font-medium leading-relaxed max-w-2xl">
+                  শহীদ শরীফ ওসমান বিন হাদি আর্কাইভ। এই ভিডিওটি ইনসাফ কায়েমের
+                  লড়াইয়ের একটি অমর দলিল। হাদী ভাইয়ের প্রতিটি কথা আমাদের
+                  পথপ্রদর্শক।
+                </p>
+              </div>
+            </div>
+
+            {/* COLUMN 2: SHARE CARD (The compact side) */}
+            <div className="lg:w-[35%] bg-zinc-900/20 h-fit border border-white/10 rounded-[2rem] p-8 flex flex-col justify-start">
+              <div className="space-y-4">
+                <div>
+                  <h4 className="text-xs font-black uppercase tracking-[0.2em] text-zinc-300">
+                    Spread the Legacy
+                  </h4>
+                  <p className="text-zinc-400 text-xs leading-relaxed mt-2">
+                    হাদী ভাইয়ের এই স্মৃতিটি পৌঁছে দিন সবার মাঝে। নিচের যেকোনো
+                    মাধ্যমে শেয়ার করুন।
+                  </p>
                 </div>
               </div>
-              <h2 className="text-xl md:text-3xl font-black leading-tight tracking-tighter text-zinc-100">
-                {video.source_title}
-              </h2>
-              <div className="h-px w-full bg-gradient-to-r from-white/10 to-transparent my-2" />
-              <p className="text-zinc-500 text-xs md:text-sm font-medium leading-relaxed">
-                শহীদ শরীফ ওসমান বিন হাদি আর্কাইভ। এই ভিডিওটি ইনসাফ কায়েমের
-                লড়াইয়ের একটি দলিল।
-              </p>
+
+              {/* ShareSection Component */}
+              <ShareSection
+                title={video.source_title}
+                url={`https://sharif-osman-hadi.netlify.app/videos/${encodeURIComponent(
+                  videoTitle
+                )}`}
+                thumbnail={getThumbnailSrc(video)}
+              />
             </div>
           </div>
         </div>
