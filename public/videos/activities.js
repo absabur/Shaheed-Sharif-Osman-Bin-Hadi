@@ -8,14 +8,6 @@ export const activities = [
     source_title:
       "নাতে রাসুল গেয়ে হাদির নির্বাচনী প্রচারণা Inqilab Moncho Sharif Osman Hadi Kalbela",
     yt_source_url: "https://www.youtube.com/watch?v=qUO52hHGSmA",
-    yt_metadata: {
-      title:
-        "নাতে রাসুল গেয়ে হাদির নির্বাচনী প্রচারণা | Inqilab Moncho | Sharif Osman Hadi | Kalbela",
-      duration: "5:19",
-      upload_date: "20250919",
-      view_count: 63477,
-      channel: "Kalbela News",
-    },
     fetched_metadata: {
       title:
         "নাতে রাসুল গেয়ে হাদির নির্বাচনী প্রচারণা | Inqilab Moncho | Sharif Osman Hadi | Kalbela",
@@ -34,14 +26,6 @@ export const activities = [
     source_title:
       "Nazrul Night Dama Dam Mast Qalandar কালচারাল সেন্টারের আয়োজন Inqilab Cultural Center",
     yt_source_url: "https://www.youtube.com/watch?v=kD2hB1BUoQQ",
-    yt_metadata: {
-      title:
-        "Nazrul Night | Dama Dam Mast Qalandar | কালচারাল সেন্টারের আয়োজন | Inqilab Cultural Center",
-      duration: "3:18",
-      upload_date: "20250915",
-      view_count: 39920,
-      channel: "ইনকিলাব মঞ্চ",
-    },
     fetched_metadata: {
       title:
         "Nazrul Night | Dama Dam Mast Qalandar | কালচারাল সেন্টারের আয়োজন | Inqilab Cultural Center",

@@ -19,18 +19,30 @@ def get_video_metadata(url):
     ydl_opts = {
         'quiet': True,
         'skip_download': True,
-        # ফেসবুকের জন্য অনেক সময় ব্রাউজার কুকি বা ইউজার এজেন্ট প্রয়োজন হতে পারে
         'user_agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
     }
     
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info = ydl.extract_info(url, download=False)
+            
+            # Get dimensions
+            width = info.get('width')
+            height = info.get('height')
+            
+            # Simple Aspect Ratio Calculation
+            aspect_ratio = None
+            if width and height:
+                aspect_ratio = width / height
+
             return {
                 "title": info.get('title'),
                 "duration": info.get('duration_string'),
-                "upload_date": info.get('upload_date'),
-                "view_count": info.get('view_count'),
+                "width": width,
+                "height": height,
+                "aspect_ratio": round(aspect_ratio, 2) if aspect_ratio else None,
+                "width": width,
+                "height": height,
                 "uploader": info.get('uploader') or info.get('uploader_id')
             }
     except Exception as e:

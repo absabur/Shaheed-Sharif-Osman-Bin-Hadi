@@ -7,14 +7,6 @@ export const electionCampaign = [
       "https://drive.google.com/file/d/1WyqfcOBFg9g1KGLYT0D8l0378zd8k8B4/view?usp=drive_link",
     source_title: "নির্বাচনী প্রচারণায় সদা হাস্যোজ্জ্বল ছিলেন শহীদ ওসমান হাদি",
     yt_source_url: "https://www.youtube.com/watch?v=taIbDKjCgpo",
-    yt_metadata: {
-      title:
-        "নির্বাচনী প্রচারণায় সদা হাস্যোজ্জ্বল ছিলেন শহীদ ওসমান হাদি | Osman Hadi | Ekushey TV",
-      duration: "47",
-      upload_date: "20251220",
-      view_count: 29494,
-      channel: "Ekushey Television - ETV",
-    },
     fetched_metadata: {
       title:
         "নির্বাচনী প্রচারণায় সদা হাস্যোজ্জ্বল ছিলেন শহীদ ওসমান হাদি | Osman Hadi | Ekushey TV",
@@ -32,13 +24,6 @@ export const electionCampaign = [
       "https://drive.google.com/file/d/1rL5t2VvG-SdYwWD2-QOS6dSTEwk-3z8L/view?usp=sharing",
     source_title: "ঢাকা-৮ আসনে নির্বাচনী প্রচারণা করছেন ওসমান হাদি । Mytv News",
     yt_source_url: "https://www.youtube.com/watch?v=7UGDkC_qzbg",
-    yt_metadata: {
-      title: "ঢাকা-৮ আসনে নির্বাচনী প্রচারণা করছেন ওসমান হাদি । Mytv News",
-      duration: "3:29",
-      upload_date: "20251204",
-      view_count: 819,
-      channel: "mytv Bangladesh",
-    },
     fetched_metadata: {
       title: "ঢাকা-৮ আসনে নির্বাচনী প্রচারণা করছেন ওসমান হাদি । Mytv News",
       duration: "3:29",
@@ -56,14 +41,6 @@ export const electionCampaign = [
     source_title:
       "ভ্যান গাড়ি নিয়ে ওসমান হাদির ব্যাতিক্রমী নির্বাচনী প্রচারণা | Osman Hadi | Election | Jugantor              ",
     yt_source_url: "https://www.youtube.com/watch?v=DrS3HIwj6zs",
-    yt_metadata: {
-      title:
-        "ভ্যান গাড়ি নিয়ে ওসমান হাদির ব্যাতিক্রমী নির্বাচনী প্রচারণা | Osman Hadi | Election | Jugantor",
-      duration: "2:58",
-      upload_date: "20251128",
-      view_count: 7702,
-      channel: "Daily Jugantor",
-    },
     fetched_metadata: {
       title:
         "ভ্যান গাড়ি নিয়ে ওসমান হাদির ব্যাতিক্রমী নির্বাচনী প্রচারণা | Osman Hadi | Election | Jugantor",
@@ -82,14 +59,6 @@ export const electionCampaign = [
     source_title:
       "ওসমান হাদির নির্বাচনি প্রচারণায় ময়লা পানি ছুড়ে মারলো কারা? |Osman hadi| Election campaign |NTV  V     V News",
     yt_source_url: "https://www.youtube.com/watch?v=GAFFz4LOwDM",
-    yt_metadata: {
-      title:
-        "ওসমান হাদির নির্বাচনি প্রচারণায় ময়লা পানি ছুড়ে মারলো কারা? |Osman hadi| Election campaign |NTV News  s     s",
-      duration: "1:57",
-      upload_date: "20251115",
-      view_count: 86632,
-      channel: "NTV News",
-    },
     fetched_metadata: {
       title:
         "ওসমান হাদির নির্বাচনি প্রচারণায় ময়লা পানি ছুড়ে মারলো কারা? |Osman hadi| Election campaign |NTV News  s",
@@ -107,13 +76,6 @@ export const electionCampaign = [
       "https://drive.google.com/file/d/1XOmW3WS2ecMLrgUHc3V2KMC_XQi0qEzr/view?usp=sharing",
     source_title: "ওসমান হাদির ভিন্নধর্মী নির্বাচনি প্রচারণা | Amar Desh",
     yt_source_url: "https://www.youtube.com/watch?v=yl-g5OyQhW0",
-    yt_metadata: {
-      title: "ওসমান হাদির ভিন্নধর্মী নির্বাচনি প্রচারণা  | Amar Desh",
-      duration: "8:06",
-      upload_date: "20251115",
-      view_count: 39493,
-      channel: "Daily Amar Desh",
-    },
     fetched_metadata: {
       title: "ওসমান হাদির ভিন্নধর্মী নির্বাচনি প্রচারণা  | Amar Desh",
       duration: "8:06",
@@ -131,14 +93,6 @@ export const electionCampaign = [
     source_title:
       "নির্বাচনী প্রচারণায় নামলেন ইনকিলাব মঞ্চের হাদি | Osman Hadi | Inclub Moncho | Boishakhi Tv New  w     ws",
     yt_source_url: "https://www.youtube.com/watch?v=XnM-PE0MIxA",
-    yt_metadata: {
-      title:
-        "নির্বাচনী প্রচারণায় নামলেন ইনকিলাব মঞ্চের হাদি | Osman Hadi | Inclub Moncho | Boishakhi Tv News",
-      duration: "2:26",
-      upload_date: "20250919",
-      view_count: 11689,
-      channel: "Boishakhi Tv News",
-    },
     fetched_metadata: {
       title:
         "নির্বাচনী প্রচারণায় নামলেন ইনকিলাব মঞ্চের হাদি | Osman Hadi | Inclub Moncho | Boishakhi Tv News",
@@ -157,13 +111,6 @@ export const electionCampaign = [
     source_title:
       "জাতীয় সংসদ নির্বাচনের প্রচারণায় ইনকিলাব মঞ্চের হাদি | NEWS24",
     yt_source_url: "https://www.youtube.com/watch?v=PfoNCZMXSbY",
-    yt_metadata: {
-      title: "জাতীয় সংসদ নির্বাচনের প্রচারণায় ইনকিলাব মঞ্চের হাদি | NEWS24",
-      duration: "3:57",
-      upload_date: "20250920",
-      view_count: 523,
-      channel: "NEWS24",
-    },
     fetched_metadata: {
       title: "জাতীয় সংসদ নির্বাচনের প্রচারণায় ইনকিলাব মঞ্চের হাদি | NEWS24",
       duration: "3:57",
@@ -181,14 +128,6 @@ export const electionCampaign = [
     source_title:
       "নতুন ট্যাগ লাইন দিয়ে নির্বাচনী প্রচারণা শুরু করলেন ওসমান হাদি",
     yt_source_url: "https://www.youtube.com/watch?v=vGbefWsLPSk",
-    yt_metadata: {
-      title:
-        "নতুন ট্যাগ লাইন দিয়ে নির্বাচনী প্রচারণা শুরু করলেন ওসমান হাদি | The News BD",
-      duration: "29",
-      upload_date: "20251129",
-      view_count: 1052,
-      channel: "The News bd",
-    },
     fetched_metadata: {
       title:
         "নতুন ট্যাগ লাইন দিয়ে নির্বাচনী প্রচারণা শুরু করলেন ওসমান হাদি | The News BD",
@@ -207,14 +146,6 @@ export const electionCampaign = [
     source_title:
       "ভ্যান গাড়ি নিয়ে সেদিন ওসমান হাদির ব্যাতিক্রমী নির্বাচনী প্রচারণা!",
     yt_source_url: "https://www.youtube.com/watch?v=UhCBDne-Dso",
-    yt_metadata: {
-      title:
-        "ভ্যান গাড়ি নিয়ে সেদিন ওসমান হাদির ব্যাতিক্রমী নির্বাচনী প্রচারণা! #shorts  @farukraz  #news",
-      duration: "12",
-      upload_date: "20251221",
-      view_count: 1297,
-      channel: "Faruk Raz",
-    },
     fetched_metadata: {
       title:
         "ভ্যান গাড়ি নিয়ে সেদিন ওসমান হাদির ব্যাতিক্রমী নির্বাচনী প্রচারণা! #shorts  @farukraz  #news",
@@ -233,14 +164,6 @@ export const electionCampaign = [
     source_title:
       "জুম্মার নামাজ শেষে নির্বাচনী প্রচারণায় নামলেন ওসমান হাদি | Osman Hadi | Election Campaign",
     yt_source_url: "https://www.youtube.com/watch?v=kvRTHF5oeFI",
-    yt_metadata: {
-      title:
-        "জুম্মার নামাজ শেষে নির্বাচনী প্রচারণায় নামলেন ওসমান হাদি | Osman Hadi | Election Campaign",
-      duration: "49",
-      upload_date: "20251128",
-      view_count: 913,
-      channel: "Banglanews24",
-    },
     fetched_metadata: {
       title:
         "জুম্মার নামাজ শেষে নির্বাচনী প্রচারণায় নামলেন ওসমান হাদি | Osman Hadi | Election Campaign",
@@ -259,14 +182,6 @@ export const electionCampaign = [
     source_title:
       "ভ্যান গাড়ি নিয়ে ওসমান হাদির ব‍্যতিক্রমী নির্বাচনী প্রচারণা | Osman Hadi | Election | Daily Kar     r           ratoa",
     yt_source_url: "https://www.youtube.com/watch?v=runkfAWK0J0",
-    yt_metadata: {
-      title:
-        "ভ্যান গাড়ি নিয়ে ওসমান হাদির ব‍্যতিক্রমী নির্বাচনী প্রচারণা | Osman Hadi | Election | Daily Karatoa                 ",
-      duration: "3:06",
-      upload_date: "20251128",
-      view_count: 419,
-      channel: "Daily Karatoa",
-    },
     fetched_metadata: {
       title:
         "ভ্যান গাড়ি নিয়ে ওসমান হাদির ব‍্যতিক্রমী নির্বাচনী প্রচারণা | Osman Hadi | Election | Daily Karatoa",
@@ -284,14 +199,6 @@ export const electionCampaign = [
       "https://drive.google.com/file/d/11sFw0z0wA_WmkA5cCDYz2sO_dGbsPUIl/view?usp=sharing",
     source_title: "শাহবাগ থেকে ঢাকা-৮ আসনের নির্বাচনী প্রচারণা শুরু করেছেন",
     yt_source_url: "https://www.youtube.com/watch?v=vSpcQ2K3IEA",
-    yt_metadata: {
-      title:
-        "শাহবাগ থেকে ঢাকা-৮ আসনের  নির্বাচনী প্রচারণা শুরু করেছেন শরিফ ওসমান হাদি | Osman Hadi | Ajkal News           ",
-      duration: "32",
-      upload_date: "20250919",
-      view_count: 1759,
-      channel: "Ajkal আজকাল",
-    },
     fetched_metadata: {
       title:
         "শাহবাগ থেকে ঢাকা-৮ আসনের  নির্বাচনী প্রচারণা শুরু করেছেন শরিফ ওসমান হাদি | Osman Hadi | Ajkal News",
@@ -310,14 +217,6 @@ export const electionCampaign = [
     source_title:
       "জুম্মা শেষে নির্বাচনী প্রচারণা চালাচ্ছে ওসমান হাদি! #bengali #bangladesh",
     yt_source_url: "https://www.youtube.com/watch?v=zmMp1dUEV6Y",
-    yt_metadata: {
-      title:
-        "জুম্মা শেষে নির্বাচনী প্রচারণা চালাচ্ছে ওসমান হাদি! #bengali #bangladesh",
-      duration: "40",
-      upload_date: "20251003",
-      view_count: 1235,
-      channel: "Breaking News BD",
-    },
     fetched_metadata: {
       title:
         "জুম্মা শেষে নির্বাচনী প্রচারণা চালাচ্ছে ওসমান হাদি! #bengali #bangladesh",
@@ -336,14 +235,6 @@ export const electionCampaign = [
     source_title:
       "ওসমান হাদির নির্বাচনী প্রচারে গান গাইলেন জামায়াত সেক্রেটারির ছেলে সালমান",
     yt_source_url: "https://www.youtube.com/watch?v=gCzV2kbm2SQ",
-    yt_metadata: {
-      title:
-        "ওসমান হাদির নির্বাচনী প্রচারে গান গাইলেন জামায়াত সেক্রেটারির ছেলে সালমান",
-      duration: "2:33",
-      upload_date: "20250919",
-      view_count: 14247,
-      channel: "News1 TV",
-    },
     fetched_metadata: {
       title:
         "ওসমান হাদির নির্বাচনী প্রচারে গান গাইলেন জামায়াত সেক্রেটারির ছেলে সালমান",
@@ -362,14 +253,6 @@ export const electionCampaign = [
     source_title:
       "শাহবাগ থেকে নির্বাচনের প্রচারনা শুরু করলেন হাদি | Osman Hadi | Political Speech | Daily Jugant   t       tor",
     yt_source_url: "https://www.youtube.com/watch?v=QUc0AX8Nh10",
-    yt_metadata: {
-      title:
-        "শাহবাগ থেকে নির্বাচনের প্রচারনা শুরু করলেন হাদি | Osman Hadi | Political Speech | Daily Jugantor",
-      duration: "4:35",
-      upload_date: "20250919",
-      view_count: 12921,
-      channel: "Daily Jugantor",
-    },
     fetched_metadata: {
       title:
         "শাহবাগ থেকে নির্বাচনের প্রচারনা শুরু করলেন হাদী | Osman Hadi | Political Speech | Daily Jugantor",
@@ -388,14 +271,6 @@ export const electionCampaign = [
     source_title:
       "ওসমান হাদির ব্যাতিক্রম নির্বাচনী গণসংযোগ | Osman Hadi | Election | Jugantor",
     yt_source_url: "https://www.youtube.com/watch?v=5Ovttr8F-08",
-    yt_metadata: {
-      title:
-        "ওসমান হাদির ব্যাতিক্রম নির্বাচনী গণসংযোগ | Osman Hadi | Election | Jugantor",
-      duration: "57",
-      upload_date: "20251128",
-      view_count: 10543,
-      channel: "Daily Jugantor",
-    },
     fetched_metadata: {
       title:
         "ওসমান হাদির ব্যাতিক্রম নির্বাচনী গণসংযোগ | Osman Hadi | Election | Jugantor",
@@ -414,14 +289,6 @@ export const electionCampaign = [
     source_title:
       "ভ্যানে চড়ে নির্বাচনী প্রচারণায় ঢাকা ৮ আসনের প্রার্থী ওসমান হাদি | Osman-Hadi | Dhaka-8 | Jagon    n         news",
     yt_source_url: "https://www.youtube.com/watch?v=edFpOxaeMxs",
-    yt_metadata: {
-      title:
-        "ভ্যানে চড়ে নির্বাচনী প্রচারণায় ঢাকা ৮ আসনের প্রার্থী ওসমান হাদি | Osman-Hadi | Dhaka-8 | Jagonews",
-      duration: "31",
-      upload_date: "20251128",
-      view_count: 5788,
-      channel: "Jago News",
-    },
     fetched_metadata: {
       title:
         "ভ্যানে চড়ে নির্বাচনী প্রচারণায় ঢাকা ৮ আসনের প্রার্থী ওসমান হাদী | Osman-Hadi | Dhaka-8 | Jagonews",
@@ -440,14 +307,6 @@ export const electionCampaign = [
     source_title:
       "জনসংযোগ করছেন ইনকিলাব মঞ্চের হাদি | Osman Hadi | Election Campaign Activities | Kaler Kantho",
     yt_source_url: "https://www.youtube.com/watch?v=-6x3sZ3abEQ",
-    yt_metadata: {
-      title:
-        "জনসংযোগ করছেন ইনকিলাব মঞ্চের হাদি | Osman Hadi | Election Campaign Activities | Kaler Kantho",
-      duration: "4:13",
-      upload_date: "20250920",
-      view_count: 1010,
-      channel: "Kaler Kantho",
-    },
     fetched_metadata: {
       title:
         "জনসংযোগ করছেন ইনকিলাব মঞ্চের হাদী | Osman Hadi | Election Campaign Activities | Kaler Kantho",
@@ -466,14 +325,6 @@ export const electionCampaign = [
     source_title:
       "নির্বাচনী প্রচারণায় ওসমান হাদি | Osman Hadi Election Campaign 2025",
     yt_source_url: "https://www.youtube.com/watch?v=v0fSYzis6WI",
-    yt_metadata: {
-      title:
-        "নির্বাচনী প্রচারণায় ওসমান হাদি | Osman Hadi Election Campaign 2025",
-      duration: "11:22",
-      upload_date: "20251128",
-      view_count: 144,
-      channel: "Bangla FM Live ",
-    },
     fetched_metadata: {
       title:
         "নির্বাচনী প্রচারণায় ওসমান হাদী | Osman Hadi Election Campaign 2025",
@@ -492,14 +343,6 @@ export const electionCampaign = [
     source_title:
       "নির্বাচনী প্রচারণায় টাকা না দিয়ে উল্টো টাকা পান হাদি | Sharif Osman Hadi | Election Campaign",
     yt_source_url: "https://www.youtube.com/watch?v=gUb6CU2uPOs",
-    yt_metadata: {
-      title:
-        "নির্বাচনী প্রচারণায় টাকা না দিয়ে উল্টো টাকা পান হাদি | Sharif Osman Hadi | Election Campaign",
-      duration: "3:45",
-      upload_date: "20251115",
-      view_count: 778,
-      channel: "Bangla Insight",
-    },
     fetched_metadata: {
       title:
         "নির্বাচনী প্রচারণায় টাকা না দিয়ে উল্টো টাকা পান হাদি | Sharif Osman Hadi | Election Campaign",
@@ -517,13 +360,6 @@ export const electionCampaign = [
       "https://drive.google.com/file/d/1CR2K_7t-W01fH6uV6uPZ2zqxu7_Df9MK/view?usp=sharing",
     source_title: "নির্বাচনী প্রচারণায় ওসমান হাদি | sharif Osman Hadi",
     yt_source_url: "https://www.youtube.com/watch?v=YM2dDL_V-QI",
-    yt_metadata: {
-      title: "নির্বাচনী প্রচারণায় ওসমান হাদি | sharif Osman Hadi",
-      duration: "6",
-      upload_date: "20250921",
-      view_count: 21398,
-      channel: "Dhaka Talk",
-    },
     fetched_metadata: {
       title: "নির্বাচনী প্রচারণায় ওসমান হাদী | sharif Osman Hadi",
       duration: "6",
@@ -540,13 +376,6 @@ export const electionCampaign = [
       "https://drive.google.com/file/d/17PvR1Y8fs2ExrYFiGHx6BU0dzTuzrclZ/view?usp=sharing",
     source_title: "নির্বাচনী প্রচারণায় ব্যস্ত ওসমান হাদি",
     yt_source_url: "https://www.youtube.com/watch?v=s2yuk5TK0pA",
-    yt_metadata: {
-      title: "নির্বাচনী প্রচারণায় ব্যস্ত ওসমান হাদি",
-      duration: "11",
-      upload_date: "20251115",
-      view_count: 1658,
-      channel: "Eye News BD Official",
-    },
     fetched_metadata: {
       title: "নির্বাচনী প্রচারণায় ব্যস্ত ওসমান হাদী",
       duration: "11",
@@ -752,13 +581,6 @@ export const electionCampaign = [
       "https://drive.google.com/file/d/1XVxsQve1l-1Z-56p63QDyyI6KarmsI4v/view?usp=sharing",
     source_title: "ঢাকা আট এ আমরা আপ্লুত",
     yt_source_url: "https://www.youtube.com/watch?v=g6DvkUX4mh8",
-    yt_metadata: {
-      title: "ঢাকা আট এ আমরা আপ্লুত",
-      duration: "5:26",
-      upload_date: "20251125",
-      view_count: 39884,
-      channel: "Osman Hadi Official",
-    },
     fetched_metadata: {
       title: "ঢাকা আট এ আমরা আপ্লুত",
       duration: "5:26",
@@ -776,13 +598,6 @@ export const electionCampaign = [
     source_title:
       "এইসব ভালোবাসা মিছে নয় II Election Campaign Dhaka-8 II Osman Hadi",
     yt_source_url: "https://www.youtube.com/watch?v=yBr9X7RbbAA",
-    yt_metadata: {
-      title: "এইসব ভালোবাসা মিছে নয় II Election Campaign Dhaka-8 II Osman Hadi",
-      duration: "4:20",
-      upload_date: "20251206",
-      view_count: 23001,
-      channel: "Osman Hadi Official",
-    },
     fetched_metadata: {
       title: "এইসব ভালোবাসা মিছে নয় II Election Campaign Dhaka-8 II Osman Hadi",
       duration: "4:20",

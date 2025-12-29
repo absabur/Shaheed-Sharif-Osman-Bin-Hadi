@@ -8,14 +8,6 @@ export const kobita = [
     source_title:
       "চির উন্নত মম শির — হাদির বিদ্রোহী কণ্ঠ | Osman Hadi | শরিফ ওসমান হাদি | ইনকিলাব মঞ্চ",
     yt_source_url: "https://www.youtube.com/watch?v=ZrNAZc3EY5w",
-    yt_metadata: {
-      title:
-        "চির উন্নত মম শির — হাদির বিদ্রোহী কণ্ঠ | Osman Hadi | শরিফ ওসমান হাদি | ইনকিলাব মঞ্চ",
-      duration: "6:27",
-      upload_date: "20251214",
-      view_count: 190689,
-      channel: "Scroll With Politics",
-    },
     fetched_metadata: {
       title:
         "চির উন্নত মম শির — হাদির বিদ্রোহী কণ্ঠ | Osman Hadi | শরিফ ওসমান হাদি | ইনকিলাব মঞ্চ",
@@ -33,13 +25,6 @@ export const kobita = [
       "https://drive.google.com/file/d/1QdLgCqmFL1uzImW7bU1AkNHOGzH5Gj6B/view?usp=drive_link",
     source_title: "কবিতার অক্ত II শরিফ ওসমান হাদি II osman",
     yt_source_url: "https://www.youtube.com/watch?v=lgR_irTBp8I",
-    yt_metadata: {
-      title: "কবিতার অক্ত II শরিফ ওসমান হাদি II osman",
-      duration: "1:44",
-      upload_date: "20251029",
-      view_count: 20580,
-      channel: "ইনকিলাব মঞ্চ",
-    },
     fetched_metadata: {
       title: "কবিতার অক্ত II শরিফ ওসমান হাদি II osman",
       duration: "1:44",
@@ -56,13 +41,6 @@ export const kobita = [
       "https://drive.google.com/file/d/1OOs_uye1TFbFJ4sRO1_a-eXW7Eq1pmF7/view?usp=drive_link",
     source_title: "মানুষের রেটিং শুরু হওয়া উচিত মৃত্যুর পর। Rokomari",
     yt_source_url: "https://www.youtube.com/watch?v=p3ve3DAFQ30",
-    yt_metadata: {
-      title: "মানুষের রেটিং শুরু হওয়া উচিত মৃত্যুর পর। Rokomari",
-      duration: "1:13",
-      upload_date: "20251223",
-      view_count: 246595,
-      channel: "Rokomari․com",
-    },
     fetched_metadata: {
       title: "মানুষের রেটিং শুরু হওয়া উচিত মৃত্যুর পর। Rokomari",
       duration: "1:13",
@@ -165,14 +143,6 @@ export const kobita = [
     source_title:
       "শহীদ ওসমান হাদির কবিতার হৃদয় কাঁপানো আবৃত্তি | Osman Hadi | Poem | Somoy TV",
     yt_source_url: "https://www.youtube.com/watch?v=2qV3205TjPM",
-    yt_metadata: {
-      title:
-        "শহীদ ওসমান হাদির কবিতার হৃদয় কাঁপানো আবৃত্তি | Osman Hadi | Poem | Somoy TV",
-      duration: "18:21",
-      upload_date: "20251224",
-      view_count: 10227,
-      channel: "SOMOY TV",
-    },
     fetched_metadata: {
       title:
         "শহীদ ওসমান হাদির কবিতার হৃদয় কাঁপানো আবৃত্তি | Osman Hadi | Poem | Somoy TV",
