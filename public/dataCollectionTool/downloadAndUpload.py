@@ -72,16 +72,8 @@ def process_video_to_drive(url, folder_id=None):
             .execute()
         )
 
-        # 4. CLEANUP (With Error Handling)
-        try:
-            os.remove(final_filename)
-        except PermissionError:
-            print(
-                f"Note: Could not delete {final_filename} automatically. Please delete it manually later."
-            )
-
         print("সাফল্যের সাথে সম্পন্ন হয়েছে!")
-        return {"title": info.get("title"), "drive_link": file.get("webViewLink")}
+        return file.get("webViewLink")
 
     except Exception as e:
-        return {"error": str(e)}
+        return ""

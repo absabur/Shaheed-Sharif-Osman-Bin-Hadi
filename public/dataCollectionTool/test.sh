@@ -1,2 +1,0 @@
-yt-dlp -f "bv[height<=1080]+ba/b" --merge-output-format mkv "https://www.facebook.com/reel/1481464102957413"
-yt-dlp -f "bv[height<=1080]+ba/b" --merge-output-format mkv -o "%(title).50s [%(id)s].%(ext)s" "https://www.facebook.com/reel/1527868428494290"

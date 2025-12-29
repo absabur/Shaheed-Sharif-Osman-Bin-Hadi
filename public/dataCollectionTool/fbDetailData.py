@@ -54,9 +54,11 @@ def run_file(file_name):
     for item in interviews:
         # যদি ইউটিউব ইউআরএল থাকে তবে সেটি ব্যবহার করবে, নাহলে ফেসবুক ইউআরএল দেখবে
         target_url = item.get("yt_source_url") or item.get("fb_url")
+        metadata = item.get("fetched_metadata", {})
 
         if target_url:
-            metadata = get_video_metadata(target_url)
+            if not metadata:
+                metadata = get_video_metadata(target_url)
             new_item = {**item}
             drive_url = item.get("drive_url")
             if not drive_url:
@@ -78,20 +80,20 @@ def run_file(file_name):
 
 
 filepaths = [
-    "../videos/activities.json",
-    "../videos/biography.json",
-    "../videos/discussion.json",
-    "../videos/electionCampaign.json",
-    "../videos/interviews.json",
+    # "../videos/activities.json",
+    # "../videos/biography.json",
+    # "../videos/discussion.json",
+    # "../videos/electionCampaign.json",
+    # "../videos/interviews.json",
     "../videos/justice.json",
-    "../videos/lectures.json",
-    "../videos/peoplesLove.json",
-    "../videos/poetry.json",
-    "../videos/pressConference.json",
-    "../videos/protests.json",
-    "../videos/song.json",
-    "../videos/speeches.json",
-    "../videos/talkshow.json",
+    # "../videos/lectures.json",
+    # "../videos/peoplesLove.json",
+    # "../videos/poetry.json",
+    # "../videos/pressConference.json",
+    # "../videos/protests.json",
+    # "../videos/song.json",
+    # "../videos/speeches.json",
+    # "../videos/talkshow.json",
 ]
 
 for filepath in filepaths:
