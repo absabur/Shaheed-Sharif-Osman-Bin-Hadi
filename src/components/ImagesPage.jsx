@@ -28,20 +28,20 @@ const ImagesPage = ({ resolvedParams }) => {
           current={`Gallery`}
         />
         {/* HEADER SECTION */}
-        <div className="flex flex-col md:flex-row justify-between items-end gap-8 mb-16 border-b border-white/10 pb-12">
+        <div className="flex flex-col md:flex-row justify-between items-end gap-4 pb-6">
           <div className="space-y-4">
-            <h1 className="text-3xl md:text-5xl font-black tracking-tighter">
-              স্মৃতির{" "}
+            <h1 className="text-xl md:text-3xl font-black tracking-tighter">
+              শহীদ ওসমান হাদি স্মৃতি আর্কাইভ <br />
               <span
                 className="text-zinc-800"
                 style={{ WebkitTextStroke: "1px #3f3f46" }}
               >
-                অ্যালবাম
+                Photo / Image Archive
               </span>
             </h1>
             <p className="text-zinc-500 max-w-xl text-lg italic">
-              &quot;প্রতিটি ফ্রেম একটি নীরব বিপ্লব, প্রতিটি ছবি একটি জীবন্ত
-              ইতিহাস।&quot;
+              &quot;জুলাই বিপ্লবের কণ্ঠস্বর শহীদ ওসমান হাদির বিপ্লবী জীবনের
+              প্রতিটি মুহূর্তের চিত্র।&quot;
             </p>
           </div>
 

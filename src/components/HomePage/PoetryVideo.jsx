@@ -16,23 +16,13 @@ const PoetryVideo = () => {
         <div className="w-full lg:w-1/3 lg:sticky lg:top-32 h-fit text-center lg:text-left">
           <SectionHeader
             number="03"
-            title="শব্দের বিদ্রোহ"
-            sub="Poetic Resistance"
+            title="হাদির কবিতা সমূহ"
+            sub="Hadi's Poetry"
           />
           <p className="mt-6 md:mt-8 text-zinc-500 leading-relaxed text-base md:text-lg max-w-xl mx-auto lg:mx-0">
             তার প্রতিটি আবৃত্তি ছিল এক একটি আগ্নেয়াস্ত্র। ভিজ্যুয়াল এবং শব্দের
             মাধ্যমে তিনি ফুটিয়ে তুলতেন এক শোষিত জাতির দীর্ঘশ্বাস।
           </p>
-          <Link
-            href={`/videos?category=Poetry`}
-            className="w-full sm:w-fit mx-auto lg:mx-0 mt-8 flex items-center justify-center gap-3 p-4 md:p-5 border border-red-900/50 text-red-600 font-black hover:bg-red-700 hover:text-white transition-all uppercase tracking-[0.2em] md:tracking-[0.3em] text-[10px] rounded-2xl active:scale-95 group"
-          >
-            সবগুলো ভিডিও দেখুন
-            <ArrowRight
-              size={18}
-              className="group-hover:translate-x-2 transition-transform"
-            />
-          </Link>
         </div>
 
         {/* Right Side: Creative Video List */}
@@ -98,6 +88,16 @@ const PoetryVideo = () => {
                 </Link>
               );
             })}
+          <Link
+            href={`/videos?category=Poetry`}
+            className="w-full sm:w-fit mx-auto lg:mx-0 mt-8 flex items-center justify-center gap-3 p-4 md:p-5 border border-red-900/50 text-red-600 font-black hover:bg-red-700 hover:text-white transition-all uppercase tracking-[0.2em] md:tracking-[0.3em] text-[10px] rounded-2xl active:scale-95 group"
+          >
+            সবগুলো ভিডিও দেখুন
+            <ArrowRight
+              size={18}
+              className="group-hover:translate-x-2 transition-transform"
+            />
+          </Link>
         </div>
       </div>
     </section>

@@ -95,7 +95,7 @@ const SocialFooter = () => {
     <div className="py-10">
       <div className="text-center mb-10">
         <h2 className="text-xl md:text-2xl font-black tracking-tighter text-white uppercase">
-          আমাদের সাথে <span className="text-red-600">সংযুক্ত হন</span>
+          ওসমান হাদির সাথে <span className="text-red-600">সংযুক্ত হন</span>
         </h2>
         <p className="text-[10px] md:text-xs text-zinc-500 font-bold uppercase tracking-[0.2em] mt-2">
           সোশ্যাল মিডিয়ায় ওসমান হাদীকে ফলো করুন

@@ -5,8 +5,6 @@ import {
   MapPin,
   Shield,
   Quote,
-  Flame,
-  ArrowRight,
   History,
   HeartHandshake,
   Scale,
@@ -40,20 +38,20 @@ const AboutPage = () => {
         </div>
 
         <div className="relative z-20 text-center px-6 max-w-5xl">
-          <div className="text-[10px] md:text-lg inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-600/10 border border-red-600/20 text-red-500 font-black uppercase tracking-[0.2em] md:tracking-[0.3em] mb-8 animate-bounce">
-            <Flame size={14} className="shrink-0" /> শহীদ শরীফ ওসমান বিন হাদি
-          </div>
-          <h1 className="text-4xl md:text-8xl font-black tracking-tighter leading-[0.9] mb-6">
-            THE VOICE OF <br />
-            <span className="text-red-700 drop-shadow-[0_0_50px_rgba(185,28,28,0.5)]">
-              INQUILAB
-            </span>
+          <h1 className="text-[10px] md:text-lg inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-600/10 border border-red-600/20 text-red-500 font-black tracking-[0.1em] md:tracking-[0.2em] mb-8">
+            Shaheed Sharif Osman Hadi
           </h1>
+          <div className="text-4xl md:text-8xl font-black tracking-tighter leading-[0.9] mb-6">
+            বিপ্লব ও ইনসফের <br />
+            <span className="text-red-700 drop-shadow-[0_0_50px_rgba(185,28,28,0.5)]">
+              কন্ঠস্বর
+            </span>
+          </div>
           <p className="text-zinc-400 text-base md:text-xl font-medium max-w-2xl mx-auto mb-8">
             বিপ্লবী জুলাই যোদ্ধা ও ইনকিলাব মঞ্চের মুখপাত্র
           </p>
           <div className="flex flex-wrap justify-center gap-3 md:gap-4 text-zinc-500 font-black text-[9px] md:text-xs uppercase tracking-widest">
-            {["Teacher", "Activist", "Strategist", "Martyr"].map((tag) => (
+            {["শিক্ষক", "বিপ্লবী", "শহীদ", "রাজনীতিবিদ"].map((tag) => (
               <span
                 key={tag}
                 className="px-4 py-1.5 md:px-6 md:py-2 bg-white/5 border border-white/10 rounded-full backdrop-blur-md hover:bg-red-700/20 transition-colors"
@@ -73,25 +71,25 @@ const AboutPage = () => {
             icon={<Calendar />}
             label="জন্ম (Birth)"
             value="৩০ জুন, ১৯৯৩"
-            sub="Nalchity, Jhalakathi"
+            sub="নলছিটি, ঝালকাঠি"
           />
           <DetailCard
             icon={<History />}
             label="শাহাদাত (Martyrdom)"
             value="১৮ ডিসেম্বর, ২০২৫"
-            sub="Singapore General Hospital"
+            sub="সিঙ্গাপুর জেনারেল হাসপাতাল"
           />
           <DetailCard
             icon={<MapPin />}
             label="জন্মস্থান (Birth Place)"
             value="নলছিটি, ঝালকাঠি"
-            sub="Barishal Division"
+            sub="বরিশাল বিভাগ"
           />
           <DetailCard
             icon={<Shield />}
             label="সমাধি (Final Rest)"
             value="ঢাবি কেন্দ্রীয় মসজিদ"
-            sub="Beside National Poet"
+            sub="জাতীয় কবির পাশে"
           />
         </div>
 
@@ -100,12 +98,13 @@ const AboutPage = () => {
         {/* 3. BIOGRAPHICAL SUMMARY */}
         <section className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="space-y-6 order-2 lg:order-1">
-            <h2 className="text-red-600 font-black uppercase tracking-widest text-xs md:text-sm">
-              Brief Biography
-            </h2>
-            <h3 className="text-2xl md:text-4xl font-black leading-tight">
+            <h2 className="text-2xl md:text-4xl font-black leading-tight">
+              <span className="text-red-600 text-[10px] tracking-normal md:text-xs relative bottom-1">
+                Brief Biography
+              </span>
+              <br />
               জীবনবৃত্তান্ত ও কর্ম
-            </h3>
+            </h2>
             <p className="text-zinc-400 text-base md:text-lg leading-relaxed">
               শরীফ ওসমান বিন হাদি, যিনি ওসমান গণি নামেও পরিচিত, ছিলেন একজন
               বাংলাদেশি রাজনীতিবিদ, শিক্ষক ও সমাজকর্মী। তিনি ইনকিলাব মঞ্চের
@@ -139,8 +138,8 @@ const AboutPage = () => {
                 অন্যায়ের বিরুদ্ধে, সেই মিছিলের সামনে আমি আছি, কোনো একটা বুলেট
                 এসে হয়তো আমার বুকটা বিদ্ধ করে দিয়েছে!&quot;
               </p>
-              <p className="text-red-600 font-black text-xs uppercase tracking-widest">
-                — তাঁর শেষ স্বপ্ন
+              <p className="text-red-600 font-black text-xs tracking-widest">
+                — ওসমান হাদি
               </p>
             </div>
           </div>
@@ -176,17 +175,32 @@ const AboutPage = () => {
             <TimelineItem
               year="২০২৪"
               title="জুলাই গণঅভ্যুত্থান"
-              desc="রামপুরা এলাকার সমন্বয়কারী হিসেবে বিপ্লবে নেতৃত্ব ও ইনকিলাব মঞ্চের মুখপাত্র।"
+              desc="রামপুরা এলাকার সমন্বয়কারী"
             />
             <TimelineItem
-              year="২০২৫ (ডিসে ১২)"
+              year="২০২৪ (১৩ আগস্ট)"
+              title="ইনকিলাব মঞ্চ প্রতিষ্ঠা"
+              desc="ইনকিলাব মঞ্চ একটি অভ্যুত্থান অনুপ্রাণিত সাংস্কৃতিক প্ল্যাটফর্ম। সমস্ত আধিপত্যবাদের বিরুদ্ধে দাঁড়িয়ে স্বাধীনতা-সার্বভৌমত্ব রক্ষা ও ইনসাফ ভিত্তিক একটি রাষ্ট্র বিনির্মাণই লক্ষ্য।"
+            />
+            <TimelineItem
+              year="২০২৫ (১২ ডিসেম্বর)"
               title="হামলা ও ষড়যন্ত্র"
               desc="পল্টন এলাকায় মুখোশধারী আততায়ীদের হামলার শিকার।"
             />
             <TimelineItem
-              year="২০২৫ (ডিসে ১৮)"
+              year="২০২৫ (১৮ ডিসেম্বর)"
               title="শাহাদাত বরণ"
               desc="সিঙ্গাপুর জেনারেল হাসপাতালে চিকিৎসাধীন অবস্থায় শাহাদাত বরণ।"
+            />
+            <TimelineItem
+              year="২০২৫ (২০ ডিসেম্বর)"
+              title="জানাযা ও দাফন"
+              desc="জাতীয় সংসদ ভবনের দক্ষিণ প্লাজায় জানাযার নামাজ অনুষ্ঠিত হয়। তাঁকে জাতীয় কবি কাজী নজরুল ইসলামের সমাধিস্থলের পাশে ঢাকা বিশ্ববিদ্যালয় কেন্দ্রীয় মসজিদ প্রাঙ্গণে সমাহিত করা হয়।"
+            />
+            <TimelineItem
+              year="২০২৫ (২০ ডিসেম্বর)"
+              title="জানাযা ও দাফন"
+              desc="জাতীয় কবি কাজী নজরুল ইসলামের সমাধিস্থলের পাশে ঢাকা বিশ্ববিদ্যালয় কেন্দ্রীয় মসজিদ প্রাঙ্গণে সমাহিত করা হয়।"
             />
           </div>
         </section>
@@ -194,27 +208,28 @@ const AboutPage = () => {
         {/* 5. PHILOSOPHICAL PILLARS */}
         <section className="py-10">
           <div className="text-center mb-12 md:mb-16 space-y-4">
-            <h2 className="text-red-600 font-black uppercase tracking-[0.4em] text-xs">
-              Aims & Values
-            </h2>
-            <h3 className="text-2xl md:text-4xl font-black tracking-tighter">
+            <h2 className="text-2xl md:text-4xl font-black tracking-tighter">
+              <span className="text-red-600 text-[10px] tracking-normal md:text-xs relative bottom-1">
+                Aims & Values
+              </span>
+              <br />
               আদর্শিক ভিত্তি
-            </h3>
+            </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/5 border border-white/10">
             <PillarCard
               icon={<Scale />}
-              title="Justice"
+              title="Justice - ইনসাফ"
               desc="আল্লাহর জমিনে ইনসাফ কায়েম করার দাবিতে তিনি ছিলেন আপোষহীন।"
             />
             <PillarCard
-              icon={<Shield />}
-              title="Resistance"
-              desc="আধিপত্যবাদের বিরুদ্ধে তিনি ছিলেন বলিষ্ঠ কণ্ঠস্বর।"
+              icon={<Shield className="text-red-600" />}
+              title="Resistance - প্রতিরোধ"
+              desc="আধিপত্যবাদ ও অন্যায়ের বিরুদ্ধে তিনি ছিলেন এক বলিষ্ঠ কণ্ঠস্বর।"
             />
             <PillarCard
               icon={<Crosshair />}
-              title="Vision"
+              title="Vision - লক্ষ্য"
               desc="একটি বৈষম্যহীন নতুন বাংলাদেশের স্বপ্ন দেখেছিলেন তিনি।"
             />
           </div>
@@ -258,13 +273,13 @@ const DetailCard = ({ icon, label, value, sub }) => (
       {React.cloneElement(icon, { size: 28 })}
     </div>
     <div className="space-y-1 md:space-y-2">
-      <p className="text-[9px] md:text-[10px] text-zinc-600 font-black uppercase tracking-widest">
+      <p className="text-xs text-zinc-600 font-black uppercase tracking-widest">
         {label}
       </p>
       <p className="text-base md:text-xl font-black text-zinc-100 leading-tight">
         {value}
       </p>
-      <p className="text-[9px] md:text-[10px] text-red-700 font-bold uppercase tracking-wider opacity-60">
+      <p className="text-xs text-red-700 font-bold uppercase tracking-wider opacity-60">
         {sub}
       </p>
     </div>

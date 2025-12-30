@@ -8,25 +8,28 @@ const VideoCategoryCards = () => {
   return (
     <div className="w-full max-w-[1400px] mx-auto px-6 py-12 md:py-20">
       {/* HEADER FOR HOMEPAGE SECTION */}
-      <div className="flex justify-between items-end mb-10">
+      <div className="flex justify-between flex-wrap items-start gap-4 mb-6">
         <div>
-          <h3 className="text-red-600 font-black uppercase tracking-[0.3em] text-[10px] mb-3">
-            Browse Archives
-          </h3>
-          <h2 className="text-2xl md:text-4xl font-black tracking-tighter italic text-white">
-            ভিডিও <span className="text-zinc-800 not-italic">ক্যাটাগরি</span>
+          <h2 className="text-2xl md:text-4xl font-black tracking-নরমাল  italic text-white">
+            <span className="text-red-600 text-[10px] tracking-normal md:text-xs relative bottom-1">
+              Osman Hadi Video Archive
+            </span>
+            <br />
+            ওসমান হাদির ভিডিও আর্কাইভ
           </h2>
         </div>
-        <Link
-          href="/videos"
-          className="text-zinc-500 hover:text-white text-[10px] font-black uppercase tracking-widest flex items-center gap-2 group transition-all"
-        >
-          View All{" "}
-          <ArrowRight
-            size={14}
-            className="group-hover:translate-x-1 transition-transform"
-          />
-        </Link>
+        <div className="max-w-md ml-auto text-center md:text-right">
+          <Link
+            href="/gallery"
+            className="inline-flex items-center gap-3 bg-white/5 border border-white/10 px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-red-700 hover:border-red-700 transition-all group"
+          >
+            সকল ভিডিও দেখুন{" "}
+            <ArrowRight
+              size={16}
+              className="group-hover:translate-x-2 transition-transform"
+            />
+          </Link>
+        </div>
       </div>
 
       {/* UNIQUE CARD GRID */}
@@ -73,7 +76,7 @@ const VideoCategoryCards = () => {
               {/* Cinematic Slide Overlay */}
               <div className="absolute inset-0 translate-y-full group-hover:translate-y-0 bg-red-700 transition-transform duration-500 ease-out z-0 flex items-center justify-center">
                 <span className="text-white font-black uppercase text-xs tracking-widest">
-                  গ্যালারি দেখুন
+                  ভিডিও গুলো দেখুন
                 </span>
               </div>
             </Link>

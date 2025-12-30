@@ -11,6 +11,7 @@ const AchievementSection = ({ from = "" }) => {
     {
       year: "2007",
       title: "স্বর্ণপদক - তাৎক্ষণিক বক্তৃতা",
+      titleEnglish: "Gold Medal - Instant Speech",
       desc: "ইসলামিক ফাউন্ডেশন বাংলাদেশ আয়োজিত তাৎক্ষণিক বক্তৃতা প্রতিযোগিতায় জাতীয় চ্যাম্পিয়ন।",
       icon: <Trophy className="text-red-500" />,
       color: "from-red-900/20",
@@ -18,6 +19,7 @@ const AchievementSection = ({ from = "" }) => {
     {
       year: "2008",
       title: "চ্যাম্পিয়ন - কবিতা আবৃত্তি",
+      titleEnglish: "Champion - Poetry Recitation",
       desc: "শিক্ষা মন্ত্রণালয় আয়োজিত জাতীয় কবিতা আবৃত্তি প্রতিযোগিতায় প্রথম স্থান অর্জন।",
       icon: <Mic2 className="text-red-500" />,
       color: "from-zinc-900",
@@ -25,6 +27,7 @@ const AchievementSection = ({ from = "" }) => {
     {
       year: "2009",
       title: "সেরা বক্তা - জাতীয় বিতর্ক",
+      titleEnglish: "Best Speaker - National Debate",
       desc: "শিক্ষা মন্ত্রণালয় আয়োজিত জাতীয় বিতর্ক প্রতিযোগিতায় শ্রেষ্ঠ বক্তার সম্মাননা।",
       icon: <Stars className="text-red-500" />,
       color: "from-zinc-900",
@@ -32,6 +35,7 @@ const AchievementSection = ({ from = "" }) => {
     {
       year: "2024",
       title: "ইনকিলাব মঞ্চ প্রতিষ্ঠা",
+      titleEnglish: "Establishment of the Inquilab Moncho",
       desc: "বিপ্লবী প্ল্যাটফর্ম প্রতিষ্ঠা এবং রাষ্ট্র পুনর্গঠন ও রাজনৈতিক সচেতনতার জন্য ১০০+ কর্মসূচি সফলভাবে পরিচালনা।",
       icon: <Users className="text-red-500" />,
       color: "from-red-900/20",
@@ -46,10 +50,11 @@ const AchievementSection = ({ from = "" }) => {
     >
       {/* Section Header */}
       <div className={`mb-10 md:mb-16`}>
-        <h3 className="text-red-600 font-black uppercase tracking-[0.4em] text-xs mb-4 flex items-center gap-2">
-          <div className="w-8 h-px bg-red-600" /> Honors & Impact
-        </h3>
         <h2 className="text-2xl md:text-4xl font-black tracking-tighter text-white">
+          <span className="text-red-600 text-[10px] tracking-normal md:text-xs relative bottom-1">
+            Osman Hadi Contributions and honors earned
+          </span>
+          <br />
           অবদান ও <span className="text-red-700">অর্জিত সম্মান</span>
         </h2>
         <p className="text-zinc-500 mt-6 max-w-xl text-lg">
@@ -70,7 +75,7 @@ const AchievementSection = ({ from = "" }) => {
               {React.cloneElement(item.icon, { size: 200 })}
             </div>
 
-            <div className="relative z-10 flex flex-col md:flex-row gap-8 items-start">
+            <div className="relative z-10 flex flex-col md:flex-row gap-4 items-start">
               <div className="shrink-0 w-16 h-16 bg-zinc-900 border border-white/10 rounded-2xl flex items-center justify-center group-hover:bg-red-700 group-hover:scale-110 transition-all duration-500 shadow-2xl">
                 {React.cloneElement(item.icon, {
                   size: 32,
@@ -82,7 +87,11 @@ const AchievementSection = ({ from = "" }) => {
                 <span className="text-red-600 font-black tracking-[0.3em] text-xs">
                   {item.year}
                 </span>
-                <h4 className="text-2xl md:text-3xl font-black text-zinc-100 group-hover:text-white">
+                <h4 className="relative -top-2 text-2xl md:text-3xl font-black text-zinc-100 group-hover:text-white">
+                  <span className="text-red-600 text-[10px] tracking-normal md:text-xs relative bottom-1">
+                    {item.titleEnglish}
+                  </span>
+                  <br />
                   {item.title}
                 </h4>
                 <p className="text-zinc-500 text-sm md:text-base leading-relaxed group-hover:text-zinc-400">

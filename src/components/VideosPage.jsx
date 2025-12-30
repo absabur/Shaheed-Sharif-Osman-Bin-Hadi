@@ -74,14 +74,21 @@ const VideosPage = ({ resolvedParams }) => {
           links={[{ path: "/", text: "", icon: <Home size={15} /> }]}
           current={`Videos`}
         />
-        <div className="flex flex-col justify-between items-end gap-10">
+        <div className="flex flex-col justify-between items-end gap-0">
           <div className="space-y-4 w-full">
-            <h2 className="text-xl md:text-3xl font-black">
-              ভিডিও আর্কাইভ (Video Collection)
-            </h2>
-            <p className="text-zinc-500 max-w-xl text-lg">
-              ওসমান হাদীর আন্দোলন, বক্তব্য এবং ব্যক্তিগত জীবনের দুর্লভ ভিডিও
-              ক্লিপগুলোর বিশাল সংগ্রহ।
+            <h1 className="text-xl md:text-3xl font-black tracking-tighter">
+              শহীদ ওসমান হাদি: ভিডিও মেমোরিয়াল আর্কাইভ <br />
+              <span
+                className="text-zinc-800"
+                style={{ WebkitTextStroke: "1px #3f3f46" }}
+              >
+                Video Memorial Archive
+              </span>
+            </h1>
+            <p className="hidden md:block text-zinc-500 max-w-xl text-lg mb-3">
+              জুলাই বিপ্লবের বীর সেনানী ও ইনকিলাব মঞ্চের মুখপাত্র শহীদ ওসমান
+              হাদির আন্দোলন, ঐতিহাসিক বক্তব্য এবং স্মৃতিবিজড়িত জীবনের দুর্লভ
+              ভিডিও সংগ্রহশালা।
             </p>
           </div>
           <VideoCategoryFilter
@@ -90,7 +97,7 @@ const VideosPage = ({ resolvedParams }) => {
           />
         </div>
 
-        <div className="my-4 lg:my-8 flex flex-col md:flex-row gap-4 w-full items-stretch">
+        <div className="my-2 mb-6 lg:my-8 flex flex-col md:flex-row gap-2 w-full items-stretch">
           {/* Left: Total Vault Badge */}
           <SearchField />
 

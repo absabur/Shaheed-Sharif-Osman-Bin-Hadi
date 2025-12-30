@@ -3,7 +3,7 @@ import { SectionHeader } from "./Home";
 import Link from "next/link";
 import discussion from "../../../public/videos/discussion.json";
 import { getYouTubeID } from "@/utils/ytId";
-import { Play } from "lucide-react";
+import { ArrowRight, Play } from "lucide-react";
 
 const DiscussionVideo = () => {
   return (
@@ -11,14 +11,14 @@ const DiscussionVideo = () => {
       <div className="mx-auto">
         <SectionHeader
           number="01"
-          title="রণাঙ্গনের কন্ঠস্বর"
-          sub="Frontline Battles"
+          title="ইনসাফের বিপ্লবী কন্ঠস্বর"
+          sub="Revolutionary voice of justice"
         />
 
         {/* Grid: Stacks on mobile, 2 columns on Large screens */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-12 mt-10 md:mt-16">
           {/* Main Featured Video */}
-          
+
           <FeaturedVideo
             title={discussion?.length && discussion[0].source_title}
             url={discussion?.length && discussion[0].yt_source_url}
@@ -42,9 +42,9 @@ const DiscussionVideo = () => {
             {/* View All Button */}
             <Link
               href={`/videos?category=Discussion`}
-              className="w-full mt-2 p-5 border border-red-900/50 text-red-600 font-black hover:bg-red-700 hover:text-white transition-all uppercase tracking-[0.3em] text-[10px] md:text-xs rounded-2xl active:scale-95 flex items-center justify-center text-center"
+              className="w-full space-x-3 mt-2 p-5 border border-red-900/50 text-red-600 font-black hover:bg-red-700 hover:text-white transition-all uppercase tracking-[0.3em] text-[10px] md:text-xs rounded-2xl active:scale-95 flex items-center justify-center text-center"
             >
-              View Battlefield Archive
+              <span>হাদির আলোচনা সমূহ</span> <ArrowRight size={15} />
             </Link>
           </div>
         </div>

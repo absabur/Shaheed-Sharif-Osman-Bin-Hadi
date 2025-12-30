@@ -1,6 +1,6 @@
 "use client";
 
-import { Search } from "lucide-react";
+import { ChevronDown, Search } from "lucide-react";
 import { useRouter, useSearchParams, usePathname } from "next/navigation";
 import { useTransition, useEffect, useState, useCallback } from "react";
 
@@ -59,35 +59,36 @@ export default function SearchField() {
   }, [searchParams]);
 
   return (
-    <div className="flex flex-col md:flex-row gap-4 w-full md:w-2/3 items-stretch">
+    <div className="flex flex-col md:flex-row gap-2 w-full md:w-2/3 items-stretch">
       <div className="relative flex-[3] group">
-        <div className="absolute inset-y-0 left-6 flex items-center pointer-events-none">
-          <Search
-            size={18}
-            className={`${
-              isPending ? "animate-pulse text-red-600" : "text-zinc-500"
-            } transition-colors`}
-          />
+        <div className="absolute inset-y-0 right-6 flex items-center pointer-events-none">
+          <Search size={15} color="red" />
         </div>
         <input
           type="text"
-          placeholder="SEARCH ARCHIVE..."
+          placeholder="Search Video..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="w-full h-full bg-zinc-950 border border-white/10 rounded-2xl py-4 pl-16 pr-12 text-xs font-black tracking-widest uppercase text-white focus:outline-none focus:border-red-600/50 transition-all shadow-2xl"
+          className="w-full h-full bg-zinc-950 border border-white/10 rounded-2xl py-4 pr-16 pl-6 text-xs font-black tracking-widest text-white focus:outline-none focus:border-red-600/50 transition-all shadow-2xl"
         />
       </div>
 
-      <select
-        value={searchParams.get("sort") || "views"}
-        onChange={(e) => updateURL("sort", e.target.value)}
-        className="bg-zinc-950 flex-1 border border-white/10 rounded-2xl px-4 py-4 text-xs font-black tracking-widest uppercase text-zinc-400 focus:outline-none focus:border-red-600/50 transition-all cursor-pointer"
-      >
-        <option value="views">Default</option>
-        <option value="newest">Newest First</option>
-        <option value="oldest">Oldest First</option>
-        <option value="duration">Longest Duration</option>
-      </select>
+      <div className="relative">
+        <div className="absolute right-5 top-1/2 -translate-y-1/2 pointer-events-none text-red-600">
+          <ChevronDown size={18} />
+        </div>
+        <select
+          value={searchParams.get("sort") || "views"}
+          onChange={(e) => updateURL("sort", e.target.value)}
+          className="w-full appearance-none bg-zinc-950 text-white border border-white/10 px-6 py-4 rounded-2xl text-xs font-black uppercase tracking-widest focus:outline-none focus:border-red-700 transition-all cursor-pointer"
+        >
+          {/* Custom Arrow Icon for the Select */}
+          <option value="views">Default</option>
+          <option value="newest">Newest First</option>
+          <option value="oldest">Oldest First</option>
+          <option value="duration">Longest Duration</option>
+        </select>
+      </div>
     </div>
   );
 }

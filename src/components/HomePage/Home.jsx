@@ -47,17 +47,14 @@ const Home = () => {
         {/* Content Layer - Positioning centered exactly like the first one */}
         <div className="relative z-20 text-center px-6 w-full max-w-5xl flex flex-col items-center">
           {/* 1. Top Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 mb-8 rounded-full bg-red-600/10 border border-red-600/20 text-red-500 text-[10px] md:text-xs font-black tracking-[0.2em] md:tracking-[0.3em] uppercase">
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
-            </span>
-            ১৯৯৩ — ২০২৫
+          <div className="inline-flex items-center gap-2 px-4 py-2 mb-8 rounded-full bg-red-600/10 border border-red-600/20 text-red-500 text-[10px] md:text-xs font-black md:tracking-[0.1em] uppercase">
+            30 June 1993 — 18 August 2025
           </div>
 
           {/* 2. Main Name */}
           <div className="relative mb-3">
             <h1 className="text-4xl md:text-8xl font-black text-white tracking-tighter leading-[0.9]">
+              <span className="sr-only">Shaheed Osman Hadi</span>
               শহীদ শরীফ ওসমান <br />
               <span className="text-red-700 drop-shadow-[0_0_50px_rgba(185,28,28,0.5)]">
                 বিন হাদি
@@ -113,23 +110,28 @@ const Home = () => {
         className="py-12 md:py-20 px-6 max-w-[1400px] mx-auto"
       >
         <div className="mb-8 md:mb-12">
-          <h3 className="text-red-600 font-black uppercase tracking-[0.3em] mb-4 flex items-center gap-2 text-sm md:text-base">
-            <Zap size={18} /> Identity Matrix
-          </h3>
           <h2 className="text-2xl md:text-4xl font-black leading-tight">
-            বিবিধ পরিচয়ে ওসমান হাদি
+            <span className="text-red-600 text-[10px] md:text-xs relative -bottom-0">
+              The multi-dimensional identity of Sharif Osman Hadi
+            </span>
+            <br />
+            শরীফ ওসমান হাদির বহুমাত্রিক পরিচয়
           </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 lg:gap-6">
           {/* Identity: The Activist (Main Feature Card) */}
           <div className="md:col-span-2 md:row-span-2 bg-gradient-to-br from-red-900/30 to-zinc-950 border border-white/10 rounded-[2rem] md:rounded-[2.5rem] p-8 md:p-12 flex flex-col justify-between group hover:border-red-600/40 transition-all">
-            <div className="space-y-6">
+            <div className="space-y-3">
               <div className="w-14 h-14 md:w-16 md:h-16 bg-red-700 rounded-2xl flex items-center justify-center shadow-lg shadow-red-700/20">
                 <ShieldCheck size={32} className="text-white" />
               </div>
               <div>
                 <h4 className="text-xl md:text-3xl font-black mb-4">
+                  <span className="text-red-600 text-[10px] md:text-xs relative -bottom-0">
+                    Revolutionary and Coordinator
+                  </span>
+                  <br />
                   বিপ্লবী ও সমন্বয়ক
                 </h4>
                 <p className="text-zinc-400 text-base md:text-lg leading-relaxed">
@@ -160,7 +162,11 @@ const Home = () => {
             </div>
             <div>
               <h4 className="text-xl md:text-3xl font-bold mb-2">
-                কবি ও সাহিত্যিক
+                <span className="text-red-600 text-[10px] md:text-xs relative -bottom-0">
+                  Poet and cultural activist
+                </span>
+                <br />
+                কবি ও সাংস্কৃতিক কর্মী
               </h4>
               <p className="text-zinc-400 text-sm md:text-base leading-relaxed">
                 তার কবিতাগুলো ছিল প্রতিবাদের ভাষা। শব্দের বুননে তিনি ফুটিয়ে
@@ -172,7 +178,14 @@ const Home = () => {
           {/* Identity: The Scholar */}
           <div className="md:col-span-1 bg-zinc-900/40 border border-white/10 rounded-[2rem] md:rounded-[2.5rem] p-8 hover:bg-zinc-800/60 transition-all flex flex-col justify-center">
             <Award className="text-red-600 mb-6" size={40} />
-            <h4 className="text-lg md:text-xl font-bold mb-2">শিক্ষকতা পেশা</h4>
+            <h4 className="text-lg md:text-xl font-bold mb-2">
+              {" "}
+              <span className="text-red-600 text-[10px] md:text-xs relative -bottom-0">
+                Teaching profession
+              </span>
+              <br />
+              শিক্ষকতা পেশা
+            </h4>
             <p className="text-zinc-500 text-xs md:text-sm leading-relaxed">
               তিনি University of Scholars-এর ইংরেজি বিভাগে প্রভাষক হিসেবে কর্মরত
               ছিলেন। চিন্তাশীল লেখক হিসেবে তাঁর পরিচিতি ছিল অনন্য।
@@ -206,27 +219,27 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1 rounded-3xl overflow-hidden border border-white/10">
             <PillarCard
               icon={<Scale size={32} />}
-              title="Justice (ইনসাফ)"
+              title="ইনসাফ - Justice"
               desc="আমি যখন ইনসাফের লড়াইটা করি তখন তো সেখান পরাজয়ের কিছু নেই। আমি বেঁচে থাকলে গাজী হয়ে লড়ব, মরে গেলে শহীদ হয়ে আল্লাহর কাছে চলে যাব।"
               color="border-red-900/20"
             />
             <PillarCard
               icon={<Shield size={32} />}
-              title="Integrity (সততা)"
+              title="সততা - Honesty"
               desc="রাজনৈতিক ক্যারিয়ারে এক মুহূর্তের জন্য লোভ বা মোহের কাছে মাথা নত করেননি।"
               color="border-red-900/20"
             />
             <PillarCard
               icon={<History size={32} />}
-              title="Sovereignty"
+              title="সার্বভৌমত্ব - Sovereignty"
               desc="দাসত্বই যে জমিনের নিশ্চল নিয়তি, লড়াই-ই সেখানে সর্বোত্তম এবাদত"
               color="border-red-900/20"
             />
             <PillarCard
               icon={<Flame size={32} />}
-              title="Sacrifice"
-              desc="শেষ রক্তবিন্দু পর্যন্ত বিপ্লবের পথে অটল থেকে শাহাদাত বরণ।"
-              color="border-0"
+              title="শাহাদাত - Martyrdom"
+              desc="হক আদায়ের পথে আপসহীন থেকে নিজের জীবনকে বিলিয়ে দেওয়ার পরম সাহসিকতা।"
+              color="border-red-900/20"
             />
           </div>
         </div>
@@ -243,26 +256,17 @@ const Home = () => {
         <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-zinc-900/20 blur-[100px] -z-10" />
 
         <div className="max-w-[1400px] mx-auto px-6">
-          <div className="flex flex-col lg:flex-row justify-between items-end gap-10 mb-12">
+          <div className="flex flex-wrap justify-between items-end gap-4 mb-6">
             <div className="space-y-3 self-start">
-              <h3 className="text-red-600 font-black uppercase tracking-[0.4em] flex items-center gap-2">
-                <Maximize2 size={16} /> Visual Legacy
-              </h3>
               <h2 className="text-2xl md:text-4xl font-black tracking-tighter">
-                স্মৃতির কোলাজ <br />
-                <span
-                  className="text-zinc-800"
-                  style={{ WebkitTextStroke: "1px #3f3f46" }}
-                >
-                  Photo Archive
+                <span className="text-red-600 text-[10px] tracking-normal md:text-xs relative bottom-1">
+                  Osman Hadi Photo Archive
                 </span>
+                <br />
+                ছবি আর্কাইভ
               </h2>
             </div>
-            <div className="max-w-md text-center md:text-right">
-              <p className="text-zinc-500 text-lg leading-relaxed italic mb-6">
-                &quot;ছবি কথা বলে, ইতিহাসকে জীবন্ত রাখে। প্রতিটি ফ্রেমে মিশে আছে
-                বিপ্লব ও ভালোবাসার গল্প।&quot;
-              </p>
+            <div className="max-w-md ml-auto text-center md:text-right">
               <Link
                 href="/gallery"
                 className="inline-flex items-center gap-3 bg-white/5 border border-white/10 px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-red-700 hover:border-red-700 transition-all group"
@@ -286,14 +290,6 @@ const Home = () => {
                 alt="Main Archive"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-60 group-hover:opacity-100 transition-opacity" />
-              <div className="absolute bottom-10 left-10 p-2">
-                <span className="bg-red-700 px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">
-                  Featured
-                </span>
-                <h4 className="text-3xl font-black mt-4">
-                  বিপ্লবের প্রথম প্রহর
-                </h4>
-              </div>
             </div>
 
             {/* Top Right Vertical */}
@@ -316,7 +312,7 @@ const Home = () => {
                 className="text-zinc-800 mb-4 group-hover:text-red-600 transition-colors"
               />
               <p className="text-zinc-600 font-bold uppercase tracking-widest text-[10px]">
-                Total Collection
+                মোট ছবি (Total Images)
               </p>
               <h3 className="text-5xl font-black text-white mt-2">
                 {osmanarchiveImages.length}+
@@ -336,14 +332,9 @@ const Home = () => {
             <div className="md:col-span-6 md:row-span-3 relative group rounded-[2.5rem] overflow-hidden border border-white/10">
               <img
                 src={osmanarchiveImages[2].url}
-                className="w-full h-full object-cover opacity-40 group-hover:opacity-100 transition-all"
+                className="w-full h-full object-cover opacity-100 group-hover:opacity-100 transition-all"
                 alt="Wide Archive"
               />
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-0 group-hover:scale-100 transition-all">
-                <div className="bg-white text-black p-4 rounded-full shadow-2xl">
-                  <ArrowUpRight size={24} />
-                </div>
-              </div>
             </div>
 
             {/* Smallest Detail */}

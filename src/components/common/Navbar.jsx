@@ -56,10 +56,10 @@ const Navbar = () => {
             />
             <div>
               <h1 className="text-lg text-white font-black tracking-tighter leading-none">
-                OSMAN HADI
+                ওসমান হাদি
               </h1>
               <p className="text-[10px] text-red-500 font-bold uppercase tracking-[0.2em]">
-                Legacy Archive
+                স্মৃতি আর্কাইভ
               </p>
             </div>
           </Link>

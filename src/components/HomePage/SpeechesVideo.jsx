@@ -11,7 +11,7 @@ const SpeechesVideo = () => {
       <div className="px-6 mb-8 max-w-4xl flex flex-col md:flex-row justify-between items-end gap-8">
         <SectionHeader
           number="02"
-          title="চিন্তা ও দর্শন"
+          title="ওসমান হাদির চিন্তা ও দর্শন"
           sub="Intellectual Warfare"
         />
       </div>
@@ -51,47 +51,15 @@ const SpeechesVideo = () => {
       <div className="flex justify-center px-6">
         <Link
           href="/videos?category=Speeches"
-          className="relative group w-full max-w-2xl"
+          className="w-full space-x-3 mt-2 p-5 border border-red-900/50 text-red-600 font-black hover:bg-red-700 hover:text-white transition-all uppercase tracking-[0.3em] text-[10px] md:text-xs rounded-2xl active:scale-95 flex items-center justify-center text-center"
         >
-          <div
-            className="
-      relative flex flex-col sm:flex-row items-start sm:items-center justify-between 
-      p-5 md:p-6 bg-zinc-950 border border-white/10 rounded-[1.5rem] md:rounded-[2rem] 
-      group-hover:border-red-600/50 transition-all duration-500 overflow-hidden
-    "
-          >
-            {/* Background Glow Effect */}
-            <div className="absolute inset-0 bg-red-600/5 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
-
-            {/* Left Content: Icon + Text */}
-            <div className="flex items-center gap-4 md:gap-6 relative z-10 w-full sm:w-auto">
-              <div className="shrink-0 w-10 h-10 md:w-12 md:h-12 bg-zinc-900 rounded-xl md:rounded-2xl flex items-center justify-center text-zinc-500 group-hover:bg-red-700 group-hover:text-white transition-all duration-500">
-                <MonitorPlay size={20} className="md:w-6 md:h-6" />
-              </div>
-              <div>
-                <h5 className="text-white font-black text-xs md:text-sm uppercase tracking-widest leading-tight">
-                  বক্তৃতাগুলো একসাথে দেখুন
-                </h5>
-                <p className="text-zinc-600 text-[8px] md:text-[10px] font-bold uppercase tracking-widest mt-1">
-                  Access the Full Intellectual Archive
-                </p>
-              </div>
-            </div>
-
-            {/* Right Content: Explore Link */}
-            <div
-              className="
-        relative z-10 flex items-center gap-2 text-red-600 font-black text-[10px] uppercase tracking-widest
-        mt-4 sm:mt-0 ml-14 sm:ml-0 transition-all duration-500
-      "
-            >
-              <span className="group-hover:mr-1 transition-all">Explore</span>
-              <ArrowRight
-                size={16}
-                className="group-hover:translate-x-2 transition-transform duration-500"
-              />
-            </div>
-          </div>
+          <span className="group-hover:mr-1 transition-all">
+            হাদির বক্তৃতা সমূহ{" "}
+          </span>
+          <ArrowRight
+            size={16}
+            className="group-hover:translate-x-2 transition-transform duration-500"
+          />
         </Link>
       </div>
     </section>
