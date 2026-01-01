@@ -19,6 +19,13 @@ export const metadata = {
   title: "শহীদ ওসমান হাদি | Shaheed Osman Hadi Archive",
   description:
     "Memorial Archive of Sharif Osman Hadi | ইনকিলাব মঞ্চের মুখপাত্র শরীফ ওসমান হাদির ছবি ও ভিডিওর ডিজিটাল সংগ্রহশালা",
+  alternates: {
+    languages: {
+      "x-default": "https://sharifosmanhadi.info",
+      "en-US": "https://sharifosmanhadi.info",
+      "bn-BD": "https://sharifosmanhadi.info",
+    },
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -31,21 +38,6 @@ export default function RootLayout({ children }) {
         <meta
           property="og:image"
           content="https://sharifosmanhadi.info/static/osman.webp"
-        />
-        <link
-          rel="alternate"
-          hrefLang="bn"
-          href="https://sharifosmanhadi.info/"
-        />
-        <link
-          rel="alternate"
-          hrefLang="en"
-          href="https://sharifosmanhadi.info/en/"
-        />
-        <link
-          rel="alternate"
-          hrefLang="x-default"
-          href="https://sharifosmanhadi.info/"
         />
         <link rel="apple-touch-icon" href="/static/apple-touch-icon.png" />
         <meta property="twitter:card" content="summary_large_image" />
