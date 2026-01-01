@@ -230,9 +230,9 @@ const VideoPlayerPage = async ({ params, searchParams }) => {
             <div className="lg:w-[35%] bg-zinc-900/20 h-fit border border-white/10 rounded-[2rem] p-8 flex flex-col justify-start">
               <div className="space-y-4">
                 <div>
-                  <h4 className="text-xs font-black uppercase tracking-[0.2em] text-zinc-300">
+                  <p className="text-xs font-black uppercase tracking-[0.2em] text-zinc-300">
                     Spread the Legacy
-                  </h4>
+                  </p>
                   <p className="text-zinc-400 text-xs leading-relaxed mt-2">
                     হাদী ভাইয়ের এই স্মৃতিটি পৌঁছে দিন সবার মাঝে। নিচের যেকোনো
                     মাধ্যমে শেয়ার করুন।

@@ -90,6 +90,7 @@ const PoetryVideo = () => {
             })}
           <Link
             href={`/videos?category=Poetry`}
+            rel="nofollow"
             className="w-full sm:w-fit mx-auto lg:mx-0 mt-8 flex items-center justify-center gap-3 p-4 md:p-5 border border-red-900/50 text-red-600 font-black hover:bg-red-700 hover:text-white transition-all uppercase tracking-[0.2em] md:tracking-[0.3em] text-[10px] rounded-2xl active:scale-95 group"
           >
             কবিতার ভিডিও গুলো দেখুন

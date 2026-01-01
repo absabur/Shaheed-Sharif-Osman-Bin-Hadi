@@ -96,9 +96,9 @@ export default function TributeForm() {
               <div className="w-24 h-24 bg-green-500/10 border border-green-500/20 rounded-full flex items-center justify-center mx-auto text-green-500 mb-8">
                 <CheckCircle2 size={48} />
               </div>
-              <h4 className="text-3xl font-black mb-4 text-white uppercase tracking-tighter">
+              <p className="text-3xl font-black mb-4 text-white uppercase tracking-tighter">
                 ধন্যবাদ!
-              </h4>
+              </p>
               <p className="text-zinc-500 text-base mb-10 max-w-sm mx-auto">
                 আপনার শ্রদ্ধাঞ্জলিটি সফলভাবে জমা হয়েছে। যাচাই শেষে এটি আর্কাইভে
                 প্রকাশিত হবে।

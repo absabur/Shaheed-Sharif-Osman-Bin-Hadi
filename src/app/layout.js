@@ -16,9 +16,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "শহীদ ওসমান হাদি আর্কাইভ | Shaheed Osman Hadi Archive",
+  title: "শহীদ ওসমান হাদি | Shaheed Osman Hadi Archive",
   description:
-    "Memorial Archive of Sharif Osman Hadi | ইনকিলাব মঞ্চের মুখপাত্র শরীফ ওসমান হাদির আর্কাইভ, জীবনী, ছবি ও ভিডিওর ডিজিটাল সংগ্রহশালা",
+    "Memorial Archive of Sharif Osman Hadi | ইনকিলাব মঞ্চের মুখপাত্র শরীফ ওসমান হাদির ছবি ও ভিডিওর ডিজিটাল সংগ্রহশালা",
 };
 
 export default function RootLayout({ children }) {

@@ -1,8 +1,6 @@
 import React from "react";
 import {
   Play,
-  ArrowUpRight,
-  Maximize2,
   Heart,
   ShieldCheck,
   Award,
@@ -13,7 +11,6 @@ import {
   Scale,
   ArrowRight,
   Quote,
-  Zap,
 } from "lucide-react";
 
 import Link from "next/link";
@@ -54,8 +51,8 @@ const Home = () => {
           {/* 2. Main Name */}
           <div className="relative mb-3">
             <h1 className="text-4xl md:text-8xl font-black text-white tracking-tighter leading-[0.9]">
-              <span className="sr-only">Shaheed Osman Hadi</span>
-              শহীদ শরীফ ওসমান <br />
+              <span className="sr-only">Shaheed Osman Hadi </span> শহীদ শরীফ
+              ওসমান <br />
               <span className="text-red-700 drop-shadow-[0_0_50px_rgba(185,28,28,0.5)]">
                 বিন হাদি
               </span>
@@ -127,17 +124,17 @@ const Home = () => {
                 <ShieldCheck size={32} className="text-white" />
               </div>
               <div>
-                <h4 className="text-xl md:text-3xl font-black mb-4">
+                <h3 className="text-xl md:text-3xl font-black mb-4">
                   <span className="text-red-600 text-[10px] md:text-xs relative -bottom-0">
                     Revolutionary and Coordinator
                   </span>
                   <br />
                   বিপ্লবী ও সমন্বয়ক
-                </h4>
+                </h3>
                 <p className="text-zinc-400 text-base md:text-lg leading-relaxed">
-                  ২০২৪ সালের জুলাই বিপ্লব চলাকালে ওসমান হাদি ঢাকার রামপুরা
-                  এলাকায় সমন্বয়কের দায়িত্ব পালন করেন। তিনি মাঠপর্যায়ের সংগঠন
-                  ও আন্দোলনে সরাসরি যুক্ত ছিলেন।
+                  শহীদ শরীফ ওসমান বিন হাদি ২০২৪ সালের জুলাই বিপ্লব চলাকালে ওসমান
+                  হাদি ঢাকার রামপুরা এলাকায় সমন্বয়কের দায়িত্ব পালন করেন। তিনি
+                  মাঠপর্যায়ের সংগঠন ও আন্দোলনে সরাসরি যুক্ত ছিলেন।
                 </p>
               </div>
             </div>
@@ -161,13 +158,13 @@ const Home = () => {
               />
             </div>
             <div>
-              <h4 className="text-xl md:text-3xl font-bold mb-2">
+              <h3 className="text-xl md:text-3xl font-bold mb-2">
                 <span className="text-red-600 text-[10px] md:text-xs relative -bottom-0">
                   Poet and cultural activist
                 </span>
                 <br />
                 কবি ও সাংস্কৃতিক কর্মী
-              </h4>
+              </h3>
               <p className="text-zinc-400 text-sm md:text-base leading-relaxed">
                 তার কবিতাগুলো ছিল প্রতিবাদের ভাষা। শব্দের বুননে তিনি ফুটিয়ে
                 তুলতেন পরাধীনতার শৃঙ্খল ভাঙার গান।
@@ -178,16 +175,16 @@ const Home = () => {
           {/* Identity: The Scholar */}
           <div className="md:col-span-1 bg-zinc-900/40 border border-white/10 rounded-[2rem] md:rounded-[2.5rem] p-8 hover:bg-zinc-800/60 transition-all flex flex-col justify-center">
             <Award className="text-red-600 mb-6" size={40} />
-            <h4 className="text-lg md:text-xl font-bold mb-2">
+            <h3 className="text-lg md:text-xl font-bold mb-2">
               <span className="text-red-600 text-[10px] md:text-xs relative -bottom-0">
                 Teaching profession
               </span>
               <br />
               শিক্ষকতা পেশা
-            </h4>
+            </h3>
             <p className="text-zinc-500 text-xs md:text-sm leading-relaxed">
-              তিনি University of Scholars-এর ইংরেজি বিভাগে প্রভাষক হিসেবে কর্মরত
-              ছিলেন। চিন্তাশীল লেখক হিসেবে তাঁর পরিচিতি ছিল অনন্য।
+              Shaheed Osman Hadi University of Scholars-এর ইংরেজি বিভাগে প্রভাষক
+              হিসেবে কর্মরত ছিলেন। চিন্তাশীল লেখক হিসেবে তাঁর পরিচিতি ছিল অনন্য।
             </p>
           </div>
 
@@ -406,9 +403,7 @@ const PillarCard = ({ icon, title, desc, color }) => (
     <div className="text-red-600 mb-8 group-hover:scale-110 group-hover:-rotate-6 transition-transform">
       {icon}
     </div>
-    <h3 className="text-2xl font-black mb-4 uppercase tracking-tight">
-      {title}
-    </h3>
+    <p className="text-2xl font-black mb-4 uppercase tracking-tight">{title}</p>
     <p className="text-zinc-500 text-sm leading-relaxed font-medium">{desc}</p>
   </div>
 );

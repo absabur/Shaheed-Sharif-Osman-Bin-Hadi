@@ -42,6 +42,7 @@ const DiscussionVideo = () => {
             {/* View All Button */}
             <Link
               href={`/videos?category=Discussion`}
+              rel="nofollow"
               className="w-full space-x-3 mt-2 p-5 border border-red-900/50 text-red-600 font-black hover:bg-red-700 hover:text-white transition-all uppercase tracking-[0.3em] text-[10px] md:text-xs rounded-2xl active:scale-95 flex items-center justify-center text-center"
             >
               <span>হাদির আলোচনা সমূহ</span> <ArrowRight size={15} />

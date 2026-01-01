@@ -40,6 +40,7 @@ const VideoCategoryCards = () => {
             <Link
               key={cat.id}
               href={`/videos?category=${cat.id}`}
+              rel="nofollow"
               className="group relative h-48 bg-zinc-950 rounded-3xl overflow-hidden border border-white/10 hover:border-red-600/50 transition-all duration-700 shadow-2xl"
             >
               {/* Background Decorative Element */}
