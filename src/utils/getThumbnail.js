@@ -6,7 +6,7 @@ export const getThumbnailSrc = (video) => {
 
   if (ytUrl) {
     const ytId = getYouTubeID(ytUrl);
-    return `https://i.ytimg.com/vi/${ytId}/hqdefault.jpg`;
+    return `https://i.ytimg.com/vi/${ytId}/hq720.jpg`;
   }
 
   // 2. Check for Google Drive Source
