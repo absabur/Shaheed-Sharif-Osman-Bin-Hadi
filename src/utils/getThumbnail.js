@@ -4,10 +4,6 @@ export const getThumbnailSrc = (video) => {
   // 1. Check for YouTube Sources
   const ytUrl = video.yt_source_url || video.yt_personal_url;
 
-  if (video?.fetched_metadata?.thumbnail_url) {
-    return video.fetched_metadata.thumbnail_url;
-  }
-
   if (ytUrl) {
     const ytId = getYouTubeID(ytUrl);
     return `https://i.ytimg.com/vi/${ytId}/hqdefault.jpg`;
