@@ -10,9 +10,10 @@
     "start": "next start"
   },
   "dependencies": {
-    "lucide-react": "^0.562.0",
     "bcryptjs": "^3.0.2",
     "jsonwebtoken": "^9.0.2",
+    "lucide-react": "^0.562.0",
+    "modern-screenshot": "^4.6.7",
     "mongoose": "^8.17.1",
     "next": "15.4.8",
     "next-sitemap": "^4.2.3",

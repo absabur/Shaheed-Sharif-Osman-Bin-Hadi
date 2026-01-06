@@ -22,6 +22,7 @@ import AchievementSection from "../common/Achivement";
 import OsmanAboutSection from "../common/OsmanAbout";
 import VideoCategoryCards from "../common/VideoCategoryCard";
 import Image from "next/image";
+import JusticeTimer from "../common/JusticeTimer";
 
 const Home = () => {
   return (
@@ -107,6 +108,9 @@ const Home = () => {
           </div>
         </div>
       </header>
+
+      {/* justice timer */}
+      <JusticeTimer />
 
       {/* 3. BENTO IDENTITY MATRIX */}
       <section
