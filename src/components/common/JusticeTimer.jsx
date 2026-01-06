@@ -146,7 +146,7 @@ const JusticeTimer = () => {
       >
         <div
           ref={downloadRef}
-          style={{ width: "1300px", height: "800px" }}
+          style={{ width: "1300px", height: "850px" }}
           className="bg-[#080808] p-6 flex flex-col justify-between items-center text-center border-[12px] border-red-900/20"
         >
           <div className="space-y-4 pb-10">
@@ -206,10 +206,10 @@ const JusticeTimer = () => {
 
           <div className="w-full flex justify-between items-end flex-wrap border-t border-white/10 pt-8">
             <div className="text-left">
-              <p className="text-zinc-400 text-sm">#JusticeForHadi</p>
+              <p className="text-zinc-400 text-lg">#JusticeForHadi</p>
             </div>
             <div className="text-right text-zinc-400">
-              <p className="text-sm">sharifosmanhadi.info</p>
+              <p className="text-lg">sharifosmanhadi.info</p>
             </div>
           </div>
         </div>
