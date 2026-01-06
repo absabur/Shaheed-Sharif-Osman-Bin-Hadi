@@ -146,7 +146,7 @@ const JusticeTimer = () => {
       >
         <div
           ref={downloadRef}
-          style={{ width: "1250px", height: "700px" }}
+          style={{ width: "1300px", height: "800px" }}
           className="bg-[#080808] p-6 flex flex-col justify-between items-center text-center border-[12px] border-red-900/20"
         >
           <div className="space-y-4 pb-10">
@@ -159,6 +159,12 @@ const JusticeTimer = () => {
                 ? "শহীদ ওসমান হাদি হত্যার\nবিচারহীনতার সময়কাল"
                 : "Period of Impunity for the\nMurder of Martyr Osman Hadi"}
             </h1>
+          </div>
+
+          <div className="p-4 rounded-lg bg-red-600 text-white mx-auto mb-12 text-2xl">
+            {lang === "bn"
+              ? "ইনসাফ প্রতিষ্ঠা না হওয়া পর্যন্ত আমাদের সংগ্রাম চলবে"
+              : "Our struggle will continue until justice is established."}
           </div>
 
           {/* Always a straight line in download, never wraps */}
@@ -184,17 +190,19 @@ const JusticeTimer = () => {
               isLast
             />
           </div>
-          {lang === "bn" ? (
-            <div className="text-2xl w-full py-10">
-              ১২ ডিসেম্বর, ২০২৫ এ ০২:২৫ PM{" "}
-              <span className="text-red-600">-</span> {currentBDTime}
-            </div>
-          ) : (
-            <div className="text-2xl w-full py-10">
-              12 December 2025 at 02:25 pm{" "}
-              <span className="text-red-600">-</span> {currentBDTime}
-            </div>
-          )}
+          <div className="text-2xl w-full py-10">
+            {lang === "bn" ? (
+              <>
+                ১২ ডিসেম্বর, ২০২৫ এ ০২:২৫ PM{" "}
+                <span className="text-red-600">-</span> {currentBDTime}
+              </>
+            ) : (
+              <>
+                12 December 2025 at 02:25 pm{" "}
+                <span className="text-red-600">-</span> {currentBDTime}
+              </>
+            )}
+          </div>
 
           <div className="w-full flex justify-between items-end flex-wrap border-t border-white/10 pt-8">
             <div className="text-left">
