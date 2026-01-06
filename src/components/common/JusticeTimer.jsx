@@ -121,6 +121,12 @@ const JusticeTimer = () => {
             />
           </div>
 
+          <p className="mt-10 text-zinc-400">
+            {lang === "bn"
+              ? "ডাউনলোড করে সোশাল মিডিয়া তে শেয়ার করুন"
+              : "Download and share to social media"}
+          </p>
+
           <button
             onClick={handleDownload}
             className="mt-10 bg-red-700 px-8 py-4 rounded-xl font-black text-white flex items-center gap-2 uppercase text-xs tracking-widest"
@@ -140,7 +146,7 @@ const JusticeTimer = () => {
       >
         <div
           ref={downloadRef}
-          style={{ width: "1200px", height: "650px" }}
+          style={{ width: "1250px", height: "700px" }}
           className="bg-[#080808] p-6 flex flex-col justify-between items-center text-center border-[12px] border-red-900/20"
         >
           <div className="space-y-4 pb-10">
@@ -195,9 +201,7 @@ const JusticeTimer = () => {
               <p className="text-zinc-400 text-sm">#JusticeForHadi</p>
             </div>
             <div className="text-right text-zinc-400">
-              <p className="text-sm">
-                sharifosmanhadi.info
-              </p>
+              <p className="text-sm">sharifosmanhadi.info</p>
             </div>
           </div>
         </div>
