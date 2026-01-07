@@ -61,11 +61,11 @@ def run_file(file_name):
             if not metadata:
                 metadata = get_video_metadata(target_url)
             new_item = {**item}
-            drive_url = item.get("drive_url")
-            if not drive_url:
-                drive_url = process_video_to_drive(target_url, metadata.get("title"))
+            # drive_url = item.get("drive_url")
+            # if not drive_url:
+            #     drive_url = process_video_to_drive(target_url, metadata.get("title"))
+            # new_item["drive_url"] = drive_url
             new_item["fetched_metadata"] = metadata
-            new_item["drive_url"] = drive_url
             updated_interviews.append(new_item)
         else:
             updated_interviews.append(item)
@@ -81,14 +81,14 @@ def run_file(file_name):
 
 
 filepaths = [
-    "../videos/activities.json",
+    # "../videos/activities.json",
     # "../videos/biography.json",
     # "../videos/discussion.json",
-    "../videos/electionCampaign.json",
+    # "../videos/electionCampaign.json",
     # "../videos/interviews.json",
-    "../videos/justice.json",
-    "../videos/lectures.json",
-    "../videos/peoplesLove.json",
+    # "../videos/justice.json",
+    # "../videos/lectures.json",
+    # "../videos/peoplesLove.json",
     # "../videos/poetry.json",
     # "../videos/pressConference.json",
     # "../videos/protests.json",
