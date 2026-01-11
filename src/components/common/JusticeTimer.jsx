@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Download, Scale, Languages, Clock } from "lucide-react";
 import { domToPng } from "modern-screenshot";
 import style from "./css/custom.module.css";
+import Image from "next/image";
 
 const JusticeTimer = () => {
   const [lang, setLang] = useState("bn");
@@ -168,8 +169,17 @@ const JusticeTimer = () => {
         <div
           ref={downloadRef}
           style={{ width: "1300px", height: "750px", zIndex: "10" }}
-          className={`${style.designBg} p-6 flex flex-col justify-between items-center text-center border-[12px] border-red-900/20`}
+          className={`p-6 flex flex-col justify-between items-center text-center border-[12px] border-red-900/20`}
         >
+          <Image
+            src="/static/osman.webp"
+            alt="Shaheed Osman Hadi"
+            fill
+            priority // High priority for Hero background
+            quality={85} // Balance between high quality and file size
+            sizes="100vw" // Since it's a full-screen background
+            className="object-cover opacity-30"
+          />
           <div className="space-y-4">
             <div className="flex justify-center items-center mb-6 gap-3 text-red-500 font-black uppercase tracking-[0.4em] text-sm">
               <Scale size={32} />{" "}
