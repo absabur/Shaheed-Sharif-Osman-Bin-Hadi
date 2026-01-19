@@ -81,19 +81,19 @@ def run_file(file_name):
 
 
 filepaths = [
-    # "../videos/activities.json",
+    "../videos/activities.json",
     # "../videos/biography.json",
     # "../videos/discussion.json",
     # "../videos/electionCampaign.json",
     # "../videos/interviews.json",
     # "../videos/justice.json",
-    # "../videos/lectures.json",
-    # "../videos/peoplesLove.json",
+    "../videos/lectures.json",
+    "../videos/peoplesLove.json",
     # "../videos/poetry.json",
     # "../videos/pressConference.json",
     # "../videos/protests.json",
     # "../videos/song.json",
-    # "../videos/speeches.json",
+    "../videos/speeches.json",
     # "../videos/talkshow.json",
 ]
 
