@@ -53,7 +53,7 @@ const Home = () => {
         <div className="relative z-20 text-center px-6 w-full max-w-5xl flex flex-col items-center">
           {/* 1. Top Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 mb-8 rounded-full bg-red-600/10 border border-red-600/20 text-red-500 text-[10px] md:text-xs font-black md:tracking-[0.1em] uppercase">
-            30 June 1993 — 18 August 2025
+            30 June 1993 — 18 December 2025
           </div>
 
           {/* 2. Main Name */}
